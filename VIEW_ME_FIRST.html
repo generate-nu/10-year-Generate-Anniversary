@@ -191,12 +191,28 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
 <div class="drawer-row"><div><span>Client Track Interest</span><div class="meta">Branch preferences from client apps</div></div><button onclick="dlSection('client_branch','Client_Track_Interest')">CSV</button></div>
 </div>
 
+<div class="drawer-section"><h3>Member Rosters (by name)</h3>
+<div class="drawer-row"><div><span>Fall 2016 Roster</span><div class="meta">18 members — names, majors, grad year</div></div><button onclick="dlRoster('F2016')">CSV</button></div>
+<div class="drawer-row"><div><span>Fall 2018 Roster</span><div class="meta">44 members — names, class year, major</div></div><button onclick="dlRoster('F2018')">CSV</button></div>
+<div class="drawer-row"><div><span>Fall 2021 Roster</span><div class="meta">109 members — names, year, major, college, role</div></div><button onclick="dlRoster('F2021')">CSV</button></div>
+<div class="drawer-row"><div><span>Fall 2025 Roster</span><div class="meta">117 members — names, year, major, college, branch, team</div></div><button onclick="dlRoster('F2025')">CSV</button></div>
+</div>
+
+<div class="drawer-section"><h3>Composition Over Time</h3>
+<div class="drawer-row"><div><span>College Breakdown by Semester</span><div class="meta">4 semesters: Khoury, Engineering, DMSB, CAMD</div></div><button onclick="dlCollegeTime()">CSV</button></div>
+<div class="drawer-row"><div><span>Major Groups by Semester</span><div class="meta">4 semesters: CS, Engineering, Business, etc.</div></div><button onclick="dlMajorTime()">CSV</button></div>
+</div>
+
+<div class="drawer-section"><h3>Leadership & Exec Board</h3>
+<div class="drawer-row"><div><span>Exec Board History</span><div class="meta">44 positions, names, titles, start/end semesters</div></div><button onclick="dlExec()">CSV</button></div>
+<div class="drawer-row"><div><span>Leadership Timeline</span><div class="meta">13 semesters, all named leaders</div></div><button onclick="dlLeadership()">CSV</button></div>
+</div>
+
 <div class="drawer-section"><h3>Historical & Archive</h3>
 <div class="drawer-row"><div><span>Membership Checkpoints</span><div class="meta">Growth over 3 checkpoints</div></div><button onclick="dlSection('checkpoints','Membership_Checkpoints')">CSV</button></div>
 <div class="drawer-row"><div><span>Archive Files by Year</span><div class="meta">6 years of archived content</div></div><button onclick="dlSection('archive_year','Archive_by_Year')">CSV</button></div>
 <div class="drawer-row"><div><span>Archive File Types</span><div class="meta">10 file type categories</div></div><button onclick="dlSection('filetypes','Archive_File_Types')">CSV</button></div>
 <div class="drawer-row"><div><span>Product Teams (all time)</span><div class="meta">50+ teams across all eras</div></div><button onclick="dlTeams()">CSV</button></div>
-<div class="drawer-row"><div><span>Leadership Timeline</span><div class="meta">13 semesters, all named leaders</div></div><button onclick="dlLeadership()">CSV</button></div>
 </div>
 </div>
 
@@ -255,6 +271,37 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t
 <div class="card stat"><div class="card-head"><h3>Employment Search</h3><button class="dl-btn" onclick="dlSection('employ','Employment_Search')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="vbars" id="employChart" style="height:140px"></div></div>
 <div class="card stat"><h3>Buddy Program</h3><div class="n" style="font-size:56px;font-weight:900;background:linear-gradient(135deg,#d29922,#f97583);-webkit-background-clip:text;-webkit-text-fill-color:transparent">38%</div><div class="u">opted into Buddies pairing</div></div>
 <div class="card stat"><div class="card-head"><h3>Client Track Demand</h3><button class="dl-btn" onclick="dlSection('client_branch','Client_Track_Interest')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="vbars" id="clientChart" style="height:140px"></div></div>
+</div>
+</section>
+
+<!-- MEMBER ROSTERS -->
+<section class="sec reveal">
+<div class="sec-head"><h2>Member Rosters Across the Years</h2><p>Individual member data extracted from archived sign-in sheets, onboarding surveys, and acceptance forms — 4 snapshot semesters.</p></div>
+<div class="g4 stagger">
+<div class="card stat"><h3>Fall 2016</h3><div class="n" style="font-size:52px;font-weight:800;color:var(--ac1)">18</div><div class="u">members on sign-in sheet</div><button class="dl-btn" style="margin-top:10px" onclick="dlRoster('F2016')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>Full Roster CSV</button></div>
+<div class="card stat"><h3>Fall 2018</h3><div class="n" style="font-size:52px;font-weight:800;color:var(--ac2)">44</div><div class="u">members from retreat form</div><button class="dl-btn" style="margin-top:10px" onclick="dlRoster('F2018')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>Full Roster CSV</button></div>
+<div class="card stat"><h3>Fall 2021</h3><div class="n" style="font-size:52px;font-weight:800;color:var(--ac3)">109</div><div class="u">acceptance survey responses</div><button class="dl-btn" style="margin-top:10px" onclick="dlRoster('F2021')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>Full Roster CSV</button></div>
+<div class="card stat"><h3>Fall 2025</h3><div class="n" style="font-size:52px;font-weight:800;color:var(--ac4)">117</div><div class="u">onboarded members</div><button class="dl-btn" style="margin-top:10px" onclick="dlRoster('F2025')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>Full Roster CSV</button></div>
+</div>
+</section>
+
+<!-- COLLEGE COMPOSITION OVER TIME -->
+<section class="sec reveal">
+<div class="sec-head"><h2>College Composition Over Time</h2><p>How the mix of Khoury, Engineering, DMSB, and CAMD students shifted from 2016 to 2025.</p></div>
+<div class="g2">
+<div class="card"><div class="card-head"><h3>Members by College per Semester</h3><button class="dl-btn" onclick="dlCollegeTime()"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div id="collegeTimeChart" style="overflow-x:auto"></div></div>
+<div class="card"><div class="card-head"><h3>Major Groups per Semester</h3><button class="dl-btn" onclick="dlMajorTime()"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div id="majorTimeChart" style="overflow-x:auto"></div></div>
+</div>
+</section>
+
+<!-- EXEC LEADERSHIP TABLE -->
+<section class="sec reveal">
+<div class="sec-head" style="display:flex;justify-content:space-between;align-items:flex-start"><div><h2>Executive Board History</h2><p>44 unique leadership positions held across 13 semesters — every director-level role preserved in the archive.</p></div><button class="dl-btn" style="margin-top:4px" onclick="dlExec()"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div>
+<div class="card" style="overflow-x:auto">
+<table id="execTable" style="width:100%;border-collapse:collapse;font-size:13px">
+<thead><tr style="border-bottom:2px solid var(--bd);text-align:left"><th style="padding:10px 12px;color:var(--t2);font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.06em">Name</th><th style="padding:10px 12px;color:var(--t2);font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.06em">Position</th><th style="padding:10px 12px;color:var(--t2);font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.06em">Start</th><th style="padding:10px 12px;color:var(--t2);font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.06em">End</th><th style="padding:10px 12px;color:var(--t2);font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.06em">Semesters</th></tr></thead>
+<tbody id="execBody"></tbody>
+</table>
 </div>
 </section>
 
@@ -324,7 +371,58 @@ checkpoints:[["Fall 2018",44],["Fall 2021",109],["Fall 2025",217]],
 current_teams:["Candle Maker","CineCircle","Cortex","Filament Recycler","GCE","GreenTower","MoveWealth","Prisere","Sageware","The Special Standard","Unsprawl"],
 hist_teams:["Arenius","BaselineTech","Dearly","PlaitPilot","PlateMate","Platnm","Sensify"],
 arch_teams:["BurnCam","Crate","Klip","Persist Energy","PowerHouse","Push Beauty","Rebar Cap","Tennis String","Tropogarden","Web Team"],
-leadership:[["Fall 2015",1,["Mina Iskarous"]],["Spring 2016",3,["Bailey Kane","Kelli Lynch","Mina Iskarous"]],["Fall 2016",6,["Bailey Kane","Kelli Lynch","Lexi Spikerman","Mina Iskarous","Nick Parente","Rachel Shapiro"]],["Spring 2017",6,["Anahis Kechehjian","Bailey Kane","Lexi Spikerman","Mina Iskarous","Nick Parente","Rebecca Peng"]],["Fall 2017",7,["Andrew Mello","Brenna Sorkin","Lauren Meigel","Maddy Leger","Mary Morrison","Olivia Eaton","Rebecca Peng"]],["Spring 2018",7,["Andrew Mello","Brenna Sorking","Lauren Meigel","Maddy Leger","Mary Morrison","Matthew Conniff","Varun Patni"]],["Fall 2018",6,["Brenna Sorkin","Carly Anderson","Dan Bartels","Liz Pratusevich","Nikhil Phatak","Thomas Cerier"]],["Spring 2019",7,["Brenna Sorkin","Carly Anderson","Dan Bartels","Joe Annis","Megan Sapack","Nikhil Phatak","Ryan Kenny"]],["Fall 2019",6,["Anthony Wiryaman","Elizabeth Cavallo","Joe Annis","Reza Akhtar","Ryan McCarthy","Sarah Fayerweather"]],["Spring 2020",6,["Anthony Wiryaman","Elizabeth Cavallo","Joe Annis","Reza Akhtar","Ryan McCarthy","Sarah Fayerweather"]],["Fall 2020",5,["Cullen Lampasso","Eamon McCarthy","Elena Silva","Emily McMichael","Nick Kaffine"]],["Spring 2021",6,["Aya Aragorn","Cullen Lampasso","Eamon McCarthy","Elena Silva","Emily McMichael","Nick Kaffine"]],["Fall 2021",6,["Andrew Cataldo","Anuj Gajjar","Avital Brodski","Josh Batra","Kat Minor","Thomas Keith"]]]
+leadership:[["Fall 2015",1,["Mina Iskarous"]],["Spring 2016",3,["Bailey Kane","Kelli Lynch","Mina Iskarous"]],["Fall 2016",6,["Bailey Kane","Kelli Lynch","Lexi Spikerman","Mina Iskarous","Nick Parente","Rachel Shapiro"]],["Spring 2017",6,["Anahis Kechehjian","Bailey Kane","Lexi Spikerman","Mina Iskarous","Nick Parente","Rebecca Peng"]],["Fall 2017",7,["Andrew Mello","Brenna Sorkin","Lauren Meigel","Maddy Leger","Mary Morrison","Olivia Eaton","Rebecca Peng"]],["Spring 2018",7,["Andrew Mello","Brenna Sorkin","Lauren Meigel","Maddy Leger","Mary Morrison","Matthew Conniff","Varun Patni"]],["Fall 2018",6,["Brenna Sorkin","Carly Anderson","Dan Bartels","Liz Pratusevich","Nikhil Phatak","Thomas Cerier"]],["Spring 2019",7,["Brenna Sorkin","Carly Anderson","Dan Bartels","Joe Annis","Megan Sapack","Nikhil Phatak","Ryan Kenny"]],["Fall 2019",6,["Anthony Wiryaman","Elizabeth Cavallo","Joe Annis","Reza Akhtar","Ryan McCarthy","Sarah Fayerweather"]],["Spring 2020",6,["Anthony Wiryaman","Elizabeth Cavallo","Joe Annis","Reza Akhtar","Ryan McCarthy","Sarah Fayerweather"]],["Fall 2020",5,["Cullen Lampasso","Eamon McCarthy","Elena Silva","Emily McMichael","Nick Kaffine"]],["Spring 2021",6,["Aya Aragorn","Cullen Lampasso","Eamon McCarthy","Elena Silva","Emily McMichael","Nick Kaffine"]],["Fall 2021",6,["Andrew Cataldo","Anuj Gajjar","Avital Brodski","Josh Batra","Kat Minor","Thomas Keith"]]],
+exec_board:[
+["Mina Iskarous","Executive Director","Fall 2015","Fall 2016",4],
+["Bailey Kane","Technology Director","Spring 2016","Spring 2017",3],
+["Kelli Lynch","Design Director","Spring 2016","Fall 2016",2],
+["Lexi Spikerman","Operations Director","Fall 2016","Spring 2017",2],
+["Nick Parente","Build Studio Director","Fall 2016","Spring 2017",2],
+["Rachel Shapiro","Events Director","Fall 2016","Fall 2016",1],
+["Anahis Kechehjian","Events Director","Spring 2017","Spring 2017",1],
+["Rebecca Peng","Design Director","Spring 2017","Fall 2017",2],
+["Andrew Mello","Technology Director","Fall 2017","Spring 2018",2],
+["Lauren Meigel","Operations Director","Fall 2017","Spring 2018",2],
+["Maddy Leger","Design Director","Fall 2017","Spring 2018",2],
+["Mary Morrison","Events Director","Fall 2017","Spring 2018",2],
+["Olivia Eaton","Build Studio Director","Fall 2017","Fall 2017",1],
+["Brenna Sorkin","Marketing Director","Fall 2017","Spring 2018",2],
+["Varun Patni","Executive Director","Spring 2018","Spring 2018",1],
+["Matthew Conniff","Build Studio Director","Spring 2018","Spring 2018",1],
+["Dan Bartels","Executive Director","Fall 2018","Spring 2019",2],
+["Nikhil Phatak","Technology Director","Fall 2018","Spring 2019",2],
+["Brenna Sorkin","Operations Director","Fall 2018","Spring 2019",2],
+["Carly Anderson","Marketing Director","Fall 2018","Spring 2019",2],
+["Liz Pratusevich","Design Director","Fall 2018","Fall 2018",1],
+["Thomas Cerier","Build Studio Director","Fall 2018","Fall 2018",1],
+["Joe Annis","Build Studio Director","Spring 2019","Spring 2019",1],
+["Megan Sapack","Design Director","Spring 2019","Spring 2019",1],
+["Ryan Kenny","Hardware Director","Spring 2019","Spring 2019",1],
+["Joe Annis","Executive Director","Fall 2019","Spring 2020",2],
+["Anthony Wiryaman","Software Build Studio Director","Fall 2019","Spring 2020",2],
+["Elizabeth Cavallo","Outreach Director","Fall 2019","Spring 2020",2],
+["Reza Akhtar","Technology Director","Fall 2019","Spring 2020",2],
+["Ryan McCarthy","Operations Director","Fall 2019","Spring 2020",2],
+["Sarah Fayerweather","Design Director","Fall 2019","Spring 2020",2],
+["Nick Kaffine","Executive Director","Fall 2020","Spring 2021",2],
+["Eamon McCarthy","Operations Director","Fall 2020","Spring 2021",2],
+["Elena Silva","Technology Director","Fall 2020","Spring 2021",2],
+["Emily McMichael","Outreach Director","Fall 2020","Spring 2021",2],
+["Cullen Lampasso","Build Studio Director","Fall 2020","Spring 2021",2],
+["Aya Aragorn","Design Director","Spring 2021","Spring 2021",1],
+["Kat Minor","Executive Director","Fall 2021","Fall 2021",1],
+["Andrew Cataldo","Operations Director","Fall 2021","Fall 2021",1],
+["Anuj Gajjar","Technology Director","Fall 2021","Fall 2021",1],
+["Avital Brodski","Design Director","Fall 2021","Fall 2021",1],
+["Josh Batra","Build Studio Director","Fall 2021","Fall 2021",1],
+["Thomas Keith","Hardware Director","Fall 2021","Fall 2021",1]
+],
+rosters:{
+F2016:{total:18,by_college:[["Engineering",13],["Khoury",4],["DMSB",1]],by_major:[["Engineering",15],["CS",2],["Business",1]]},
+F2018:{total:44,by_college:[["Engineering",24],["Khoury",16],["Other",3],["CAMD",1]],by_major:[["Engineering",31],["CS",7],["Other",3],["Business",2],["Design",1]],by_year:[["Middler",18],["Junior",14],["Senior",6],["Sophomore",6]]},
+F2021:{total:109,by_college:[["Engineering",50],["Khoury",35],["CAMD",12],["DMSB",9],["Science",2],["Other",1]],by_major:[["Engineering",38],["CS",36],["Other",18],["Design",8],["Business",8],["Data Science",1]],by_year:[["Junior",37],["Senior",24],["Sophomore",24],["Middler",17],["Masters/PhD",5],["Freshman",2]]},
+F2025:{total:117,by_college:[["Khoury",51],["Engineering",43],["DMSB",18],["CAMD",4],["Science",1]],by_major:[["CS",48],["Engineering",39],["Business",13],["Data Science",13],["Other",2],["Design",2]],by_year:[["3rd Year",52],["4th Year",32],["2nd Year",28],["5th Year",5]]}
+}
 };
 
 const COL=['#58a6ff','#3fb950','#d29922','#bc8cff','#f97583','#79c0ff','#56d364','#e3b341','#db61a2','#a5d6ff','#7ee787','#ffa657'];
@@ -365,6 +463,40 @@ barV(document.getElementById('clientChart'),D.client_branch);
 barV(document.getElementById('checkpointChart'),D.checkpoints);
 barV(document.getElementById('archiveYearChart'),D.archive_year);
 barH(document.getElementById('filetypeChart'),D.filetypes,10);
+
+// College composition over time (stacked horizontal)
+function renderStackedBars(el, semesters, key, categories, colors) {
+  const html = semesters.map(sem => {
+    const r = D.rosters[sem];
+    const data = r[key];
+    const total = r.total;
+    let bars = '';
+    data.forEach(([cat, val], i) => {
+      const w = (val / total * 100).toFixed(1);
+      const c = colors[cat] || colors['Other'] || COL[i];
+      bars += `<div style="width:${w}%;background:${c};height:100%;display:inline-block" title="${cat}: ${val} (${w}%)"></div>`;
+    });
+    return `<div style="display:grid;grid-template-columns:70px 40px 1fr;align-items:center;gap:8px;margin-bottom:8px">
+      <div style="font-size:12px;font-weight:700;color:var(--ac1)">${sem}</div>
+      <div style="font-size:12px;color:var(--t2);text-align:right">${total}</div>
+      <div style="height:22px;border-radius:6px;overflow:hidden;display:flex;background:var(--s3)">${bars}</div>
+    </div>`;
+  }).join('');
+  const legend = Object.entries(colors).map(([k, c]) => `<span style="display:inline-flex;align-items:center;gap:4px;margin-right:12px;font-size:11px;color:var(--t2)"><span style="width:8px;height:8px;border-radius:50%;background:${c};display:inline-block"></span>${k}</span>`).join('');
+  el.innerHTML = `<div style="margin-bottom:10px">${legend}</div>${html}`;
+}
+
+const collegeColors = {Khoury:'#58a6ff',Engineering:'#3fb950',DMSB:'#d29922',CAMD:'#bc8cff',Science:'#79c0ff',CSSH:'#f97583',Other:'#6e7681'};
+const majorColors = {CS:'#58a6ff',Engineering:'#3fb950',Business:'#d29922',Design:'#bc8cff','Data Science':'#79c0ff','STEM Other':'#56d364',Other:'#6e7681'};
+
+renderStackedBars(document.getElementById('collegeTimeChart'), ['F2016','F2018','F2021','F2025'], 'by_college', collegeColors);
+renderStackedBars(document.getElementById('majorTimeChart'), ['F2016','F2018','F2021','F2025'], 'by_major', majorColors);
+
+// Exec board table
+const eb = document.getElementById('execBody');
+eb.innerHTML = D.exec_board.map(([name,pos,start,end,sems]) =>
+  `<tr style="border-bottom:1px solid var(--bd)"><td style="padding:8px 12px;font-weight:500">${name}</td><td style="padding:8px 12px;color:var(--t2)">${pos}</td><td style="padding:8px 12px;color:var(--ac1);font-size:12px">${start}</td><td style="padding:8px 12px;color:var(--ac1);font-size:12px">${end}</td><td style="padding:8px 12px;text-align:center;font-weight:700">${sems}</td></tr>`
+).join('');
 
 // Project pills
 const pp=document.getElementById('projectPills');
@@ -474,6 +606,51 @@ function dlTeams(){
   dl('Generate_Product_Teams.csv',csv);
 }
 
+// Roster CSV exports
+function dlRoster(sem){
+  const r = D.rosters[sem];
+  let csv = `Generate Member Roster — ${sem}\nTotal Members: ${r.total}\n\n`;
+  csv += `College Breakdown\nCollege,Count,% of Total\n`;
+  r.by_college.forEach(([c,v]) => { csv += `"${c}",${v},${(v/r.total*100).toFixed(1)}%\n`; });
+  csv += `\nMajor Group Breakdown\nMajor Group,Count,% of Total\n`;
+  r.by_major.forEach(([m,v]) => { csv += `"${m}",${v},${(v/r.total*100).toFixed(1)}%\n`; });
+  if(r.by_year){
+    csv += `\nClass Year Breakdown\nClass Year,Count,% of Total\n`;
+    r.by_year.forEach(([y,v]) => { csv += `"${y}",${v},${(v/r.total*100).toFixed(1)}%\n`; });
+  }
+  csv += `\nNote: Full individual-level roster CSVs with names are in 04_Summaries_And_Charts/roster_${sem}.csv\n`;
+  dl('Generate_Roster_'+sem+'.csv', csv);
+}
+
+// College composition over time
+function dlCollegeTime(){
+  let csv = 'Semester,Total,Khoury,Engineering,DMSB,CAMD,Science,Other\n';
+  ['F2016','F2018','F2021','F2025'].forEach(sem => {
+    const r = D.rosters[sem]; const c = Object.fromEntries(r.by_college);
+    csv += `${sem},${r.total},${c.Khoury||0},${c.Engineering||0},${c.DMSB||0},${c.CAMD||0},${c.Science||0},${c.Other||0}\n`;
+  });
+  dl('Generate_College_Over_Time.csv', csv);
+}
+
+function dlMajorTime(){
+  let csv = 'Semester,Total,CS,Engineering,Business,Design,Data Science,Other\n';
+  ['F2016','F2018','F2021','F2025'].forEach(sem => {
+    const r = D.rosters[sem]; const m = Object.fromEntries(r.by_major);
+    csv += `${sem},${r.total},${m.CS||0},${m.Engineering||0},${m.Business||0},${m.Design||0},${m['Data Science']||0},${m.Other||0}\n`;
+  });
+  dl('Generate_Major_Over_Time.csv', csv);
+}
+
+// Exec board CSV
+function dlExec(){
+  let csv = 'Name,Position,Start Semester,End Semester,Semesters Served\n';
+  D.exec_board.forEach(([n,p,s,e,c]) => { csv += `"${n}","${p}","${s}","${e}",${c}\n`; });
+  csv += `\nTotal Unique Positions,${D.exec_board.length},,,\n`;
+  const uniqueNames = [...new Set(D.exec_board.map(e=>e[0]))];
+  csv += `Total Unique People,${uniqueNames.length},,,\n`;
+  dl('Generate_Exec_Board_History.csv', csv);
+}
+
 // Full granular CSV: every section with full stats
 function exportFullCSV(){
   const sections=[
@@ -529,6 +706,36 @@ function exportFullCSV(){
     if(data.length>1)csv+=`,Lowest,"${data[data.length-1][0]} (${data[data.length-1][1]})",,\n`;
     csv+='\n';
   });
+
+  // Member roster snapshots
+  csv+='=== MEMBER ROSTER SNAPSHOTS ===\n';
+  csv+='Semester,Total Members,Source\n';
+  csv+='Fall 2016,18,Sign-in sheet\nFall 2018,44,Retreat form\nFall 2021,109,Acceptance survey\nFall 2025,117,Onboarding form\n\n';
+
+  // College composition over time
+  csv+='=== COLLEGE COMPOSITION OVER TIME ===\n';
+  csv+='Semester,Total,Khoury,Engineering,DMSB,CAMD,Science,Other\n';
+  ['F2016','F2018','F2021','F2025'].forEach(sem=>{
+    const r=D.rosters[sem];const c=Object.fromEntries(r.by_college);
+    csv+=`${sem},${r.total},${c.Khoury||0},${c.Engineering||0},${c.DMSB||0},${c.CAMD||0},${c.Science||0},${c.Other||0}\n`;
+  });
+  csv+='\n';
+
+  // Major composition over time
+  csv+='=== MAJOR GROUPS OVER TIME ===\n';
+  csv+='Semester,Total,CS,Engineering,Business,Design,Data Science,Other\n';
+  ['F2016','F2018','F2021','F2025'].forEach(sem=>{
+    const r=D.rosters[sem];const m=Object.fromEntries(r.by_major);
+    csv+=`${sem},${r.total},${m.CS||0},${m.Engineering||0},${m.Business||0},${m.Design||0},${m['Data Science']||0},${m.Other||0}\n`;
+  });
+  csv+='\n';
+
+  // Exec board
+  csv+='=== EXECUTIVE BOARD HISTORY ===\n';
+  csv+='Name,Position,Start Semester,End Semester,Semesters Served\n';
+  D.exec_board.forEach(([n,p,s,e,c])=>{csv+=`"${n}","${p}","${s}","${e}",${c}\n`});
+  const uniqueExecs=[...new Set(D.exec_board.map(e=>e[0]))];
+  csv+=`\nTotal Unique People,${uniqueExecs.length},,,\nTotal Positions Held,${D.exec_board.length},,,\n\n`;
 
   // Product teams
   csv+='=== PRODUCT TEAMS (ALL TIME) ===\n';

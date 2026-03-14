@@ -8,3 +8,4 @@ __MACOSX/
 # Cache/config artifacts
 .cache/
 .mplconfig/
+.venv/

@@ -1,0 +1,94 @@
+{
+  "F2016": {
+    "total": 18,
+    "by_college": {
+      "Engineering": 13,
+      "Khoury": 4,
+      "DMSB": 1
+    },
+    "by_major_group": {
+      "Engineering": 15,
+      "CS": 2,
+      "Business": 1
+    },
+    "by_grad_year": {
+      "2019": 9,
+      "2018": 5,
+      "2017": 3,
+      "2020": 1
+    }
+  },
+  "F2018": {
+    "total": 44,
+    "by_college": {
+      "Engineering": 24,
+      "Khoury": 16,
+      "Other": 3,
+      "CAMD": 1
+    },
+    "by_major_group": {
+      "Engineering": 31,
+      "CS": 7,
+      "Other": 3,
+      "Business": 2,
+      "Design": 1
+    },
+    "by_class_year": {
+      "Middler": 18,
+      "Junior": 14,
+      "Senior": 6,
+      "Sophomore": 6
+    }
+  },
+  "F2021": {
+    "total": 109,
+    "by_college": {
+      "Engineering": 50,
+      "Khoury": 35,
+      "CAMD": 12,
+      "DMSB": 9,
+      "Science": 2,
+      "Other": 1
+    },
+    "by_major_group": {
+      "Engineering": 38,
+      "CS": 36,
+      "Other": 18,
+      "Design": 8,
+      "Business": 8,
+      "Data Science": 1
+    },
+    "by_class_year": {
+      "Junior": 37,
+      "Senior": 24,
+      "Sophomore": 24,
+      "Middler": 17,
+      "Masters/PHD": 5,
+      "Freshman": 2
+    }
+  },
+  "F2025": {
+    "total": 117,
+    "by_college": {
+      "Khoury": 51,
+      "Engineering": 43,
+      "DMSB": 18,
+      "CAMD": 4,
+      "Science": 1
+    },
+    "by_major_group": {
+      "CS": 48,
+      "Engineering": 39,
+      "Business": 13,
+      "Data Science": 13,
+      "Other": 2,
+      "Design": 2
+    },
+    "by_class_year": {
+      "Third (Undergraduate)": 52,
+      "Fourth (Undergraduate)": 32,
+      "Second (Undergraduate)": 28,
+      "Fifth (Undergraduate)": 5
+    }
+  }
+}
