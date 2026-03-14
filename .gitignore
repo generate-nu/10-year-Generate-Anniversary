@@ -1,0 +1,10 @@
+# Large archive zips (12GB+) — too big for GitHub
+01_Raw_Source_Archives/*.zip
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# Cache/config artifacts
+.cache/
+.mplconfig/

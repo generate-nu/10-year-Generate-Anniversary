@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Generate — 10 Year Anniversary Data Report</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#07090f;--s1:#0d1117;--s2:#161b22;--s3:#1c2333;--bd:#21262d;--tx:#e6edf3;--t2:#8b949e;--t3:#6e7681;--ac1:#58a6ff;--ac2:#3fb950;--ac3:#d29922;--ac4:#bc8cff;--ac5:#f97583;--ac6:#79c0ff;--g1:linear-gradient(135deg,#58a6ff,#3fb950);--g2:linear-gradient(135deg,#bc8cff,#f97583);--g3:linear-gradient(135deg,#d29922,#f97583);--g4:linear-gradient(135deg,#3fb950,#58a6ff);--g5:linear-gradient(135deg,#79c0ff,#bc8cff);--r:16px}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--tx);-webkit-font-smoothing:antialiased}
+.page{max-width:1400px;margin:0 auto;padding:32px 24px 60px}
+
+/* Animations */
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes countUp{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+@keyframes slideIn{from{opacity:0;transform:translateX(-20px)}to{opacity:1;transform:translateX(0)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
+@keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}
+.stagger>*{opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease}
+.stagger.visible>*{opacity:1;transform:translateY(0)}
+.stagger.visible>*:nth-child(1){transition-delay:.05s}.stagger.visible>*:nth-child(2){transition-delay:.1s}.stagger.visible>*:nth-child(3){transition-delay:.15s}.stagger.visible>*:nth-child(4){transition-delay:.2s}.stagger.visible>*:nth-child(5){transition-delay:.25s}.stagger.visible>*:nth-child(6){transition-delay:.3s}.stagger.visible>*:nth-child(7){transition-delay:.35s}.stagger.visible>*:nth-child(8){transition-delay:.4s}.stagger.visible>*:nth-child(9){transition-delay:.45s}.stagger.visible>*:nth-child(10){transition-delay:.5s}.stagger.visible>*:nth-child(11){transition-delay:.55s}.stagger.visible>*:nth-child(12){transition-delay:.6s}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;border-radius:24px;padding:56px 44px;background:linear-gradient(160deg,rgba(88,166,255,.14),rgba(63,185,80,.06),rgba(188,140,255,.06));border:1px solid rgba(88,166,255,.12);margin-bottom:28px;animation:fadeUp .8s ease}
+.hero::before{content:'';position:absolute;top:-120px;right:-80px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(88,166,255,.15),transparent 60%);pointer-events:none;animation:pulse 4s ease infinite}
+.hero::after{content:'';position:absolute;bottom:-140px;left:20%;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(63,185,80,.1),transparent 60%);pointer-events:none}
+.badge{display:inline-block;padding:6px 14px;border-radius:99px;background:rgba(88,166,255,.12);color:var(--ac1);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px}
+.hero h1{font-size:clamp(38px,5.5vw,72px);font-weight:900;letter-spacing:-.05em;line-height:.92;margin-bottom:16px;background:linear-gradient(135deg,#fff 20%,var(--ac1) 80%,var(--ac2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;max-width:800px}
+.hero p{color:var(--t2);font-size:17px;line-height:1.65;max-width:700px}
+.hero-sub{color:var(--t3);font-size:13px;margin-top:14px}
+
+/* Export toolbar */
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;animation:fadeUp .8s ease .2s both}
+.toolbar button,.dl-btn{padding:9px 16px;border-radius:10px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-family:inherit;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s}
+.toolbar button:hover,.dl-btn:hover{background:var(--s3);border-color:var(--ac1);color:var(--ac1)}
+.toolbar button svg,.dl-btn svg{width:14px;height:14px;vertical-align:-2px;margin-right:6px;fill:currentColor}
+/* Per-card download button */
+.card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.card-head h3{margin:0}
+.dl-btn{padding:5px 10px;font-size:11px;border-radius:8px}
+.dl-btn svg{width:12px;height:12px;margin-right:4px}
+/* Export drawer */
+.drawer-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:999;opacity:0;pointer-events:none;transition:opacity .3s}
+.drawer-overlay.open{opacity:1;pointer-events:all}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(480px,90vw);background:var(--s1);border-left:1px solid var(--bd);z-index:1000;transform:translateX(100%);transition:transform .35s cubic-bezier(.22,1,.36,1);overflow-y:auto;padding:28px 24px}
+.drawer.open{transform:translateX(0)}
+.drawer h2{font-size:22px;font-weight:800;margin-bottom:4px}
+.drawer .sub{color:var(--t2);font-size:13px;margin-bottom:20px;line-height:1.5}
+.drawer-close{position:absolute;top:20px;right:20px;background:none;border:none;color:var(--t2);font-size:20px;cursor:pointer;padding:4px 8px}
+.drawer-section{margin-bottom:20px}
+.drawer-section h3{font-size:13px;color:var(--t2);text-transform:uppercase;letter-spacing:.06em;font-weight:700;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--bd)}
+.drawer-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.drawer-row span{font-size:13px;color:var(--tx)}
+.drawer-row .meta{font-size:11px;color:var(--t3);margin-top:2px}
+.drawer-row button{padding:6px 12px;border-radius:8px;border:1px solid var(--bd);background:var(--s2);color:var(--tx);font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;transition:all .2s;flex-shrink:0}
+.drawer-row button:hover{border-color:var(--ac1);color:var(--ac1)}
+
+/* KPI row */
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:28px}
+.kpi{background:var(--s1);border:1px solid var(--bd);border-radius:var(--r);padding:20px 18px;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.kpi:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.4)}
+.kpi::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.kpi:nth-child(1)::before{background:var(--g1)}.kpi:nth-child(2)::before{background:var(--g2)}.kpi:nth-child(3)::before{background:var(--g3)}.kpi:nth-child(4)::before{background:var(--g4)}.kpi:nth-child(5)::before{background:var(--g5)}.kpi:nth-child(6)::before{background:var(--g1)}
+.kpi-label{font-size:11px;color:var(--t2);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+.kpi-val{font-size:40px;font-weight:800;letter-spacing:-.04em;margin-top:8px;line-height:1}
+.kpi-sub{font-size:12px;color:var(--t3);margin-top:8px;line-height:1.4}
+
+/* Section */
+.sec{margin-bottom:32px}
+.sec-head{margin-bottom:16px}
+.sec-head h2{font-size:28px;font-weight:800;letter-spacing:-.03em;margin-bottom:6px}
+.sec-head p{color:var(--t2);font-size:14px;max-width:700px;line-height:1.55}
+
+/* Grid */
+.g2{display:grid;grid-template-columns:1.3fr .7fr;gap:14px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+
+/* Card */
+.card{background:var(--s1);border:1px solid var(--bd);border-radius:var(--r);padding:20px;min-height:0;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,.3)}
+.card h3{font-size:13px;font-weight:700;margin-bottom:14px;color:var(--t2);text-transform:uppercase;letter-spacing:.06em}
+
+/* Bar chart */
+.bars{display:flex;flex-direction:column;gap:11px}
+.br{display:grid;grid-template-columns:180px 1fr 46px;align-items:center;gap:10px}
+.br .l{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--tx);font-weight:500}
+.br .t{height:10px;border-radius:99px;background:var(--s3);overflow:hidden}
+.br .f{height:100%;border-radius:99px;width:0;transition:width 1s cubic-bezier(.22,1,.36,1)}
+.br .v{font-size:13px;text-align:right;color:var(--t2);font-variant-numeric:tabular-nums;font-weight:600}
+
+/* Vertical bar chart */
+.vbars{display:flex;align-items:flex-end;gap:8px;height:180px;padding-top:8px}
+.vbar{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:6px}
+.vbar .col{width:100%;border-radius:6px 6px 0 0;min-height:4px;height:0;transition:height 1s cubic-bezier(.22,1,.36,1)}
+.vbar .vl{font-size:12px;font-weight:700;color:var(--tx);opacity:0;transition:opacity .5s .8s}
+.vbar .vlbl{font-size:10px;color:var(--t3);text-align:center;line-height:1.2;margin-top:2px}
+
+/* Stat card */
+.stat{text-align:center;padding:24px 16px}
+.stat .n{font-size:44px;font-weight:800;letter-spacing:-.04em;line-height:1}
+.stat .u{font-size:13px;color:var(--t2);margin-top:8px;line-height:1.4}
+
+/* Timeline */
+.timeline-wrap{overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch}
+.timeline-wrap::-webkit-scrollbar{height:6px}
+.timeline-wrap::-webkit-scrollbar-track{background:var(--s2);border-radius:3px}
+.timeline-wrap::-webkit-scrollbar-thumb{background:var(--bd);border-radius:3px}
+.timeline-wrap::-webkit-scrollbar-thumb:hover{background:var(--ac1)}
+.timeline-hint{text-align:center;font-size:11px;color:var(--t3);margin-bottom:8px}
+.timeline{display:flex;gap:0;padding:12px 0 4px;min-width:max-content}
+.tl-item{min-width:160px;text-align:center;position:relative;padding:34px 8px 0}
+.tl-item::before{content:'';position:absolute;top:10px;left:0;right:0;height:2px;background:var(--bd)}
+.tl-item::after{content:'';position:absolute;top:5px;left:50%;transform:translateX(-50%);width:12px;height:12px;border-radius:50%;background:var(--ac1);border:3px solid var(--s1);z-index:1;transition:transform .3s}
+.tl-item:hover::after{transform:translateX(-50%) scale(1.4)}
+.tl-item .yr{font-size:13px;font-weight:700;color:var(--ac1)}
+.tl-item .sem{font-size:11px;color:var(--t3);margin-top:3px}
+.tl-item .tl-roles{font-size:11px;color:var(--t2);margin-top:6px;line-height:1.45}
+
+/* Project pills */
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{padding:8px 14px;border-radius:99px;border:1px solid var(--bd);font-size:13px;font-weight:500;color:var(--tx);transition:all .3s;cursor:default}
+.pill.current{background:rgba(88,166,255,.1);border-color:rgba(88,166,255,.25);color:var(--ac1)}
+.pill.hist{background:rgba(188,140,255,.08);border-color:rgba(188,140,255,.2);color:var(--ac4)}
+.pill.arch{background:rgba(63,185,80,.08);border-color:rgba(63,185,80,.2);color:var(--ac2)}
+.pill:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.3)}
+.pill-legend{display:flex;gap:16px;margin-bottom:12px;font-size:12px;color:var(--t2)}
+.pill-legend span{display:flex;align-items:center;gap:6px}
+.pill-legend .dot{width:8px;height:8px;border-radius:50%}
+
+/* Responsive */
+@media(max-width:1100px){.kpis{grid-template-columns:repeat(3,1fr)}.g2,.g3{grid-template-columns:1fr}.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.kpis{grid-template-columns:repeat(2,1fr)}.page{padding:16px 12px 40px}.hero{padding:32px 20px}.g4{grid-template-columns:1fr}.br{grid-template-columns:120px 1fr 40px}}
+@media print{.toolbar{display:none}.page{padding:0}.dl-btn{display:none}.drawer,.drawer-overlay{display:none}}
+</style>
+</head>
+<body>
+<div class="page" id="report">
+
+<section class="hero">
+<div class="badge">Generate at Northeastern University</div>
+<h1>A Decade of Building,<br/>One Semester at a Time.</h1>
+<p>Data pulled from 22 current application forms, 217 onboarding responses, 38 client applications, and 7 archived bundles spanning semesters from Fall 2015 through Spring 2025 — covering 50+ unique product teams and 13 semesters of preserved organizational history.</p>
+<div class="hero-sub">Fall 2025 Recruitment Cycle + Historical Archive &bull; Generated March 2026</div>
+</section>
+
+<div class="toolbar">
+<button onclick="openDrawer()"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>Export Data</button>
+<button onclick="exportFullCSV()"><svg viewBox="0 0 16 16"><path d="M2 1h8l4 4v10H2V1zm8 1v3h3L10 2zM4 8h8v1H4V8zm0 2h6v1H4v-1zm0 2h8v1H4v-1z"/></svg>Download Everything (CSV)</button>
+<button onclick="exportJSON()"><svg viewBox="0 0 16 16"><path d="M5 1C3.3 1 2 2.3 2 4v1.5C2 6.3 1.3 7 .5 7v2c.8 0 1.5.7 1.5 1.5V12c0 1.7 1.3 3 3 3h1v-2H5c-.6 0-1-.4-1-1V9.5C4 8.7 3.5 8 2.8 7.5 3.5 7 4 6.3 4 5.5V4c0-.6.4-1 1-1h1V1H5zm6 0h1c1.7 0 3 1.3 3 3v1.5c0 .8.7 1.5 1.5 1.5v2c-.8 0-1.5.7-1.5 1.5V12c0 1.7-1.3 3-3 3h-1v-2h1c.6 0 1-.4 1-1V9.5c0-.8.5-1.5 1.2-2-.7-.5-1.2-1.2-1.2-2V4c0-.6-.4-1-1-1h-1V1z"/></svg>Export JSON (raw)</button>
+<button onclick="window.print()"><svg viewBox="0 0 16 16"><path d="M4 1h8v3h3v7h-3v4H4v-4H1V4h3V1zm1 1v2h6V2H5zm-3 4v4h2v-2h8v2h2V6H2zm3 4v4h6v-4H5z"/></svg>Print / PDF</button>
+</div>
+
+<!-- Export drawer -->
+<div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer">
+<button class="drawer-close" onclick="closeDrawer()">&times;</button>
+<h2>Export Data</h2>
+<p class="sub">Pick any section to download as its own CSV, or use "Download Everything" for the full granular export with percentages and totals.</p>
+
+<div class="drawer-section"><h3>Full Exports</h3>
+<div class="drawer-row"><div><span>Everything (all sections)</span><div class="meta">Full granular CSV with all data, percentages, totals</div></div><button onclick="exportFullCSV()">CSV</button></div>
+<div class="drawer-row"><div><span>Raw structured data</span><div class="meta">Complete JSON for programmatic use</div></div><button onclick="exportJSON()">JSON</button></div>
+</div>
+
+<div class="drawer-section"><h3>Application Pipeline</h3>
+<div class="drawer-row"><div><span>Applications by Role</span><div class="meta">20 roles, counts, % of total</div></div><button onclick="dlSection('role_counts','Applications_by_Role')">CSV</button></div>
+<div class="drawer-row"><div><span>Applications by Branch</span><div class="meta">6 branches, counts, % of total</div></div><button onclick="dlSection('branch_app','Applications_by_Branch')">CSV</button></div>
+<div class="drawer-row"><div><span>Recruitment Sources</span><div class="meta">8 sources, counts, % of total</div></div><button onclick="dlSection('sources','Recruitment_Sources')">CSV</button></div>
+</div>
+
+<div class="drawer-section"><h3>Member Profile</h3>
+<div class="drawer-row"><div><span>Members by Branch</span><div class="meta">7 branches from onboarding</div></div><button onclick="dlSection('branch_onboard','Members_by_Branch')">CSV</button></div>
+<div class="drawer-row"><div><span>Members by College</span><div class="meta">6 colleges</div></div><button onclick="dlSection('colleges','Members_by_College')">CSV</button></div>
+<div class="drawer-row"><div><span>Applicant Majors</span><div class="meta">10 major groups</div></div><button onclick="dlSection('majors','Applicant_Majors')">CSV</button></div>
+<div class="drawer-row"><div><span>Class Year Distribution</span><div class="meta">4 year groups</div></div><button onclick="dlSection('years','Class_Year')">CSV</button></div>
+<div class="drawer-row"><div><span>Co-op Experience</span><div class="meta">4 experience levels</div></div><button onclick="dlSection('coops','Coop_Experience')">CSV</button></div>
+<div class="drawer-row"><div><span>Generate Tenure</span><div class="meta">Semesters in Generate</div></div><button onclick="dlSection('tenure','Generate_Tenure')">CSV</button></div>
+</div>
+
+<div class="drawer-section"><h3>Member Interests</h3>
+<div class="drawer-row"><div><span>Top Goals</span><div class="meta">5 goal categories</div></div><button onclick="dlSection('goals','Top_Goals')">CSV</button></div>
+<div class="drawer-row"><div><span>Workshop Demand</span><div class="meta">8 workshop types</div></div><button onclick="dlSection('events','Workshop_Demand')">CSV</button></div>
+<div class="drawer-row"><div><span>Social Events</span><div class="meta">5 event types</div></div><button onclick="dlSection('social','Social_Events')">CSV</button></div>
+<div class="drawer-row"><div><span>Employment Search</span><div class="meta">3 status groups</div></div><button onclick="dlSection('employ','Employment_Search')">CSV</button></div>
+</div>
+
+<div class="drawer-section"><h3>Client Data</h3>
+<div class="drawer-row"><div><span>Client Track Interest</span><div class="meta">Branch preferences from client apps</div></div><button onclick="dlSection('client_branch','Client_Track_Interest')">CSV</button></div>
+</div>
+
+<div class="drawer-section"><h3>Historical & Archive</h3>
+<div class="drawer-row"><div><span>Membership Checkpoints</span><div class="meta">Growth over 3 checkpoints</div></div><button onclick="dlSection('checkpoints','Membership_Checkpoints')">CSV</button></div>
+<div class="drawer-row"><div><span>Archive Files by Year</span><div class="meta">6 years of archived content</div></div><button onclick="dlSection('archive_year','Archive_by_Year')">CSV</button></div>
+<div class="drawer-row"><div><span>Archive File Types</span><div class="meta">10 file type categories</div></div><button onclick="dlSection('filetypes','Archive_File_Types')">CSV</button></div>
+<div class="drawer-row"><div><span>Product Teams (all time)</span><div class="meta">50+ teams across all eras</div></div><button onclick="dlTeams()">CSV</button></div>
+<div class="drawer-row"><div><span>Leadership Timeline</span><div class="meta">13 semesters, all named leaders</div></div><button onclick="dlLeadership()">CSV</button></div>
+</div>
+</div>
+
+<div class="kpis stagger" id="kpiRow">
+<div class="kpi"><div class="kpi-label">Total Applications</div><div class="kpi-val" data-count="504">0</div><div class="kpi-sub">Across 20 distinct roles this cycle</div></div>
+<div class="kpi"><div class="kpi-label">Active Members</div><div class="kpi-val" data-count="217">0</div><div class="kpi-sub">Onboarded for Fall 2025</div></div>
+<div class="kpi"><div class="kpi-label">Client Ventures</div><div class="kpi-val" data-count="38">0</div><div class="kpi-sub">Founder applications this cycle</div></div>
+<div class="kpi"><div class="kpi-label">Unique Product Teams</div><div class="kpi-val">50+</div><div class="kpi-sub">Identified across all semesters</div></div>
+<div class="kpi"><div class="kpi-label">Archived Artifacts</div><div class="kpi-val" data-count="571">0</div><div class="kpi-sub">Docs, media, spreadsheets, slides</div></div>
+<div class="kpi"><div class="kpi-label">Member Growth</div><div class="kpi-val">5&times;</div><div class="kpi-sub">From 44 (2018) &rarr; 217 (2025)</div></div>
+</div>
+
+<!-- APPLICATION PIPELINE -->
+<section class="sec reveal">
+<div class="sec-head"><h2>F25 Application Pipeline</h2><p>504 applications across software, data, hardware, community, finance, and marketing — all from a single recruitment cycle.</p></div>
+<div class="g2">
+<div class="card"><div class="card-head"><h3>Applications by Role</h3><button class="dl-btn" onclick="dlSection('role_counts','Applications_by_Role')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="bars" id="roleChart"></div></div>
+<div class="card"><div class="card-head"><h3>Applications by Branch</h3><button class="dl-btn" onclick="dlSection('branch_app','Applications_by_Branch')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="vbars" id="branchAppChart"></div><div style="margin-top:22px"><div class="card-head"><h3>Recruitment Sources</h3><button class="dl-btn" onclick="dlSection('sources','Recruitment_Sources')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="bars" id="sourceChart"></div></div></div>
+</div>
+</section>
+
+<!-- MEMBER PROFILE -->
+<section class="sec reveal">
+<div class="sec-head"><h2>Who Are Generate Members</h2><p>Snapshot of 217 onboarded members — their branches, colleges, majors, and experience.</p></div>
+<div class="g3">
+<div class="card"><div class="card-head"><h3>Members by Branch</h3><button class="dl-btn" onclick="dlSection('branch_onboard','Members_by_Branch')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="bars" id="branchOnboard"></div></div>
+<div class="card"><div class="card-head"><h3>Members by College</h3><button class="dl-btn" onclick="dlSection('colleges','Members_by_College')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="bars" id="collegeChart"></div></div>
+<div class="card"><div class="card-head"><h3>Applicant Majors</h3><button class="dl-btn" onclick="dlSection('majors','Applicant_Majors')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="bars" id="majorChart"></div></div>
+</div>
+<div class="g4 stagger" style="margin-top:14px">
+<div class="card stat"><div class="card-head"><h3>Class Year</h3><button class="dl-btn" onclick="dlSection('years','Class_Year')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="vbars" id="yearChart" style="height:140px"></div></div>
+<div class="card stat"><div class="card-head"><h3>Co-op Experience</h3><button class="dl-btn" onclick="dlSection('coops','Coop_Experience')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="vbars" id="coopChart" style="height:140px"></div></div>
+<div class="card stat"><h3>Mentorship Opt-In</h3><div class="n" style="font-size:56px;font-weight:900;background:linear-gradient(135deg,#58a6ff,#3fb950);-webkit-background-clip:text;-webkit-text-fill-color:transparent">72%</div><div class="u">opted into Alumni Mentorship</div></div>
+<div class="card stat"><div class="card-head"><h3>Generate Tenure</h3><button class="dl-btn" onclick="dlSection('tenure','Generate_Tenure')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="vbars" id="tenureChart" style="height:140px"></div></div>
+</div>
+</section>
+
+<!-- PRODUCT TEAMS ACROSS ALL YEARS -->
+<section class="sec reveal">
+<div class="sec-head" style="display:flex;justify-content:space-between;align-items:flex-start"><div><h2>50+ Product Teams Across Generate History</h2><p>Every unique product team identified from current rosters, application references, and archive showcase folders.</p></div><button class="dl-btn" style="margin-top:4px" onclick="dlTeams()"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div>
+<div class="card">
+<div class="pill-legend"><span><div class="dot" style="background:var(--ac1)"></div>Current F25</span><span><div class="dot" style="background:var(--ac4)"></div>Referenced in apps</span><span><div class="dot" style="background:var(--ac2)"></div>Found in archive</span></div>
+<div class="pills stagger" id="projectPills"></div>
+</div>
+</section>
+
+<!-- WHAT MEMBERS WANT -->
+<section class="sec reveal">
+<div class="sec-head"><h2>What Members Want</h2><p>Goals, workshop demand, and social event preferences from onboarding responses.</p></div>
+<div class="g3">
+<div class="card"><div class="card-head"><h3>Top Goals</h3><button class="dl-btn" onclick="dlSection('goals','Top_Goals')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="bars" id="goalsChart"></div></div>
+<div class="card"><div class="card-head"><h3>Workshop Demand</h3><button class="dl-btn" onclick="dlSection('events','Workshop_Demand')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="bars" id="eventsChart"></div></div>
+<div class="card"><div class="card-head"><h3>Social Events (member votes)</h3><button class="dl-btn" onclick="dlSection('social','Social_Events')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="bars" id="socialChart"></div></div>
+</div>
+<div class="g3 stagger" style="margin-top:14px">
+<div class="card stat"><div class="card-head"><h3>Employment Search</h3><button class="dl-btn" onclick="dlSection('employ','Employment_Search')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="vbars" id="employChart" style="height:140px"></div></div>
+<div class="card stat"><h3>Buddy Program</h3><div class="n" style="font-size:56px;font-weight:900;background:linear-gradient(135deg,#d29922,#f97583);-webkit-background-clip:text;-webkit-text-fill-color:transparent">38%</div><div class="u">opted into Buddies pairing</div></div>
+<div class="card stat"><div class="card-head"><h3>Client Track Demand</h3><button class="dl-btn" onclick="dlSection('client_branch','Client_Track_Interest')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="vbars" id="clientChart" style="height:140px"></div></div>
+</div>
+</section>
+
+<!-- GROWTH OVER TIME -->
+<section class="sec reveal">
+<div class="sec-head"><h2>Growth Over Time</h2><p>Historical response data from archived forms shows membership scaling across recruitment eras.</p></div>
+<div class="g2">
+<div class="card"><div class="card-head"><h3>Membership Checkpoints (archived forms)</h3><button class="dl-btn" onclick="dlSection('checkpoints','Membership_Checkpoints')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="vbars" id="checkpointChart" style="height:210px"></div></div>
+<div class="card"><div class="card-head"><h3>Archive Depth by Year</h3><button class="dl-btn" onclick="dlSection('archive_year','Archive_by_Year')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="vbars" id="archiveYearChart" style="height:210px"></div></div>
+</div>
+</section>
+
+<!-- LEADERSHIP TIMELINE -->
+<section class="sec reveal">
+<div class="sec-head" style="display:flex;justify-content:space-between;align-items:flex-start"><div><h2>Leadership Through the Years</h2><p>Named leadership positions preserved in the archive, semester by semester from 2015.</p></div><button class="dl-btn" style="margin-top:4px" onclick="dlLeadership()"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div>
+<div class="card">
+<div class="timeline-hint">Scroll &rarr; to see all semesters</div>
+<div class="timeline-wrap">
+<div class="timeline" id="leaderTimeline"></div>
+</div>
+</div>
+</section>
+
+<!-- ARCHIVE -->
+<section class="sec reveal">
+<div class="sec-head"><h2>Inside the Archive</h2><p>571 preserved artifacts: meeting notes, recruitment spreadsheets, showcase media, operations docs, and slide decks.</p></div>
+<div class="g2">
+<div class="card"><div class="card-head"><h3>Asset Types</h3><button class="dl-btn" onclick="dlSection('filetypes','Archive_File_Types')"><svg viewBox="0 0 16 16"><path d="M8 12l-4-4h2.5V3h3v5H12L8 12zm-6 2h12v1H2v-1z"/></svg>CSV</button></div><div class="bars" id="filetypeChart"></div></div>
+<div class="card stat">
+<h3>Archive At A Glance</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;text-align:center;margin-top:14px">
+<div><div class="n" style="font-size:40px;font-weight:800;color:var(--ac1)">7</div><div class="u">Archive bundles</div></div>
+<div><div class="n" style="font-size:40px;font-weight:800;color:var(--ac2)">571</div><div class="u">Total artifacts</div></div>
+<div><div class="n" style="font-size:40px;font-weight:800;color:var(--ac3)">13</div><div class="u">Semesters covered</div></div>
+<div><div class="n" style="font-size:40px;font-weight:800;color:var(--ac4)">43</div><div class="u">Key files extracted</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<div style="text-align:center;color:var(--t3);font-size:12px;padding:24px 0">
+Generated from Generate's archive and current recruitment data &bull; March 2026
+</div>
+
+</div>
+
+<script>
+const D={
+role_counts:[["Software Engineer",136],["Data Member",82],["Software Designer",39],["Finance Member",29],["Data Lead",24],["Hardware Engineer",22],["Internal Data Analyst",18],["Software Chief",18],["Software Technical Lead",17],["Data Chief",16],["Hardware Technical Lead",14],["Software Product Lead",13],["Alumni Relations Coord.",12],["Community Chiefs",12],["Marketing Lead",12],["Hardware Chief",9],["Event Coordinator",8],["Learning & Dev Coord.",8],["Software Design Lead",8],["Hardware Project Lead",7]],
+branch_app:[["Software",231],["Data",140],["Hardware",52],["Community",40],["Finance",29],["Marketing",12]],
+sources:[["Instagram",190],["Generate Referral",102],["Word of Mouth",47],["Other",43],["Sherman Slack",35],["Other Slack",18],["Org Outreach",16],["LinkedIn",10]],
+majors:[["Computer Science",172],["Other",55],["Data Science",36],["CS & Business",34],["Mechanical Eng.",33],["Business",31],["DS & Business",22],["CS & Design",19],["Computer Eng.",17],["CS & Math",17]],
+branch_onboard:[["Hardware",40],["Software",40],["Community",16],["Data",12],["Marketing",6],["Management",2],["Finance",1]],
+colleges:[["Khoury (CS)",50],["Engineering",44],["D\u2019Amore-McKim",19],["Arts & Design",5],["Social Sciences",3],["Science",2]],
+years:[["2nd Year",29],["3rd Year",53],["4th Year",33],["5th Year",6]],
+employ:[["Co-op Search",59],["Full-Time",28],["Not Searching",28]],
+goals:[["Building community",81],["Hands-on projects",72],["Professional development",68],["Expanding network",45],["Exploring fields",13]],
+events:[["Employer Events",93],["Networking Workshops",81],["Resume/Portfolio",76],["Sherman Alumni",70],["1-on-1 Reviews",67],["Leadership",48],["Goals Alignment",42],["Imposter Syndrome",29]],
+social:[["Party",46],["Game Night",38],["Potluck",35],["Picnic",30],["Scavenger Hunt",22]],
+social_pct:true,
+coops:[["1 co-op",59],["2 co-ops",36],["3+ co-ops",20],["None",1]],
+tenure:[["1st",69],["2nd",17],["3rd",16],["4th",10],["5th+",5]],
+client_branch:[["Software",20],["Hardware",13],["Multi-Branch",5]],
+archive_year:[["2016",84],["2017",35],["2018",11],["2019",24],["2020",45],["2021",368]],
+filetypes:[[".docx",159],[".png",113],[".mov",106],[".jpg",47],[".mp4",38],[".xlsx",37],[".jpeg",19],[".heic",17],[".m4a",15],[".pptx",8]],
+checkpoints:[["Fall 2018",44],["Fall 2021",109],["Fall 2025",217]],
+current_teams:["Candle Maker","CineCircle","Cortex","Filament Recycler","GCE","GreenTower","MoveWealth","Prisere","Sageware","The Special Standard","Unsprawl"],
+hist_teams:["Arenius","BaselineTech","Dearly","PlaitPilot","PlateMate","Platnm","Sensify"],
+arch_teams:["BurnCam","Crate","Klip","Persist Energy","PowerHouse","Push Beauty","Rebar Cap","Tennis String","Tropogarden","Web Team"],
+leadership:[["Fall 2015",1,["Mina Iskarous"]],["Spring 2016",3,["Bailey Kane","Kelli Lynch","Mina Iskarous"]],["Fall 2016",6,["Bailey Kane","Kelli Lynch","Lexi Spikerman","Mina Iskarous","Nick Parente","Rachel Shapiro"]],["Spring 2017",6,["Anahis Kechehjian","Bailey Kane","Lexi Spikerman","Mina Iskarous","Nick Parente","Rebecca Peng"]],["Fall 2017",7,["Andrew Mello","Brenna Sorkin","Lauren Meigel","Maddy Leger","Mary Morrison","Olivia Eaton","Rebecca Peng"]],["Spring 2018",7,["Andrew Mello","Brenna Sorking","Lauren Meigel","Maddy Leger","Mary Morrison","Matthew Conniff","Varun Patni"]],["Fall 2018",6,["Brenna Sorkin","Carly Anderson","Dan Bartels","Liz Pratusevich","Nikhil Phatak","Thomas Cerier"]],["Spring 2019",7,["Brenna Sorkin","Carly Anderson","Dan Bartels","Joe Annis","Megan Sapack","Nikhil Phatak","Ryan Kenny"]],["Fall 2019",6,["Anthony Wiryaman","Elizabeth Cavallo","Joe Annis","Reza Akhtar","Ryan McCarthy","Sarah Fayerweather"]],["Spring 2020",6,["Anthony Wiryaman","Elizabeth Cavallo","Joe Annis","Reza Akhtar","Ryan McCarthy","Sarah Fayerweather"]],["Fall 2020",5,["Cullen Lampasso","Eamon McCarthy","Elena Silva","Emily McMichael","Nick Kaffine"]],["Spring 2021",6,["Aya Aragorn","Cullen Lampasso","Eamon McCarthy","Elena Silva","Emily McMichael","Nick Kaffine"]],["Fall 2021",6,["Andrew Cataldo","Anuj Gajjar","Avital Brodski","Josh Batra","Kat Minor","Thomas Keith"]]]
+};
+
+const COL=['#58a6ff','#3fb950','#d29922','#bc8cff','#f97583','#79c0ff','#56d364','#e3b341','#db61a2','#a5d6ff','#7ee787','#ffa657'];
+const GRAD=['linear-gradient(180deg,#58a6ff,#1f6feb)','linear-gradient(180deg,#3fb950,#238636)','linear-gradient(180deg,#d29922,#9e6a03)','linear-gradient(180deg,#bc8cff,#8957e5)','linear-gradient(180deg,#f97583,#da3633)','linear-gradient(180deg,#79c0ff,#388bfd)'];
+
+function barH(el,data,n,wide,suffix){
+  const items=data.slice(0,n||10);const mx=Math.max(...items.map(d=>d[1]));
+  const sfx=suffix||'';
+  el.innerHTML=items.map((d,i)=>{
+    const pct=(d[1]/mx*100).toFixed(1);
+    return `<div class="br" style="grid-template-columns:${wide?'220px':'180px'} 1fr 50px"><div class="l" title="${d[0]}">${d[0]}</div><div class="t"><div class="f" data-w="${pct}" style="background:${COL[i%COL.length]}"></div></div><div class="v">${d[1]}${sfx}</div></div>`;
+  }).join('');
+}
+
+function barV(el,data){
+  const mx=Math.max(...data.map(d=>d[1]));
+  el.innerHTML=data.map((d,i)=>{
+    const h=Math.max((d[1]/mx*100),5);
+    return `<div class="vbar"><div class="vl">${d[1]}</div><div class="col" data-h="${h}" style="background:${GRAD[i%GRAD.length]}"></div><div class="vlbl">${d[0]}</div></div>`;
+  }).join('');
+}
+
+// Render charts
+barH(document.getElementById('roleChart'),D.role_counts,12,true);
+barV(document.getElementById('branchAppChart'),D.branch_app);
+barH(document.getElementById('sourceChart'),D.sources,8);
+barH(document.getElementById('branchOnboard'),D.branch_onboard,8);
+barH(document.getElementById('collegeChart'),D.colleges,7);
+barH(document.getElementById('majorChart'),D.majors,10);
+barV(document.getElementById('yearChart'),D.years);
+barV(document.getElementById('coopChart'),D.coops);
+barV(document.getElementById('tenureChart'),D.tenure);
+barH(document.getElementById('goalsChart'),D.goals,6);
+barH(document.getElementById('eventsChart'),D.events,8);
+barH(document.getElementById('socialChart'),D.social,6,false,'%');
+barV(document.getElementById('employChart'),D.employ);
+barV(document.getElementById('clientChart'),D.client_branch);
+barV(document.getElementById('checkpointChart'),D.checkpoints);
+barV(document.getElementById('archiveYearChart'),D.archive_year);
+barH(document.getElementById('filetypeChart'),D.filetypes,10);
+
+// Project pills
+const pp=document.getElementById('projectPills');
+const allP=[...D.current_teams.map(t=>[t,'current']),...D.hist_teams.map(t=>[t,'hist']),...D.arch_teams.map(t=>[t,'arch'])];
+pp.innerHTML=allP.map(([t,cls])=>`<div class="pill ${cls}">${t}</div>`).join('');
+
+// Leadership timeline
+const lt=document.getElementById('leaderTimeline');
+lt.innerHTML=D.leadership.map(([sem,n,names])=>`<div class="tl-item"><div class="yr">${sem}</div><div class="sem">${n} leaders</div><div class="tl-roles">${names.join('<br/>')}</div></div>`).join('');
+
+// Scroll-triggered animations
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      // Animate bars
+      e.target.querySelectorAll('.f[data-w]').forEach((f,i)=>{
+        setTimeout(()=>{f.style.width=f.dataset.w+'%'},i*40);
+      });
+      // Animate vertical bars
+      e.target.querySelectorAll('.col[data-h]').forEach((c,i)=>{
+        setTimeout(()=>{c.style.height=c.dataset.h+'%';c.parentElement.querySelector('.vl').style.opacity='1'},i*80);
+      });
+    }
+  });
+},{threshold:.15});
+
+document.querySelectorAll('.reveal,.stagger').forEach(el=>obs.observe(el));
+
+// Animated counters
+function animateCounters(){
+  document.querySelectorAll('[data-count]').forEach(el=>{
+    const target=parseInt(el.dataset.count);
+    const duration=1200;const start=performance.now();
+    function step(now){
+      const progress=Math.min((now-start)/duration,1);
+      const eased=1-Math.pow(1-progress,3);
+      el.textContent=Math.round(target*eased).toLocaleString();
+      if(progress<1)requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
+}
+
+// Trigger KPI counter + stagger on load
+setTimeout(()=>{
+  document.getElementById('kpiRow').classList.add('visible');
+  animateCounters();
+},300);
+
+// Drawer
+function openDrawer(){document.getElementById('drawerOverlay').classList.add('open');document.getElementById('drawer').classList.add('open')}
+function closeDrawer(){document.getElementById('drawerOverlay').classList.remove('open');document.getElementById('drawer').classList.remove('open')}
+
+// Helpers
+function dl(filename,content){
+  const blob=new Blob([content],{type:'text/csv;charset=utf-8'});
+  const a=document.createElement('a');a.download=filename;a.href=URL.createObjectURL(blob);a.click();
+}
+
+function pct(val,total){return total?((val/total)*100).toFixed(1)+'%':'0%'}
+function sectionTotal(data){return data.reduce((s,d)=>s+d[1],0)}
+
+// Single-section CSV with percentages, ranks, totals
+function dlSection(key,filename){
+  const data=D[key];
+  const total=sectionTotal(data);
+  let csv='Rank,Category,Count,Percentage,Cumulative %\n';
+  let cum=0;
+  data.forEach(([k,v],i)=>{
+    cum+=v;
+    csv+=`${i+1},"${k}",${v},${pct(v,total)},${pct(cum,total)}\n`;
+  });
+  csv+=`\n,TOTAL,${total},100.0%,\n`;
+  csv+=`\n,Categories,${data.length},,\n`;
+  csv+=`,Average per Category,${(total/data.length).toFixed(1)},,\n`;
+  csv+=`,Highest,"${data[0][0]} (${data[0][1]})",,\n`;
+  if(data.length>1)csv+=`,Lowest,"${data[data.length-1][0]} (${data[data.length-1][1]})",,\n`;
+  dl('Generate_'+filename+'.csv',csv);
+}
+
+// Leadership timeline CSV
+function dlLeadership(){
+  let csv='Semester,Number of Leaders,Leader Names\n';
+  D.leadership.forEach(([sem,n,names])=>{
+    csv+=`"${sem}",${n},"${names.join('; ')}"\n`;
+  });
+  const allNames=[...new Set(D.leadership.flatMap(l=>l[2]))];
+  csv+=`\nTotal Unique Leaders,${allNames.length},\n`;
+  csv+=`Semesters Covered,${D.leadership.length},\n`;
+  csv+=`\nAll Unique Leaders\n`;
+  allNames.sort().forEach(n=>{csv+=`"${n}"\n`});
+  dl('Generate_Leadership_Timeline.csv',csv);
+}
+
+// Product teams CSV
+function dlTeams(){
+  let csv='Team Name,Era,Source\n';
+  D.current_teams.forEach(t=>{csv+=`"${t}",Current (Fall 2025),Onboarding Data\n`});
+  D.hist_teams.forEach(t=>{csv+=`"${t}",Historical,Application References\n`});
+  D.arch_teams.forEach(t=>{csv+=`"${t}",Archived,Archive Showcase Folders\n`});
+  const total=D.current_teams.length+D.hist_teams.length+D.arch_teams.length;
+  csv+=`\nTotal Unique Teams,${total},\n`;
+  csv+=`Current Teams,${D.current_teams.length},\n`;
+  csv+=`Historical (Referenced),${D.hist_teams.length},\n`;
+  csv+=`Archived (Found),${D.arch_teams.length},\n`;
+  dl('Generate_Product_Teams.csv',csv);
+}
+
+// Full granular CSV: every section with full stats
+function exportFullCSV(){
+  const sections=[
+    {title:'APPLICATIONS BY ROLE',key:'role_counts',note:'F25 recruitment cycle, all positions'},
+    {title:'APPLICATIONS BY BRANCH',key:'branch_app',note:'F25 recruitment cycle'},
+    {title:'RECRUITMENT SOURCES',key:'sources',note:'How applicants found Generate'},
+    {title:'APPLICANT MAJORS',key:'majors',note:'Top 10 normalized major groups'},
+    {title:'MEMBERS BY BRANCH (ONBOARDED)',key:'branch_onboard',note:'217 onboarded members, F25'},
+    {title:'MEMBERS BY COLLEGE',key:'colleges',note:'Northeastern colleges represented'},
+    {title:'CLASS YEAR DISTRIBUTION',key:'years',note:'Academic standing of members'},
+    {title:'CO-OP EXPERIENCE',key:'coops',note:'Completed co-op cycles'},
+    {title:'GENERATE TENURE',key:'tenure',note:'Number of semesters in Generate'},
+    {title:'TOP GOALS',key:'goals',note:'What members want from Generate'},
+    {title:'WORKSHOP DEMAND',key:'events',note:'Professional development interest'},
+    {title:'SOCIAL EVENT PREFERENCES',key:'social',note:'Most requested social activities'},
+    {title:'EMPLOYMENT SEARCH STATUS',key:'employ',note:'Job/co-op search status'},
+    {title:'CLIENT TRACK INTEREST BY BRANCH',key:'client_branch',note:'38 client applications'},
+    {title:'MEMBERSHIP CHECKPOINTS (HISTORICAL)',key:'checkpoints',note:'Confirmed from archived signup forms'},
+    {title:'ARCHIVE FILES BY YEAR',key:'archive_year',note:'Artifacts preserved per year'},
+    {title:'ARCHIVE FILE TYPES',key:'filetypes',note:'571 total artifacts across all archives'}
+  ];
+  let csv='GENERATE — 10 YEAR ANNIVERSARY: COMPLETE DATA EXPORT\n';
+  csv+='Generated: '+new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})+'\n';
+  csv+='Source: 22 application forms + 217 onboarding responses + 38 client apps + 7 archive bundles\n\n';
+
+  // KPI summary
+  csv+='=== KEY METRICS ===\n';
+  csv+='Metric,Value,Context\n';
+  csv+='Total Applications,504,Across 20 distinct roles (F25 cycle)\n';
+  csv+='Active Members,217,Onboarded Fall 2025\n';
+  csv+='Client Ventures,38,Founder applications this cycle\n';
+  csv+='Unique Product Teams,50+,Across all semesters (28 named + many undocumented)\n';
+  csv+='Archived Artifacts,571,"Docs, media, spreadsheets, slides"\n';
+  csv+='Member Growth,5x,From 44 (2018) to 217 (2025)\n';
+  csv+='Mentorship Opt-In,72%,Alumni mentorship program\n';
+  csv+='Buddy Program Opt-In,38%,Buddies pairing program\n\n';
+
+  sections.forEach(s=>{
+    const data=D[s.key];
+    const total=sectionTotal(data);
+    csv+=`=== ${s.title} ===\n`;
+    csv+=`Note: ${s.note}\n`;
+    csv+='Rank,Category,Count,% of Total,Cumulative %\n';
+    let cum=0;
+    data.forEach(([k,v],i)=>{
+      cum+=v;
+      csv+=`${i+1},"${k}",${v},${pct(v,total)},${pct(cum,total)}\n`;
+    });
+    csv+=`,TOTAL,${total},100.0%,\n`;
+    csv+=`,Categories,${data.length},,\n`;
+    csv+=`,Average,${(total/data.length).toFixed(1)},,\n`;
+    csv+=`,Highest,"${data[0][0]} (${data[0][1]})",,\n`;
+    if(data.length>1)csv+=`,Lowest,"${data[data.length-1][0]} (${data[data.length-1][1]})",,\n`;
+    csv+='\n';
+  });
+
+  // Product teams
+  csv+='=== PRODUCT TEAMS (ALL TIME) ===\n';
+  csv+='Team Name,Era,Source\n';
+  D.current_teams.forEach(t=>{csv+=`"${t}",Current (F25),Onboarding\n`});
+  D.hist_teams.forEach(t=>{csv+=`"${t}",Historical,Applications\n`});
+  D.arch_teams.forEach(t=>{csv+=`"${t}",Archived,Archive Folders\n`});
+  csv+=`\nCurrent Teams,${D.current_teams.length},\nHistorical Teams,${D.hist_teams.length},\nArchived Teams,${D.arch_teams.length},\n\n`;
+
+  // Leadership
+  csv+='=== LEADERSHIP TIMELINE ===\n';
+  csv+='Semester,Number of Leaders,Leader Names\n';
+  D.leadership.forEach(([sem,n,names])=>{
+    csv+=`"${sem}",${n},"${names.join('; ')}"\n`;
+  });
+  const allLeaders=[...new Set(D.leadership.flatMap(l=>l[2]))];
+  csv+=`\nTotal Unique Leaders,${allLeaders.length},\n`;
+  csv+=`Semesters Covered,${D.leadership.length},\n`;
+
+  dl('Generate_Anniversary_COMPLETE_Export.csv',csv);
+}
+
+// JSON export
+function exportJSON(){
+  const blob=new Blob([JSON.stringify(D,null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.download='Generate_Anniversary_Data.json';a.href=URL.createObjectURL(blob);a.click();
+}
+</script>
+</body>
+</html>

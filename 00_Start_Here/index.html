@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generate Anniversary Project</title>
+  <style>
+    :root {
+      --bg: #09111f;
+      --panel: rgba(12, 23, 44, 0.88);
+      --line: rgba(255,255,255,0.08);
+      --text: #ecf3ff;
+      --muted: #9fb0d3;
+      --shadow: 0 20px 45px rgba(0,0,0,0.35);
+      --radius: 22px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(124,156,255,0.25), transparent 28%),
+        radial-gradient(circle at top right, rgba(123,240,200,0.14), transparent 22%),
+        linear-gradient(180deg, #060d18, #09111f 40%, #09111f 100%);
+      min-height: 100vh;
+    }
+    .wrap { width: min(1180px, calc(100vw - 40px)); margin: 0 auto; padding: 32px 0 48px; }
+    .hero, .section, .metric { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .hero { padding: 32px; }
+    .eyebrow { display:inline-block; padding:8px 12px; border-radius:999px; background:rgba(255,255,255,0.06); color:#7bf0c8; font-size:12px; text-transform:uppercase; letter-spacing:.08em; }
+    h1 { margin: 16px 0 10px; font-size: clamp(32px, 5vw, 58px); line-height: .96; letter-spacing: -.04em; max-width: 760px; }
+    p { color: var(--muted); line-height: 1.6; }
+    .links { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+    .links a { color: var(--text); text-decoration: none; padding: 10px 14px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,0.03); }
+    .metrics { display:grid; grid-template-columns: repeat(6, minmax(0,1fr)); gap: 16px; margin-top: 20px; }
+    .metric { padding: 16px; }
+    .metric-label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+    .metric-value { margin-top: 10px; font-size: clamp(26px, 3vw, 40px); letter-spacing: -.04em; }
+    .metric-sub { margin-top: 8px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+    .section { margin-top: 20px; padding: 22px; }
+    .section h2 { margin: 0 0 6px; font-size: 24px; letter-spacing: -.03em; }
+    .grid-2, .grid-3 { display:grid; gap:16px; margin-top:16px; }
+    .grid-2 { grid-template-columns: 1.2fr .8fr; }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .card { background: rgba(255,255,255,0.03); border:1px solid var(--line); border-radius: 18px; padding: 18px; }
+    .card h3 { margin: 0 0 14px; font-size: 15px; }
+    .bar-list { display:flex; flex-direction:column; gap:12px; }
+    .bar-row { display:grid; grid-template-columns: 210px 1fr 50px; align-items:center; gap:12px; }
+    .bar-label { font-size: 13px; color: #dbe6ff; white-space: nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .bar-track { height: 12px; border-radius: 999px; background: rgba(255,255,255,0.08); overflow:hidden; }
+    .bar-fill { height: 100%; border-radius: 999px; }
+    .bar-value { text-align:right; color: var(--muted); font-size:13px; font-variant-numeric: tabular-nums; }
+    .list { display:flex; flex-direction:column; gap:10px; }
+    .list-item { padding:12px 14px; border-radius:14px; background:rgba(255,255,255,0.03); border:1px solid var(--line); color:#dbe6ff; }
+    .chips { display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+    .chip { padding:10px 12px; border-radius:14px; background:rgba(255,255,255,0.03); border:1px solid var(--line); color:#dbe6ff; font-size:13px; }
+    .muted { color: var(--muted); }
+    code { background: rgba(255,255,255,0.05); padding: 2px 6px; border-radius: 6px; }
+    @media (max-width: 1050px) { .metrics, .grid-3 { grid-template-columns: repeat(2, minmax(0,1fr)); } .grid-2 { grid-template-columns: 1fr; } }
+    @media (max-width: 720px) { .wrap { width:min(100vw - 24px, 1180px); padding-top:18px; } .hero,.section,.metric { padding:18px; } .metrics,.grid-3 { grid-template-columns: 1fr; } .bar-row { grid-template-columns: 1fr; gap:6px; } .bar-value { text-align:left; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="eyebrow">Organized For Easy Browsing</div>
+      <h1>Generate Anniversary Project Folder</h1>
+      <p>
+        This project space was structured so non-coders can find the right layer quickly: raw archive bundles,
+        current CSV exports, archive indexes, chart-ready summaries, and a clean place to drop final presentation assets.
+      </p>
+      <div class="links">
+        <a href="README.md">Open README</a>
+        <a href="../03_Archive_Indexes/archive_file_manifest.csv">Archive Manifest</a>
+        <a href="../04_Summaries_And_Charts/current_application_counts.csv">Current Counts CSV</a>
+        <a href="../04_Summaries_And_Charts/historical_checkpoints.csv">Historical Checkpoints</a>
+        <a href="../04_Summaries_And_Charts/anniversary_talking_points.md">Talking Points</a>
+      </div>
+    </section>
+
+    <section class="metrics">
+      <div class="metric"><div class="metric-label">Recruitment Applications</div><div class="metric-value">504</div><div class="metric-sub">Current role-specific forms combined</div></div><div class="metric"><div class="metric-label">Client Applications</div><div class="metric-value">38</div><div class="metric-sub">Founder / client-side demand signals</div></div><div class="metric"><div class="metric-label">Onboarding Responses</div><div class="metric-value">217</div><div class="metric-sub">Current member snapshot</div></div><div class="metric"><div class="metric-label">Archive Zip Bundles</div><div class="metric-value">7</div><div class="metric-sub">Raw historical sources organized</div></div><div class="metric"><div class="metric-label">Archived Files Indexed</div><div class="metric-value">571</div><div class="metric-sub">Manifest generated for easier browsing</div></div><div class="metric"><div class="metric-label">Archived Semesters Found</div><div class="metric-value">13</div><div class="metric-sub">Timeline continuity for anniversary framing</div></div>
+    </section>
+
+    <section class="section">
+      <h2>Folder Guide</h2>
+      <p>Use the summary layer first. The raw zips are grouped neatly, but they are still raw source material.</p>
+      <div class="grid-3">
+        <div class="card"><h3>00_Start_Here</h3><p>Landing page and quick guide for non-technical reviewers.</p></div>
+        <div class="card"><h3>01_Raw_Source_Archives</h3><p>Original archive zip bundles, preserved in one place.</p></div>
+        <div class="card"><h3>02_Current_CSV_Data</h3><p>Copied current recruitment, onboarding, and client CSV exports.</p></div>
+        <div class="card"><h3>03_Archive_Indexes</h3><p>Spreadsheet-style indexes of archive files, semesters, and file types.</p></div>
+        <div class="card"><h3>04_Summaries_And_Charts</h3><p>Clean aggregate outputs, chart-ready counts, and talking points.</p></div>
+        <div class="card"><h3>05_Presentation_Assets</h3><p>Drop final screenshots, slides, and polished visuals here.</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>What Looks Strong Right Away</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Current Role Volume</h3>
+          <div class="bar-list">
+        <div class="bar-row">
+          <div class="bar-label" title="Software Engineer Application">Software Engineer Application</div>
+          <div class="bar-track"><div class="bar-fill" style="width:100.00%; background:#7c9cff;"></div></div>
+          <div class="bar-value">136</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Data Member App">Data Member App</div>
+          <div class="bar-track"><div class="bar-fill" style="width:60.29%; background:#7bf0c8;"></div></div>
+          <div class="bar-value">82</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Software Designer Application">Software Designer Application</div>
+          <div class="bar-track"><div class="bar-fill" style="width:28.68%; background:#f7b267;"></div></div>
+          <div class="bar-value">39</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Finance Member Application">Finance Member Application</div>
+          <div class="bar-track"><div class="bar-fill" style="width:21.32%; background:#d69cff;"></div></div>
+          <div class="bar-value">29</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Data Lead Application">Data Lead Application</div>
+          <div class="bar-track"><div class="bar-fill" style="width:17.65%; background:#ff8ea3;"></div></div>
+          <div class="bar-value">24</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Hardware Engineer Application">Hardware Engineer Application</div>
+          <div class="bar-track"><div class="bar-fill" style="width:16.18%; background:#7c9cff;"></div></div>
+          <div class="bar-value">22</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Internal Data Analyst Application">Internal Data Analyst Application</div>
+          <div class="bar-track"><div class="bar-fill" style="width:13.24%; background:#7bf0c8;"></div></div>
+          <div class="bar-value">18</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Software Chief Application">Software Chief Application</div>
+          <div class="bar-track"><div class="bar-fill" style="width:13.24%; background:#f7b267;"></div></div>
+          <div class="bar-value">18</div>
+        </div>
+        </div>
+        </div>
+        <div class="card">
+          <h3>Archive Timeline</h3>
+          <p class="muted">Distinct semester folders found across the archive bundles.</p>
+          <div class="chips"><span class="chip"></span><span class="chip">02_Spring 2016</span><span class="chip">03_Fall 2016</span><span class="chip">04_Spring 2017</span><span class="chip">05_Fall 2017</span><span class="chip">06_Spring 2018</span><span class="chip">07_Fall 2018</span><span class="chip">08_Spring 2019</span><span class="chip">09_Fall 2019</span><span class="chip">10_Spring 2020</span><span class="chip">11_Fall 2020</span><span class="chip">12_Spring 2021</span><span class="chip">13_Fall 2021</span></div>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Recruitment Source Mix</h3>
+          <div class="bar-list">
+        <div class="bar-row">
+          <div class="bar-label" title="Instagram">Instagram</div>
+          <div class="bar-track"><div class="bar-fill" style="width:100.00%; background:#7c9cff;"></div></div>
+          <div class="bar-value">86</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Instagram (@generatenu)">Instagram (@generatenu)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:67.44%; background:#7bf0c8;"></div></div>
+          <div class="bar-value">58</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Generate Referral">Generate Referral</div>
+          <div class="bar-track"><div class="bar-fill" style="width:59.30%; background:#f7b267;"></div></div>
+          <div class="bar-value">51</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Generate Referral (current or past member)">Generate Referral (current or past member)</div>
+          <div class="bar-track"><div class="bar-fill" style="width:44.19%; background:#d69cff;"></div></div>
+          <div class="bar-value">38</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Sherman Center Slack">Sherman Center Slack</div>
+          <div class="bar-track"><div class="bar-fill" style="width:40.70%; background:#ff8ea3;"></div></div>
+          <div class="bar-value">35</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Word of mouth">Word of mouth</div>
+          <div class="bar-track"><div class="bar-fill" style="width:24.42%; background:#7c9cff;"></div></div>
+          <div class="bar-value">21</div>
+        </div>
+        </div>
+        </div>
+        <div class="card">
+          <h3>Onboarding by Branch</h3>
+          <div class="bar-list">
+        <div class="bar-row">
+          <div class="bar-label" title="Hardware">Hardware</div>
+          <div class="bar-track"><div class="bar-fill" style="width:100.00%; background:#7c9cff;"></div></div>
+          <div class="bar-value">40</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Software">Software</div>
+          <div class="bar-track"><div class="bar-fill" style="width:100.00%; background:#7bf0c8;"></div></div>
+          <div class="bar-value">40</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Community">Community</div>
+          <div class="bar-track"><div class="bar-fill" style="width:40.00%; background:#f7b267;"></div></div>
+          <div class="bar-value">16</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Data">Data</div>
+          <div class="bar-track"><div class="bar-fill" style="width:30.00%; background:#d69cff;"></div></div>
+          <div class="bar-value">12</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Marketing">Marketing</div>
+          <div class="bar-track"><div class="bar-fill" style="width:15.00%; background:#ff8ea3;"></div></div>
+          <div class="bar-value">6</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Management">Management</div>
+          <div class="bar-track"><div class="bar-fill" style="width:5.00%; background:#7c9cff;"></div></div>
+          <div class="bar-value">2</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Finance">Finance</div>
+          <div class="bar-track"><div class="bar-fill" style="width:2.50%; background:#7bf0c8;"></div></div>
+          <div class="bar-value">1</div>
+        </div>
+        </div>
+        </div>
+        <div class="card">
+          <h3>Historical Checkpoints</h3>
+          <div class="bar-list">
+        <div class="bar-row">
+          <div class="bar-label" title="Fall 2018 interest form">Fall 2018 interest form</div>
+          <div class="bar-track"><div class="bar-fill" style="width:20.28%; background:#7c9cff;"></div></div>
+          <div class="bar-value">44</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Fall 2021 acceptance survey">Fall 2021 acceptance survey</div>
+          <div class="bar-track"><div class="bar-fill" style="width:50.23%; background:#7bf0c8;"></div></div>
+          <div class="bar-value">109</div>
+        </div>
+        
+
+        <div class="bar-row">
+          <div class="bar-label" title="Fall 2025 onboarding responses">Fall 2025 onboarding responses</div>
+          <div class="bar-track"><div class="bar-fill" style="width:100.00%; background:#f7b267;"></div></div>
+          <div class="bar-value">217</div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Notes For Sharing</h2>
+      <div class="list">
+        <div class="list-item">Use files in <code>04_Summaries_And_Charts</code> for slides, screenshots, and chart building.</div>
+        <div class="list-item">Use <code>03_Archive_Indexes/archive_file_manifest.csv</code> if someone wants proof of what is inside the archive without opening huge zips.</div>
+        <div class="list-item">Treat <code>01_Raw_Source_Archives</code> as source material, not presentation-ready output.</div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

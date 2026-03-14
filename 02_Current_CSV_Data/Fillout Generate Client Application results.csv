@@ -1,0 +1,680 @@
+﻿"Submission ID","Last updated","Submission started","Status","Current step","Created pages","Name of your Venture","Name of your venture","First Name","Preferred Name","Last Name","Email for Contact Purposes","How did you hear about Generate?","Where did you see the Client Application?","If you are/were a student at Northeastern, what campus did you study at?","Please select any services you have used from Northeastern's Entrepreneurial Network to advance your venture.","Are you a member of any of the following groups?","Please indicate your preference for how would you like the Client interview to be performed.","Submit a link to your presentation here","Or upload your presentation's file here","I have submitted my presentation","Which branch are you applying to for your product? (1)","Which branch are you applying to for your product?","In one concise sentence, what is the core value proposition of your venture?","Specifically, what would you like Generate to build to help your venture? How does this contribute to your core value proposition?","At the end of the semester with Generate, what would you expect and consider a success?","Who is your target market? How have you already tested your product-market fit with your target market?","In bullets, what are some competitors/comparable products, and why?","In bullet points, describe what developments you have made so far?","In bullet points, how do you plan to progress your venture after Generate? Please include your expected timeline if you have an idea of it.","Is there anything else you'd like to share with us?","I have read, understand, and agree to Generate's Client Agreement","I have read, understand, and agree to Generate's Client Code of Conduct","id","Errors","Url","Network ID"
+"be539240-3521-4c9a-a76b-d1e003bd2a7f","Sat Jul 12 2025 19:15:00 GMT-0400 (Eastern Daylight Time)","Sat Jul 12 2025 19:09:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","22ef18dd5a9481b08d92de2e64158cdf","","Floor Sitting to Standing Desk ","Melania","","Stepanenko","stepanenko.melania@gmail.com","I was part of IDEA many years ago and heard about it. ","on your website","Whatever the campus in Boston is called. Genuinely have no clue. ","None","Yes","Review my submitted answers","","","false","","Unsure","A floor-to-standing desk that’s manually adjustable, minimalist, and ergonomic — designed for people who alternate between floor-sitting and standing, without the high price tag that the existing 3 floor sit to stand desk options have. 
+","I’d like Generate to help design and prototype a mechanical lifting system — ideally using counterweights, gears, or pulleys — that allows for a smooth, stable, and user-controlled height adjustment between ~13"" and ~47"". This is the central feature of the product and key to making the desk affordable, functional, and distinct from electric-only models.
+","A working prototype (or partial prototype) that successfully adjusts between sitting and standing heights using a low-tech system
+
+CAD designs and specs that I can use to iterate further or bring to a manufacturer
+
+Insights and validation from student engineers and designers on feasibility and improvements
+
+A clear understanding of potential production costs and material sourcing","People who work from home and alternate between floor-sitting and standing (e.g., wellness-focused, yoga/movement practitioners, and neurodiverse individuals)
+
+Early adopters in ergonomic and minimalist home office setups
+
+I’ve conducted informal interviews and research in niche wellness and productivity communities (e.g., Reddit, Instagram) — many users feel existing desks don’t go low enough or are overpriced
+
+There is a gap in the market for a non-electric, cleanly designed desk with a broader height range and better price point","Uppeal Desk – Electric and well-designed, but too tall for true floor-sitting (15” minimum) and expensive (~$1,600)
+
+Lillipad – Best low height (6”), portable and pre-assembled, but has overly governed motor and costs ~$1,000+
+
+Limber Life Co – Manual, eco-conscious, but unstable when adjusting and priced at ~$2,900
+
+DIY Reddit projects – Show clear interest in a hackable, affordable solution — but lack polish and usability","Conducted deep comparative research on existing floor-sitting/standing desk models
+
+Identified core user complaints and product gaps
+
+Defined mechanical specs and ideal height range (13""–47"")
+
+Compiled insights on counterweight, pulley, and pneumatic design systems
+
+Outlined materials and costs for potential DIY builds or modifications
+
+Drafted a business concept and product value proposition
+
+Created a working document summarizing all findings and design priorities","Winter 2025 – Use prototype from Generate to test with potential users and gather feedback
+
+Spring 2026 – Iterate design, explore small batch manufacturing and pricing
+
+Summer 2026 – Launch soft pilot (via direct-to-consumer or Etsy-style rollout)
+
+Fall 2026 – Evaluate potential for scaling production, crowdfunding, or small business launch","I’m a Northeastern alum (Bsc in Internationa Affairs and minor in Entre) with little experience in product strategy or engineering. I am a good project manager however, and I know how to build a website. I’m passionate about the intersection of wellness, ergonomics, and thoughtful design — and I’d be excited to work with a team of student engineers who want to bring a product like this to life. This isn’t just a desk — it’s a tool for better posture, creative work, and grounded living.
+
+","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=be539240-3521-4c9a-a76b-d1e003bd2a7f","c78a093a9582881894b4ec4c97313709"
+"42c904be-1e59-4d19-92ea-37dc56c5af59","Wed Jul 09 2025 23:58:00 GMT-0400 (Eastern Daylight Time)","Wed Jul 09 2025 23:49:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","22cf18dd5a948162a239d0737a95dea9","","MixedLCmediA","Michal","","Gregus","m.gregus@northeastern.edu","from IDEA, Mosaic, CRI","Instagram, Mosaic","Boston Campus","IDEA","Yes","Review my submitted answers","","","false","","Hardware","MixedLCmediA (our venture) produces next-generation open-tubular nanoflow liquid chromatography technology that allows researchers and analytical chemists around the globe to analyze minute sample amounts and/or get more informative data for the same amount of starting material by increasing signal-to-noise and sensitivity of mass spectrometry-based proteomic profiling.","During the past couple of years, we optimized the chemistry and preparation protocol of our novel liquid chromatography columns, built, tested, and benchmarked the prototype. The current prototype is bench type, meaning we know how to prepare all individual parts, but the setup is a bit “messy”. We would like Generate to help us build a cellphone-sized plug-and-play product enclosure/configuration with additional features, including temperature and voltage control, displays, run time counter, additional fluidic switching valves, etc. Some features can potentially be controlled by software like Arduino. Also, the whole setup needs to be enclosed in a case to prevent damage during transportation, handling, and use. ","Fully functional and operational product (or advanced-stage prototype) that can be further tested in our lab and by several of our collaborators. We have several ongoing collaborations, both academic and industrial. Testing can be performed anytime throughout the product development process.","We identified several applications and market directions that will potentially benefit from the implementation of our technology: 1) the single-cell proteomics market is rapidly emerging following the fast and impressive expansion of the single-cell transcriptomics technology market size, which is currently >$4B (that is expected to grow at a compound annual growth rate, CAGR, of ~18-25% from 2023 to 2030); 2) The market focused on the analysis of limited clinical samples, including small volumes of physiological fluids (liquid biopsies), rare cell isolates, cell-based personalized therapies, dried blood spots, and minute tissue biopsies; 3) biopharma/biotechnology-related sample types (e.g., clone selection, biotherapeutic/vaccine target delivery.
+
+The target market is in analytical chemistry laboratories. Also, there are ~280,000 research laboratories worldwide, where ~5-10% of them might be interested in our proposed technology. However, if we focus our market sizing analysis on several sectors of the high-performance liquid chromatography product markets, the identified serviceable obtainable market (SOM) of nano liquid chromatography columns for proteomics currently corresponds to $220M with a projected CAGR of 5.9% - 12% from 2023 to 2030.
+
+As a part of the IDEA Ready Stage and NSF I-Corps at NU, we did the initial customer discovery and product-market fit.","Based on our due diligence, our direct competitors are the vendors producing “conventional” state-of-the-art bead-packed nano liquid chromatography columns, e.g.,
+-	IonOpticks
+-	PepSep (acquired by Bruker Daltonics in 2021)
+-	CoAnn Technologies
+-	ESI Source Solutions
+-	PharmaFluidics (acquired by Thermo Fisher in 2021)
+ The columns produced and sold by these companies do not meet current customer needs in achieving the desired sensitivity for limited samples, and they also cannot operate at ultra-low flow. Importantly, none of these vendors specializes in producing ultra-low flow sub-20 μm internal diameter columns (porous layer open tubular, bead-packed, or monolithic), but they are trying to fill in the corresponding market space with alternative, however, suboptimal solutions that still require larger sample amounts.","-	Optimized the chemistry and preparation protocol of our novel liquid chromatography columns.
+-	Built the prototype.
+-	Tested the prototype in our laboratory.
+-	Tested the prototype against competitors (we obtained ~2x performance boost over competitors).
+-	Had pilot testing with our collaborator.
+-	Submitted a provisional patent application, followed by a full patent application (patent pending).
+-	Now we have a clear vision of what the product should look like and what it should contain, that’s why we need some help, hopefully from Generate. :)","-	We are working on the development of an advanced stage ready-to-test prototype of our potential product;
+-	We are actively preparing and submitting additional STTR/SBIR grant applications (applications are opened several times a year). Next submission in September 2025. This is a non-dilutive type of funding.
+-	We are pitching our idea to investors.
+-	We registered an LLC in 2023, and plan to hire more people (chemist, engineer, business and technology development consultant, etc.).
+-	We are currently in the IDEA Set stage and plan to progress further.
+-	We plan to submit findings and developments during or after the collaboration with Generate in the form of a manuscript (ASAP).
+-	We plan to submit a provisional patent application, followed by a full patent application during or after the collaboration with Generate (ASAP).","We appreciate the overall mission and hard work of student-led organizations at NU, like Generate or IDEA, and we’re confident that both sides can benefit from future collaboration (if selected for support).
+Our webpage for a reference:
+https://mixedlcmedia.com/","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=42c904be-1e59-4d19-92ea-37dc56c5af59","73503c777907cbe2c881b7abab7c86d2"
+"a5ae372b-8cf5-4b47-be57-1253fe430384","Wed Jul 09 2025 17:59:00 GMT-0400 (Eastern Daylight Time)","Wed Jul 09 2025 17:30:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","22bf18dd5a9481878979c2df051e00d5","","HouseFly AI","Milo","Milo","Margolis","margolis.mi@northeastern.edu","Close friends are part of the program, this was sent to me specifically from Alice Lee. ","Alice Lee (E-Club Prez) sent this over to me. ","I'm going into my senior year at Northeastern, studying in Boston","IDEA,Husky Startup Challenge (Entrepreneurs Club),Venture Mentoring Network","Yes","Review my submitted answers","","","false","","Software","HouseFly.ai helps real estate agents qualify leads, automate conversations, and handle follow-ups, so human agents can focus on closing deals, not managing inboxes.  ","I’d love for Generate to help me build a scalable platform. Right now, I’ve got a scrappy but functional system that integrates with real estate agencies' MLS and CRM tools, and automates SMS using AI.
+
+
+The problem is, I can’t code fast enough to keep up with the demand. I’m a fast-moving salesperson, but a slow-moving engineer 😅. Having a team of great engineers on my side would make a huge difference!","- We’ve rebuilt the current system into something scalable, cleaner code, stable infrastructure, and a clear path to expand beyond Boston. 
+
+
+- We’ve launched a real v1 product with a polished UI, proper backend, and the ability to onboard agents without me in the loop.
+
+
+- We’ve worked together as a real team, with engineers contributing meaningfully to product direction.
+
+
+- We’ve collected real user feedback from agents and leads using the platform, and made improvements based on it.
+
+
+- We’re in a position to grow, whether that means more customers, a stronger team, or being ready for funding if that’s the direction we choose","My target market is real estate agents and brokerages in the Boston rental market. I've tested my product and monetized. I have my own LLC, business banking account, and sales team. My biggest challenge has been finding engineering talent. ","- Revin.ai – Founded by Quinn Litherland (also a Northeastern grad), Revin is a revenue co-pilot for the trades. It uses AI to automate follow-ups, manage leads, and close more deals in industries like roofing and HVAC, where most work is still tracked with spreadsheets and phone calls. https://www.revin.ai
+
+
+
+- Modern Realty – Built by YC founder Raymond Xu, Modern Realty is essentially an AI-first real estate brokerage. It automates conversations with buyers and renters while letting real agents handle the in-person work like tours and closings. https://www.modernrealty.io
+
+
+- Both of these companies are great examples of what I’m trying to do: use AI to streamline and modernize a slow-moving, manual industry. I’ve become friends  with both of these founders and thy have shaped my current product based on what I’ve learned from watching them build.","- Launched HouseFly as a roommate matchmaking app on the App Store in January 2025.
+
+
+- Partnered with real estate agents in the Boston area early on, doing deep background checks to ensure we only worked with high-quality, vetted professionals.
+
+
+- Identified a bigger opportunity after realizing roommate matching wasn’t gaining traction: agents were spending 60–70% of their time manually qualifying and following up with leads.
+
+
+- Pivoted HouseFly to focus on AI-powered lead management, building tools that help agents automate follow-ups and qualification.
+
+
+- Built and launched a working MVP that integrates with agents’ MLS and CRM systems and handles SMS conversations with leads using AI.
+
+
+- Developed a group messaging system where agents can loop in their AI assistant to manage back-and-forth texts.
+
+
+- Closed real leads through the platform, including tour scheduling and follow-ups handled entirely by the AI.
+
+
+- Partnered with 5 real estate agencies in Boston since the pivot, and actively testing and iterating with them.
+
+
+- Set up infrastructure for scale, including lead logging via Google Sheets and internal tools to analyze AI performance and improve agent workflows.
+
+
+- Preparing for expansion ahead of the upcoming lease-signing season, based on strong agent demand.","- Move as quickly as possible. My optimistic goal is to be doing over 50K ARR by the end of Spring 2026. 
+
+
+- If I can bootstrap to a livable salary, I'd continue with this business after I graduate. ","https://www.houseflyai.com/
+
+Looking forward to chatting! ","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=a5ae372b-8cf5-4b47-be57-1253fe430384","12c38c290a050640566726dc1271ea31"
+"82c7c139-57ed-40a6-a468-8f0d0b160a84","Wed Jul 09 2025 13:01:00 GMT-0400 (Eastern Daylight Time)","Wed Jul 09 2025 12:38:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","22bf18dd5a94811daad9d35f7dccb0b5","","Geoconnect","Mert","","Saz","mertsaz170@gmail.com","Idea","Idea","Boston","IDEA","Yes","Review my submitted answers","","","false","","Software","GeoConnect is a vibrant, location-based social platform that brings the world closer by connecting users through a dynamic, interactive world map. Designed for explorers, travelers, and community enthusiasts, GeoConnect lets users share their locations, post real-time photos, and connect with others nearby or across the globe—all in a visually engaging, map-driven experience. Whether you're sharing a sunset from your hometown, discovering local vibes in a new city, or chatting with someone on the other side of the world, GeoConnect fosters authentic, location-inspired connections.","Mobile app","Working prototype ","GeoConnect is perfect for curious souls aged 18-40, from digital nomads to local explorers, who want to share their world and discover others’ through a seamless, map-based interface. ","- Foursquare
+- Jodel
+- Yelp
+- Snapchat
+- BeReal
+
+GeoConnect delivers a unique, map-driven social experience that connects young adults (18-40), travelers, digital nomads, and local explorers through real-time location sharing and photo storytelling. By offering an interactive world map, flexible global and local networking, unlimited geotagged photo posts, customizable privacy controls, and integrated community events, GeoConnect empowers users to discover, share, and connect authentically—whether in their neighborhood or across the globe. Unlike competitors, it combines immersive exploration with robust privacy and versatile social engagement, creating a vibrant platform for meaningful, location-based connections.","Wireframes, ui mockup ","Launch with beta testers then public launch. in mean time planning on fundraising which will be used for marketing. ","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=82c7c139-57ed-40a6-a468-8f0d0b160a84","876f63012ae730c71b6d80bcd7f28ff2"
+"98a54a6b-f416-4557-b34b-14f96d96ffc0","Wed Jul 09 2025 07:45:00 GMT-0400 (Eastern Daylight Time)","Wed Jul 09 2025 07:21:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","22bf18dd5a948114b6def5e92663d1c9","","Recura SmartBand","Justin","","Lee","lee.justin4@northeastern.edu","On campus","On website","Boston","Venture Mentoring Network,None,Honors Propel Grant","Yes","Review my submitted answers","","","false","","Hardware","Recura’s smart resistance band delivers real-time feedback, seamless tracking, and personalized progress insights, empowering physical therapy patients to perform their exercises safely and effectively wherever they are.","We would like Generate to help us prototype a Bluetooth-enabled smart resistance band system that integrates real-time tension sensors and supports interchangeable bands. The prototype should include sensor calibration, embedded firmware for accurate data transmission, and seamless Bluetooth connectivity with the existing Recura iOS app. This would allow users to automatically log resistance levels, reps, and sets while receiving real-time performance feedback.
+
+By focusing on usability and data connectivity, Generate’s support will directly enable the core value proposition of Recura by empowering physical therapy patients to track and improve their rehab exercises safely and effectively across settings.","At the end of the semester with Generate, we would consider it a success to have a fully functional smart resistance band prototype with integrated tension sensors, Bluetooth connectivity, and real-time syncing capabilities with the Recura app. This includes interchangeable resistance bands, accurate data capture for sets, reps, and resistance levels, and responsive feedback through the app interface.
+
+Success also includes receiving a complete engineering package: CAD files, circuit schematics, embedded firmware, and BLE communication documentation to support future development. We plan to test the prototype in collaboration with our existing clinical partners—The Physio Movement in Singapore and Downtown Physical Therapy in Boston—to evaluate its real-world performance and gather feedback for refinement.
+
+This outcome would allow us to validate the prototype’s core functionality, confirm its usability in both clinical and at-home settings, and lay a strong foundation for future iterations and broader deployment.","Our target market includes physical therapy clinics and their patients who require structured rehabilitation through resistance-based exercises. We are developing Recura’s smart resistance band as a dual-solution: a tool for clinicians to enhance patient tracking and treatment planning, and a device for patients to use at home or in the clinic for consistent, feedback-rich recovery.
+
+We’ve begun testing product-market fit through ongoing collaboration with two clinical partners—The Physio Movement in Singapore and Downtown Physical Therapy in Boston. Through these partnerships, we've validated a strong interest in a device that can streamline exercise tracking, provide real-time feedback, and bridge the data gap between clinic-based sessions and at-home rehab.
+
+Early conversations and testing have revealed clear pain points that Recura aims to address, such as poor exercise adherence, lack of real-time feedback on form, and difficulty tracking resistance progress over time. These challenges mirror gaps seen in comparable products, further confirming market demand for a solution like ours.","HyGear Gear 1
+•	Bluetooth-enabled resistance bands that sync with the HYGEAR app
+•	Tracks reps, resistance, time, and calories in real time
+•	Compact and portable for general fitness
+•	Limitations: Not designed for rehabilitation, lacks collaboration with physical therapy providers, and does not offer form correction or adaptive rehab planning
+
+SmartWorkout Pro
+•	Offers structured resistance band workouts with instructional videos
+•	Clean, user-friendly app with a library of over 50 exercises
+•	Limitations: No real-time exercise feedback, not integrated with smart resistance hardware, no partnerships with clinicians or rehab-specific workflows
+
+LIT Axis
+•	Smart resistance bands with Bluetooth sensors for live tracking
+•	Offers personalized coaching, in-ear guidance, and performance metrics
+•	Limitations: Primarily targets fitness enthusiasts, lacks partnerships with physical therapy clinics, and does not support clinician-directed rehabilitation plans
+
+How Recura stands apart
+•	Designed specifically for physical therapy patients, not general fitness users
+•	Built for clinical integration, enabling therapists to monitor and adapt rehab plans
+•	Offers real-time posture and resistance feedback to support safe recovery
+•	Supports adaptive, personalized rehabilitation based on progress
+•	Intuitive and easy to use in both clinical settings and at home
+","•	Developed the Recura iOS app, currently in beta, which allows users to log, summarize, and visualize physical therapy exercises
+•	Designed core app features based on the FITT principle (Frequency, Intensity, Time, Type), with fields for sets, reps, duration, and exercise notes
+•	Built out exercise tracking dashboards with user-friendly visualizations to support recovery insights and progress monitoring
+•	Established clinical partnerships with The Physio Movement (Singapore) and Downtown Physical Therapy (Boston) for ongoing product testing and feedback
+•	Began early user testing of the app in white-labeled form with patients from both clinical partners","•	Continue collaboration with existing clinical partners (The Physio Movement and Downtown Physical Therapy) while expanding to new physical therapy clinics for broader testing
+•	Finalize and iterate on the smart resistance band prototype during the Fall semester using feedback from clinicians and early user trials
+•	Integrate smart resistance band functionality directly into the Recura app for seamless data syncing, feedback, and progress tracking
+•	Launch targeted pilot programs in Spring to place the device in the hands of physical therapy patients and clinics for real-world deployment
+•	Continue work with Northeastern’s Venture Mentoring Network to explore VC funding and potential crowdfunding efforts for scaling Recura’s and our other app/hardware products.","This venture is deeply personal. I began developing Recura while undergoing intensive physical therapy following a severe shoulder injury and surgery. Collaborating directly with my physical therapists to shape the app has been transformative in my own recovery, and it’s my hope that Recura can offer others the same level of empowerment and clarity it gave me.
+
+I'm also working with a team of fellow honors students through the Honors Propel Grant to build a broader ecosystem of wellness apps and hardware tools. We're excited about the opportunity to collaborate with Generate, and we're fully open to feedback, iteration, and creative input throughout the design and prototyping process.
+","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=98a54a6b-f416-4557-b34b-14f96d96ffc0","415acc442c0a73d5681d59513e7e04ba"
+"523c5047-8f69-4609-8239-e2f1a85fad01","Tue Jul 08 2025 23:21:00 GMT-0400 (Eastern Daylight Time)","Tue Jul 08 2025 23:10:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","22bf18dd5a9481d38564d22126339e29","iterato","","Vineeth","","Nair","iteratoapp@gmail.com","Showcase Attendance","Instagram","Boston","IDEA,IP Law Clinic,Venture Mentoring Network","Yes","Present a slideshow","","https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-346030/flowpublicid-rrsZ9j3oXhus/5691e167-558f-44d8-ae6a-c95a3f02bda3-UlTf1dElI0B7wzS3g3te4vN3wbE1oT51neHNrasN8qL5Y0O6Gfr91ByyZBSFj2ZoTQ32NF9YIsQhp99R96dqAnfIFkqkkrAI8Ot/iterato_Generate-PreRead.docx,https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-346030/flowpublicid-rrsZ9j3oXhus/8a424dc8-c343-4f51-84c9-c194b423b707-zbjkpPUa4uwJu9EKBifvax7ij3cfp5eofkb0g4iuEOE81Q07SdCzN8qcFDnLJYCooH0UwFYrASHago7UWxeFnL7gzzqr7I5s7N2/iterato_Generate-Presentation.pptx","true","Software","","","","","","","","","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=523c5047-8f69-4609-8239-e2f1a85fad01","9e520aa8b614f6e2ee47dc73da29b4ef"
+"8b695a3a-a4bb-4157-a906-8bdc18e34aa4","Tue Jul 08 2025 21:01:00 GMT-0400 (Eastern Daylight Time)","Tue Jul 08 2025 20:55:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","22bf18dd5a9481b6bbcef9af4e0dd7a1","","Distension monitor ","Dr Rajeev ","Rajeev ","Nagpal","drrnagpal@gmail.com","From a member - Michael Marchev","Instagram","No","None","No","Review my submitted answers","","","false","","Hardware","Medical technology to bring monitoring for skin stretch  distension ","Engineering side of the product- small band like device with sensors to detect the skin distension ","To have a prototype initial stage ","Medical Technology ","Not much of similar technology existing now ","Team building 
+Elevator pitch 
+Idea clearity 
+","3-6 months ","Would love to speak as do not want to disclose my full idea here ","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=8b695a3a-a4bb-4157-a906-8bdc18e34aa4","5b39a91b6f7c7a2bac6ff414bf3b293d"
+"11872972-a560-4ebf-9773-dd7cb3c19ea1","Tue Jul 08 2025 18:25:00 GMT-0400 (Eastern Daylight Time)","Tue Jul 08 2025 17:59:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","22af18dd5a9481418d69e53818e8ffd4","","Candle Maker","Ryan","","Suleski","rdsuleski@gmail.com","Generate Member","Instagram","N/A","None","No","Review my submitted answers","","","false","","Hardware","Create a user friendly candle maker. ","In this second semester project (returning from Spring) I would like to see further developments made to the candle maker project. The first semester created a proof of concept and an almost working model. In a second semester, I would like to see a working prototype, a smaller design/footprint, improved wick placement, a new method of dispensing and heating the wax (dispense cold wax into final container and have the wax melted in the container rather than in a basin), and improve on the ability to clean the machine.","A success to me would be to have at least one candle made with the candle maker. ","The target market would be candle enthusiasts that enjoy the idea of creating their own fragrances and making their own candles, but do not enjoy the painstaking process of actually making the candle.","There are some candle making kits on the market, however, none would be as automatic as this machine intends to be. ","The first semester project team was able to create an almost working model, of which I wish to build off of and improve on. ","I would love to see this candle maker be able to be replicated, and marketable/safe for consumers. ","Would love to see what we can do with a second semester! We will of course, not be starting from scratch, but building off of the ideas of the last model. I’ve got several new ideas to improve this project, and I hope they make for a good candidate for a second semester! ","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=11872972-a560-4ebf-9773-dd7cb3c19ea1","88dc4420089b0da434d8a433be0966c5"
+"cb8bfc9f-9d3f-41f0-a523-3b1c7c7ad5f8","Tue Jul 08 2025 00:00:00 GMT-0400 (Eastern Daylight Time)","Sun Jun 22 2025 18:06:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","22af18dd5a94812bbb85c5d23252dde8","Unsprawl","","Daniel","Danny","Thomen","thomen.d@northeastern.edu","I ran the Husky Startup Challenge for EClub at Northeastern and one of the teams we picked for demo day was led by Ethan Kjersgard, one of the former heads of Generate. I told him I had a startup Idea and he referred me to your club.","The Instagram","I've been at the Boston, Oakland, and London Campuses. This coming fall I'm returning to the Oakland Campus for the Silicon Valley program.","None","Yes","Present a slideshow","https://www.canva.com/design/DAGsi1db7eI/ZGkqwfOsK7J1ijfxoheHPg/edit?utm_content=DAGsi1db7eI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton","https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-346030/flowpublicid-rrsZ9j3oXhus/8339a27c-571b-4dff-b592-e7e8089352fe-TLHoV8keY0S4sc0jiW2i5dN5CSnp7TED4yK85eGaIaIUmgRoAFfcwX1Cw4HHPM5auQevhrMzPQ2n8T5VPwAMgiLPFBY8JoJvI23/GENERATE-UNSPRAWL.pdf","true","Software","","","","","","","","","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=cb8bfc9f-9d3f-41f0-a523-3b1c7c7ad5f8","37bcfc3a8cf051c48101e790fef6bd76"
+"c976a41a-9369-4398-b930-c88bba363ae3","Tue Jul 08 2025 00:00:00 GMT-0400 (Eastern Daylight Time)","Wed Jun 04 2025 14:03:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","22af18dd5a94818a8f38fca6f5beb869","","BaselineTech","Tejaswini","TJ","Kambaiahgari","kambaiahgari.t@northeastern.edu","Past Client","website","Boston","Sherman Center Venture Co-op","Yes","Review my submitted answers","","","false","","Hardware","BaselineTech makes snowboarding safe, accessible, and trainable year-round through immersive simulation and real-time performance feedback to train athletes, entertain enthusiasts indoors.","We’re past clients, and we’d like Generate to iterate on the previous version of our multi-axis snowboard simulator — making it more sturdy, and safe, while ensuring seamless integration with our existing software, electronics, VR, and game engine. This next-gen version will incorporate direct customer feedback from real-world testing of the previous version and retail pilots.","1)	A structurally improved simulator with enhanced stability, durability, and safety features
+2)Modular hardware design that allows easy transport, assembly, and maintenance
+3)Refined actuator and motor system for smoother, more responsive multi-axis motion (pitch, roll, yaw, linear)
+4)Clean integration of all electrical systems: sensors, haptic motors, microcontrollers, and power management.","Target Market:
+	•	College/pro athletes, urban snowboarders, retailers, and athletic facilities.
+
+Product-Market Fit:
+	•	100+ user tests at demos and showcases
+	•	Retailers signed LOI's waiting for refined product.","1) SkyTechSport – High-end snowboard/ski simulators used by Olympic athletes; extremely realistic but cost $80K+ and are not portable or accessible to the average user.
+2) Snowboard Addiction Training Setup: Uses balance bars and tramp boards; affordable but lacks motion simulation and interactivity.
+3)Pro Ski Simulator: A static, spring-loaded frame mimicking carving; low realism, no data feedback.
+
+","•	Generate built the alpha version of our mutli-axis motion snowboard platform.
+	•	Secured multiple grants including Alpha Fund, Venture Co-op, babson fund
+	•	Developed a snowboarding game in Unreal
+	•	Built a standalone analytics device to track snowboarding runs—even on real mountains
+	•	Initiated a collaboration with Tokyo-based Hamano Products to explore XR arcade market expansion
+	•	Ran 100+ user tests to validate motion realism, gameplay, and training potential
+	•	Collected athlete and retail feedback to inform next-gen product requirements","	•	Fall 2025: Beta pilots, hardware refinement
+	•	Winter 2025–26: Fundraising, small-batch manufacturing, analytics testing
+	•	Spring 2026: B2B sales, expand to surf/skate, XR partnerships
+","This is a great opportunity for Generate to iterate on V1—most real-world products need refinement, not reinvention. We’ve tested, learned what works, and now it’s time to make it cleaner, safer, and user-ready. Super grateful for Generate’s work earlier—would love to team up again!","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=c976a41a-9369-4398-b930-c88bba363ae3","1d48ad63be8b1ef603dc698807d2c33e"
+"2d20d3a8-a155-4ce5-b407-c4fd8ef7e650","Tue Jul 08 2025 00:00:00 GMT-0400 (Eastern Daylight Time)","Wed Jul 02 2025 09:47:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","22af18dd5a94818d90c4d96cc7fd7583","SKIP IT.","","Emily","","Weinberg","emily@skipit.tech","Northeastern student recommended I apply","They sent me the link!","N/a","None","No","Present a slideshow","https://www.canva.com/design/DAGsJv9mDJc/4MzWE1mgGunoRw3oxmXJWQ/edit?utm_content=DAGsJv9mDJc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton","","true","Software","","","","","","","","","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=2d20d3a8-a155-4ce5-b407-c4fd8ef7e650","8bbb47554ec05618eb830e647f2df78a"
+"12d83bdf-3e11-4e11-b677-ab24e850a0d0","Mon Jul 07 2025 23:56:00 GMT-0400 (Eastern Daylight Time)","Thu May 22 2025 21:16:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","22af18dd5a94819eb00cdfbbb9cfe11e","GreenTower","GreenTower","Anthony","Anthony","Zappala","anthonyzappala1@gmail.com","My roomates Will and Charlie","The form was shared with me online","Boston Campus","None","Yes","Present a slideshow","","https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-346030/flowpublicid-rrsZ9j3oXhus/4ff19427-ac56-47b4-b508-e0c296e53a29-L1IyvpNXUKzWmOjNAyQnqezAx3kuMSoGOSZj65G9fwVjySKMszR8qT2jxwbKvAyZ4oy4cVmYRQbbRndmKWhjAigWAbPDW7hkqkV/GreenTower-Generate-Project.pptx","true","Hardware","Hardware","An easy-to-use aeroponics tower to grow fresh produce at home with an intelligent system featuring automated nutrient delivery, custom plant pods, and an energy-saving rotating LED light for maximized yields.","The module itself and the pods to hold the plants would have to be designed. Additionally, a mechanism to hold, orient, and rotate the LED light strip(s) would have to be made. For the internals, a water circulation system needs to be designed with nutrient level regulation. Ideally, the module could be plugged into a wall outlet. The module would also require an internal clock to allow for day/night schedules. ","","","","","","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=12d83bdf-3e11-4e11-b677-ab24e850a0d0","1d8f93bcf85ad7d3d38f4a837d3ff37c"
+"c3dd0409-8541-474b-a45a-337ec0753cea","Sun Jul 06 2025 20:11:00 GMT-0400 (Eastern Daylight Time)","Mon Jun 16 2025 22:03:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","229f18dd5a9481ea952deca36f13606a","Prisere LLC","","Donna","Donna","Childs","dchilds@prisere.com","Northeastern Professor Francesca Grippa","From the Generate website","No I am an Inclusive Entrepreneur Fellow","Inclusive Entrepreneurship Fellowship","Yes","Present a slideshow","www.google.com","https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-346030/flowpublicid-rrsZ9j3oXhus/3ceed7cb-4b2a-4768-9b2c-de45cf99b3b3-bVDzBxNyozWBd5wSEo47OyPsUjqQ5m4BrDtDuyyzTQ6NJTQQUgvMgwawVvNpgJzESBHHqVQhdQqHQR3p6txymri4zT7MuNK6FiL/GenerateNU-2025-Deck.pdf","true","Software","","","","","","","","","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=c3dd0409-8541-474b-a45a-337ec0753cea","b13d8f2dd9ae3b3edb65096101fad874"
+"ff9b07b1-d6ca-400d-9c4d-ae6e0192e125","Sun Jul 06 2025 11:32:00 GMT-0400 (Eastern Daylight Time)","Sun Jul 06 2025 11:26:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","228f18dd5a94817d9d56ea47cd49dd92","Algorhythm","","Zach","","Meyer","zach@algorhythm.app","Eli Zislis","Text","N/A","None","No","Present a slideshow","","https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-346030/flowpublicid-rrsZ9j3oXhus/d360ff5a-4bf5-4124-875f-78218d43df93-s7hG3BEjQJRSz32DyTPjSUlZkZI2Ne0rgstqUQ74BqbENO3UpQSuIjNCOrbMT5W6r9OUsDVhoLsygwgeoEUFvDNR1Cnofw33pGY/pitch-deck-v16-compressed.pdf","true","Software","","AI-generated audience and content strategy to help music marketing teams blow up on social media.","Scale up the ","A fully working ML inference and analysis pipeline that can handle the needs of hundreds of users at scale.","Warner and Sony music are currently clients. ","","","","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=ff9b07b1-d6ca-400d-9c4d-ae6e0192e125","8b027dcdd17e1acd04eb793ca6beadff"
+"b0d741e8-f2f3-486d-bdc9-664898002eb5","Sat Jul 05 2025 05:16:00 GMT-0400 (Eastern Daylight Time)","Tue Jun 17 2025 01:18:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","227f18dd5a9481ec844df3f66f0df4e6","","Affectrum Vault","Justin","","Lee","lee.justin4@northeastern.edu","On-campus","online","Boston","Venture Mentoring Network,Honors Propel Grant","Yes","Review my submitted answers","","","false","","Hardware","Affectrum Vault enhances medication adherence and self-awareness by seamlessly integrating a smart pill bottle with the Affectrum app, empowering individuals on medication to track, reflect, and stay accountable.","We seek Generate’s support in developing a prototype of a portable smart pill bottle with five programmable physical buttons—each mapped to configurable medication groupings via the Affectrum app. The device will house multiple internal compartments, each aligned to a preset. With a single press, it will dispense predefined doses from the appropriate compartments. Key features include:
+•	LED feedback indicators for successful dispenses, errors, and battery/sync status
+•	BLE or NFC connectivity with Affectrum’s app
+•	USB-C charging and local dispense log storage
+•	In-app customization and locking of presets
+This tactile, intuitive design transforms routine adherence into a behaviorally satisfying, accountable process—one that resonates with Affectrum’s mission of demystifying mental health through seamless, data-driven tools.","A successful outcome would include a fully functional smart pill bottle prototype capable of dispensing medication groupings from different programmable presets, each mapped to internal compartments. We’d also expect basic testing with users to confirm functionality and ergonomics, along with comprehensive documentation — including CAD files, circuit schematics, and API endpoints or BLE protocols for integration with our Affectrum app (which we’ll handle on our end). A successful partnership would result in a hardware system that's ready for field testing, refinement, and eventual production.","Our primary target markets are individuals on complex medication or supplement regimens, as well as individuals managing mental health conditions. These users often struggle with staying consistent, organized, and emotionally attuned to their medication habits. Affectrum Vault addresses this by providing a satisfying, frictionless dispensing experience and syncing with the Affectrum app to visualize how medication intake correlates with mood, activity, and wellness trends. We've validated the need through feedback from Affectrum beta users and discussions with clinicians, which pointed to a strong demand for a hardware extension that reinforces accountability and behavioral insight."," •	AdhereTech – Enterprise-grade smart pill bottle with cellular tracking and adherence alerts; built for clinical trials and institutional care, not personalized wellness integration.
+•	PillSafe – A new entrant focused on prescription safety, emphasizing secure dispensing and dose verification. While innovative for controlled substances, it lacks integration with emotional or behavioral health platforms.
+•	Pillsy / TimerCap Bluetooth-cap-enabled pill bottles that track openings and send reminders, but offer no intelligent grouping, internal compartments, or data visualization.
+•	MOBI Smart Dispenser / MedReady / MedMinder – Home-use dispensers with alarms and rotating compartments for elderly care—bulkier and designed more for compliance than user autonomy.
+•	Hero Health – Automated pill dispenser that tracks refills and sends notifications. Robust for elderly or chronic care, but lacks app-based mood correlation or mobile-first design for young adults.
+
+Why Affectrum Vault is different:
+•	Preset-button logic + internal compartments allow for customizable routines and seamless user experience.
+•	Built specifically to sync with the Affectrum app, creating a closed-loop system where users can see how medication aligns with mood, sleep, and daily behaviors.
+•	Designed for mobile-first, mental health–focused individuals—offering intuitive UX, flexible scheduling, and the emotional intelligence most clinical tools lack.
+","•	Developed a fully functional iOS app (Affectrum) with NFC integration and substance/activity/mood tracking capabilities.
+• Collaborated with service providers (mental wellness clinicians, therapists, etc.) on the development of a clinician-facing dashboard with data pulled from the Affectrum app, designed to visualize user mood and behavior data. Part of these conversations also outlined the need and foundation for future integration with Affectrum Vault to enhance remote medication monitoring and support.","Fall 2025:
+
+Begin user testing of the full Affectrum platform, focusing on the relationship between mood, behavior, and medication.
+
+Deepen partnerships with clinicians and providers to refine the dashboard and align workflows.
+
+Gather feedback across user and clinical contexts to inform ecosystem-wide improvements.
+
+Winter 2025 – Early Spring 2026:
+
+Finalize technical integration between app, dashboard, and future hardware.
+
+Spring 2026:
+
+Explore potential public crowdfunding or open pre-seed round to support platform scaling and pilot manufacturing.
+
+Use momentum to enhance onboarding, security, and provider feedback systems.","Affectrum Vault is deeply personal. It’s not just a product, it’s a response to real struggles faced by people like me and many others trying to balance mental health, medication, and daily life. This project grew out of lived experience, guided by empathy and a drive to create something that genuinely makes managing wellness easier, smarter, and more human.
+
+What excites me about working with Generate is the chance to collaborate with a team that values innovation, impact, and design. ","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=b0d741e8-f2f3-486d-bdc9-664898002eb5","891becaddb2a3467ab475d6b171e0664"
+"8b86e0e4-c496-47dd-8fb3-dec1952a4e3f","Fri Jul 04 2025 02:06:00 GMT-0400 (Eastern Daylight Time)","Fri Jul 04 2025 01:52:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","226f18dd5a9481398d9acc1cf4b20b30","EyeShift","","Shaurya","Shaurya","Khosla","khosla.s@northeastern.edu","I learned about Generate during the Client Showcase event I attended","I discovered the client application through Generate’s Instagram page","College Of Engineering","IDEA","Yes","Present a slideshow","https://docs.google.com/presentation/d/1iVRZcwTxkGN1TgYpAK-XmYOk4e-iTO_EPJa46m35wIA/edit?usp=sharing","","true","Hardware & Software","","","","","","","","","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=8b86e0e4-c496-47dd-8fb3-dec1952a4e3f","119fcd212ed5ed0cdfa13dfbb7d3c2f0"
+"48e0504f-db55-4493-b96d-334198086fd3","Thu Jul 03 2025 02:50:00 GMT-0400 (Eastern Daylight Time)","Tue Jul 01 2025 20:39:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","225f18dd5a9481e8967dc0964536fa73","GREAT COMBINATION ENTERPRISE CO.,LTD","","Aileen","","Yang","gce-service@autopartsold.com.tw","from business partner","google the ""generate club northeastern"" then find the application link ","no","None","No","Present a slideshow","","https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-346030/flowpublicid-rrsZ9j3oXhus/4b633fbe-526e-4b4d-9e90-880541d7eafb-q5lBrki72zvpzBLDXgDDyHeQdao0zGxhJY4Ua8ZJtdO3fDObOMbafpnwFEu3XydIU2Swd1HqVh0JS0Eb6wFZDCd66D6JcWXYHei/Automation-of-Semiconductor-Air-Filter.pptx","true","Hardware","","","","","","","","","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=48e0504f-db55-4493-b96d-334198086fd3","21405dcfa08e9810c303670cabfd1899"
+"06c100bb-af6c-4d80-a3ea-14b526b97b2e","Wed Jul 02 2025 14:10:00 GMT-0400 (Eastern Daylight Time)","Wed Jul 02 2025 13:28:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","224f18dd5a9481beac01c0cdd6a07774","EyeShift","","Shaurya","Shaurya","Khosla","khosla.s@northeastern.edu","I came across Generate at the showcase I attended","I learned about the Client Application through Generate’s Instagram page","College Of Engineering","IDEA","Yes","Present a slideshow","https://docs.google.com/presentation/d/1iVRZcwTxkGN1TgYpAK-XmYOk4e-iTO_EPJa46m35wIA/edit?usp=sharing","","true","Hardware & Software","","","","","","","","","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=06c100bb-af6c-4d80-a3ea-14b526b97b2e","119fcd212ed5ed0cdfa13dfbb7d3c2f0"
+"536b30dc-9290-4777-a607-9fff8da4b5bb","Mon Jun 30 2025 20:39:00 GMT-0400 (Eastern Daylight Time)","Mon May 26 2025 14:53:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","223f18dd5a948152add6e555fcbcc296","","ClaimCrisis","Sohum","","Balsara","balsara.s@northeastern.edu","Current Member","Generate Instagram","Boston","Disrupt","Yes","Review my submitted answers","","","false","","Software","ClaimCrisis empowers disaster-affected families to quickly and accurately document lost or damaged belongings using AI-guided photo retrieval and reporting, making insurance claims faster, easier, and more successful.
+","We would like Generate to build a streamlined web and mobile platform that guides users through our 20-question claim assistant, securely scans their camera roll for relevant pre-disaster photos, and generates a polished, insurer-ready report with image-based proof and estimated values of their claimable items. This contributes to our core value by automating the most time-consuming and error prone step in the claim process. This enables families to quickly submit accurate documentation of their claimable items, so that they can maximize their payouts from their insurance companies.
+","At the end of the semester with Generate, we would consider it a success to have a fully functional, user-friendly product that allows us to onboard real users, families, relief organizations, and insurance partners, and begin testing and delivering value in live disaster recovery situations. Having a tool we can confidently market and deploy into production would be a huge milestone toward proving product-market fit and our efforts to scale our impact.
+","Our target market includes disaster-affected families and individuals, particularly those impacted by events like wildfires, hurricanes, or floods, who need to file insurance claims but struggle to document what was lost. We’re also targeting relief organizations and smaller insurance companies that support these families and would benefit from a faster, more reliable claims process.
+To begin testing product-market fit, we’ve conducted early interviews and discovery conversations with disaster survivors, including individuals affected by natural disasters, such as Hurricane Sandy, Hurricane Harvey.  We have also gained informal feedback from caseworkers and peers in the emergency response space, such as nurses and EMT’s. These conversations confirmed that recalling and proving item loss is a major pain point, validating the need for a tool like Claim Crisis. We're now preparing to launch a prototype so we can continue testing with real users and iterate based on their experiences.
+","Traditional Insurance Company Claim Portals
+
+- Why it's a competitor: Most major insurers like State Farm, Allstate, and Progressive have internal online claim systems.
+
+- Limitation: These systems often place the burden on the user to remember and manually list all lost items, with little to no visual or AI support.
+
+- How Claim Crisis is different: We use AI to scan users’ camera rolls and provide visual proof, significantly reducing user effort and increasing claim accuracy.
+
+Public Adjusters
+
+- Why it's a competitor: Public adjusters help homeowners compile claims and negotiate with insurance companies.
+
+- Limitation: They are often expensive, work slowly, and may not be accessible to low-income families or in rural areas.
+
+- How Claim Crisis is different: We provide a fast, affordable, and scalable tech-based solution that users can access immediately after a disaster.
+
+Home Inventory Apps (e.g., Sortly, Encircle, HomeZada)
+
+- Why it's a comparable product: These apps help users keep track of belongings for insurance purposes.
+
+- Limitation: Most require users to catalog items in advance—something very few people actually do.
+
+","- Made a basic frontend landing page
+
+- Designed a full Figma prototype outlining the user flow
+
+- Created and presented a pitch deck for the Finnovate Venture Accelerator (Won Second Place)
+
+- Conducted early user discovery interviews with disaster survivors
+Identified potential partners such as relief organizations and smaller insurance companies
+","- Working on building further partnerships with relief organizations, public adjusters, and smaller insurance companies
+
+- Launch a public beta after Generate
+
+- Begin onboarding real users through targeted outreach and partner referrals
+
+- Collect user feedback to iterate and improve the experience
+
+- Explore new AI innovations to make item detection and damage estimation more accurate and user-friendly
+
+- Expand marketing efforts to reach more disaster-prone regions and vulnerable communities
+
+- Seek additional funding or grants to support development, operations, and scale-up efforts
+","ClaimCrisis addresses a major gap in the insurance space which is that most AI tools are built for insurers, not for the individuals affected by disasters. This project gives Generate the opportunity to build a first-of-its-kind, claimant-focused tool that uses computer vision to help people document and estimate losses. Since few solutions exist to support claimants directly, Generate students would be creating something truly novel in an underexplored market with real social impact.
+","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=536b30dc-9290-4777-a607-9fff8da4b5bb","21cfd8dd4b069a8b38c5e57dc376fec8"
+"30d79d06-aa88-4274-8426-f03b75278b60","Mon Jun 30 2025 17:30:00 GMT-0400 (Eastern Daylight Time)","Wed Jun 11 2025 14:57:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","222f18dd5a9481e58aeaf70572b1993a","","ReachApply","Kush","","Patel","patel.kush18@outlook.com","Word of mouth","Generate Website","Current student at Boston campus.","None","Yes","Review my submitted answers","","","false","","Software","ReachApply transforms the job search for students by uniting AI-powered resume tailoring, automated outreach, and real-time contact discovery—turning scattered cold applications into targeted, high-impact workflows that get results.","We would love Generate to help us ship a robust, production-ready version of ReachApply that connects the dots across job discovery, contact management, and AI-powered outreach. Specifically, we’re seeking support with:
+
+- A dynamic job + contact dashboard that lets users segment contacts into live “campaigns” (e.g., “Investment Banking – JP Morgan”) and track engagement.
+
+- Real-time job drop detection, surfacing newly posted roles (e.g., “Bank of America just launched 2026 internships”) and matching them to the user’s preferences.
+
+- Backend logic to support job-contact linking, so once you apply to a job, the system immediately suggests relevant people at that company to message.
+
+- Fully integrated AI resume + cover letter tailoring per job.
+
+- Smart outreach tooling to instantly send messages, schedule follow-ups, and track replies—either through the Chrome extension or the dashboard.
+
+- This build-out would directly power our core value: helping students move faster, stand out earlier, and never miss an opportunity.","Success would be a live, end-to-end MVP that integrates all 3 layers of the platform:
+
+1. Real-Time Job Discovery
+   - Job drop feed tied to user’s goals (e.g., “Bain just posted a new role”).
+   - One-click tailoring of resume and CL to apply immediately.
+
+2. Dashboard-Based Contact Campaigns
+   - User can create segmented dashboards (e.g., “Private Equity – NYC”) and add contacts from the Chrome extension or bulk import.
+   - Tags by company, title, reply status, and follow-up history.
+
+3. Integrated Outreach + Tracker
+   - AI-generated messages from job-contact pairs
+   - Gmail/Outlook OAuth to send directly
+   - Campaign analytics (open, reply, conversion rates)
+
+With this, we’ll be able to launch an alpha with 50–100 students and collect live usage data for pilots and funding.","Target Market:
+   - Undergraduate and international students applying to internships and early-career jobs—especially in competitive industries like consulting, finance, and tech.
+   - Students who rely heavily on LinkedIn networking, cold outreach, and resume tailoring to secure interviews.
+
+Product-Market Fit Testing:
+   - While we haven’t launched a working product yet, we’ve validated our direction through 30+ interviews with students from Northeastern, Cornell, Duke, and NYU.
+   - We’ve identified strong pain points—especially around resume fatigue, ghosted cold emails, and missed job drops.
+   - An early interest form collected 75+ signups from students eager to test a smarter job-seeking tool.
+","Teal HQ – Teal helps users track job applications and store materials in one place. It’s visually clean and student-friendly, but fundamentally passive—it doesn’t support live job discovery, resume personalization, or outreach. ReachApply fills that gap by actively sourcing jobs, tailoring resumes with AI, and connecting users to contacts who can actually move the needle.
+
+RecruitU – RecruitU offers curated job boards and school-specific career tools, often through university partnerships. While it surfaces relevant roles, the platform stops short of enabling action—it doesn’t support resume tailoring, contact discovery, or integrated outreach. There’s no way to message anyone or track responses. ReachApply goes beyond job discovery by letting users email relevant contacts directly, launch outreach campaigns, and organize their follow-ups—all from one place.
+
+
+WonsultingAI / ResumAI – These tools focus exclusively on resume generation using AI. While helpful for one-off edits, they lack context from the job description or a feedback loop tied to application outcomes. We take it further—tailoring both resumes and cover letters to individual job posts, storing those versions, and linking them to outreach campaigns.
+
+
+Huntr – Huntr’s value lies in its Kanban-style application tracking, which many students love. However, it stops short of guiding next steps—there’s no intelligent resume editing, no contact scraping, and no actionable outreach layer. ReachApply is built around helping you take the next step, not just track the last one.
+
+
+Apollo.io – Apollo is a best-in-class platform for scraping contacts and sending outreach campaigns—if you’re a salesperson. It’s not built for job-seekers, doesn’t handle resumes, and requires manual work to filter useful contacts. We’ve adapted the power of Apollo’s backend and layered it with a job-seeker’s workflow—automated email drafts, tagging by company/role, and a CRM for referrals, not cold leads.
+
+
+Simplify Jobs – Simplify shines when it comes to fast applications—users can autofill forms in one click. But the trade-off is quality: there’s no resume tailoring, no insight into which applications worked, and no human connection. ReachApply keeps that speed, but adds depth: customized documents, real-time job alerts, and contact-based follow-through.
+
+
+LinkedIn Easy Apply – Every student uses it. Few succeed with it. Easy Apply’s strength is convenience, but it encourages a spray-and-pray approach that leads to burnout and ghosting. ReachApply flips the model by prompting strategic outreach, offering targeted job drops, and helping users stand out instead of blend in.
+","- Designed and built a complete interactive UI prototype using Lovable, including flows for job tracking, contact tagging, resume tailoring, and outreach.
+
+- Mapped out the full product architecture, including modules for real-time job discovery, email automation, and document generation.
+
+- Defined a feature-rich dashboard structure where users can create segmented campaigns (e.g., “Consulting – Bain”) and organize job contacts accordingly.
+
+- Conducted extensive competitor analysis and market mapping to identify key differentiators, such as live job-drop alerts and automated referral workflows.
+
+- Collected early interest from 75+ students across Northeastern and other universities through direct outreach and internal form distribution.
+
+- Shared and validated UI demos with peers and student orgs, receiving strong feedback on speed, organization, and the end-to-end job-seeking experience.
+
+- Developed a 6-month roadmap prioritizing Chrome extension functionality, job alert pipelines, resume tailoring engine, and CRM dashboard.
+","Fall 2025 (Post-Generate):
+- Launch our alpha version with a closed group of 50–75 student users (primarily from Northeastern and partner schools).
+- Integrate key backend components: resume tailoring (OpenAI), job scraping (LinkedIn/Greenhouse/Workday), and Gmail/Outlook email sending.
+- Track user behavior to refine contact tagging logic, job-to-resume mapping, and dashboard UX.
+
+
+Winter 2025:
+- Begin forming partnerships with pre-professional student organizations (e.g., Finance, Tech, and Consulting clubs) to expand reach.
+- Build analytics tools into the platform to show resume match scores, open/reply rates, and campaign effectiveness.
+- Launch real-time job alert functionality and dynamic job-feed customization based on user preferences.
+
+
+Spring 2026:
+- Expand to additional schools through ambassador programs and cross-campus pilots.
+- Introduce ReachApply Pro: premium features like warm intro detection, optimized templates, and recruiter response tracking.
+- Begin seeking pre-seed capital to scale engineering, marketing, and partnerships.
+
+
+Summer 2026 and Beyond:
+- Prepare for accelerator applications (e.g., Dorm Room Fund, Contrary, Neo, Rough Draft Ventures).
+- Expand resume intelligence: use user-generated outcomes (interviews, responses) to refine AI suggestions.
+- Explore university white-label licensing or career center integrations.","We’ve lived the reality of job hunting as students—reaching out to dozens of people on LinkedIn, sending cold emails, trying to land coffee chats and referrals just to get noticed. It’s a process that works, but it’s incredibly time-consuming, hard to organize, and easy to lose track of who responded, who referred you, and what follow-up is due.
+
+That’s where we started: building something that could make networking easier and smarter—automating the outreach, tracking responses, and organizing contacts by company or industry. But we didn’t want to stop there.
+
+We realized that applying to jobs was just as broken. Every role requires a new resume, a new cover letter, and you spend hours tailoring documents that often go unseen. It’s exhausting and inefficient.
+
+So we’re building ReachApply to solve both sides of the equation: smarter outreach and streamlined applications—automated, personalized, and trackable, all in one place. And we’re excited to build it with a team like Generate that understands how technical solutions can truly change outcomes.","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=30d79d06-aa88-4274-8426-f03b75278b60","a41cb1547fa673e0614ff3d154e502a4"
+"ccf70429-c3a7-4241-af4c-67105ba413b1","Sun Jun 29 2025 13:12:00 GMT-0400 (Eastern Daylight Time)","Sun Jun 29 2025 13:01:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","221f18dd5a9481cc9519e37e2e151c94","","Cortex","Vidhan","","Bhaiya","vbhaiya@mba2026.hbs.edu","Was very involved in Mosaic as a student, first international Sherman Center Co-op, have worked with them for my previous venture","Website","Yes, Boston","IDEA,Scout,Husky Startup Challenge (Entrepreneurs Club),IP Law Clinic,Sherman Center Venture Co-op","Yes","Review my submitted answers","","","false","","Unsure","
+We enable manufacturing companies to identify and implement AI transformations through an AI-native consulting process that delivers outcome-based pricing at scale, making enterprise-level AI transformation accessible to mid-market manufacturers.","We need Generate to build an AI-native discovery engine that automates the diagnostic phase of manufacturing consulting - specifically a system that processes video/audio from worker interviews and operational observations to automatically identify and rank the top AI automation opportunities within a manufacturing facility. This directly enables our core value proposition by replacing the current human-intensive discovery process (2-3 weeks of manual shadowing and analysis) with an automated workflow that can process discovery data in 3-5 days, allowing us to serve multiple manufacturers simultaneously and price based on outcomes rather than time. The system would integrate with tools like Granola for data capture, use LLMs to analyze workflow patterns, and output prioritized recommendations with ROI projections, fundamentally enabling us to scale our consulting approach.","A working prototype that can process real manufacturing discovery data (audio/video from our current pilot engagements) and automatically generate a ranked list of AI automation opportunities with 70%+ accuracy compared to our manual analysis. Success would be demonstrated by reducing our discovery timeline from 2-3 weeks to 3-5 days on actual client engagements, enabling us to simultaneously serve 50 manufacturers instead of our current 506 limit. We'd consider it successful if the system identifies at least 5 viable AI opportunities per engagement that we can validate with manufacturing clients, and if we can use this to pilot our first outcome-based pricing engagement rather than traditional consulting fees.","Our target market is mid-market manufacturers ($50-250M revenue) who lack dedicated AI teams but face competitive pressure to automate operations. We've tested product-market fit through direct pilot engagements: secured $50K in contracts within 30 days of incorporation with a steel manufacturer showing 22% raw material savings (~$200K annually), signed additional pilots with semiconductor and medical device manufacturers, and validated demand through 80+ manufacturer interviews. We've proven manufacturers will pay for AI transformation when delivered through existing workflows without requiring expensive system changes.","Traditional consulting firms (McKinsey, Deloitte) - Offer manufacturing AI strategy but lack technical implementation and require months-long engagements
+Enterprise AI vendors (Palantir, C3.ai) - Provide powerful platforms but require 6+ month implementations and pristine data environments most mid-market manufacturers lack
+Manufacturing software companies (Tulip, MES providers) - Focus on specific applications rather than comprehensive AI transformation across operations
+Horizontal AI platforms (Microsoft Copilot, ChatGPT Enterprise) - Generic tools that can't integrate manufacturing-specific data silos or understand operational workflows
+Boutique manufacturing consultants - Offer operational expertise but lack AI technical capabilities and modern automation approaches","Incorporated in June 2025 and secured $50K in pilot contracts within 30 days
+Deployed demand forecasting AI agent at steel manufacturer achieving 22% raw material cost savings (~$200K annually)
+Signed additional pilot agreements with semiconductor and medical device manufacturing companies
+Completed 80+ manufacturer interviews validating market demand for accessible AI transformation","Summer 2025: Complete 5 manufacturing pilot deployments using Generate's AI-native discovery engine to validate automated consulting approach
+Fall 2025: Launch outcome-based pricing model with 3 manufacturers using validated discovery process
+Winter 2025: Raise $2-5M seed round leveraging proven AI consulting platform and manufacturing client traction
+Spring 2026: Scale to 10+ simultaneous manufacturing engagements using automated discovery workflow
+2026-2027: Expand geographically and develop industry-specific AI transformation playbooks
+Long-term: Build platform that enables other consultants to deploy AI-native manufacturing transformation at scale","We bring unique domain expertise through family manufacturing businesses and proven technical capabilities from autonomous vehicle development (Monarch Tractor). Our approach of building with manufacturers rather than for them has already generated measurable ROI, and we're positioned to revolutionize how mid-market manufacturing accesses AI transformation. We're also exploring potential expansion into rollup strategies where we acquire and transform manufacturing businesses using AI, making this discovery engine valuable for both consulting and investment applications. We'd be collaborative Generate partners because we have real manufacturing clients to test with and a clear vision for scaling AI-native consulting beyond our initial market. I have also been a Generate Client in the past for my previous company, Dr. Brinsley. ","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=ccf70429-c3a7-4241-af4c-67105ba413b1","6f8f2e73f7bd0f9f94a15b2ed3822929"
+"4eabf6c5-ac3d-4fd4-b640-df0e06e1e404","Thu Jun 26 2025 00:03:00 GMT-0400 (Eastern Daylight Time)","Wed Jun 25 2025 23:21:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","21ef18dd5a9481409df2e20fb44e672f","","Filament Recycler (Name TBD)","Sean","","Suleski","seansuleski@gmail.com","I was part of it for 5 semesters","Instagram","Boston","None","Yes","Review my submitted answers","","","false","","Hardware","This product will allow users to recycle their old or failed 3D prints to reduce material waste.","I would like Generate to complete a first-pass prototype of the filament recycler to crush/shred old or failed 3D prints, followed by melting and respooling into usable rolls of filament - all while keeping user safety and manufacturability in mind during the design process.","There are two exit pathways that I envision based on the performance of the prototype by showcase. If the prototype is functional, I would love to donate it to the sherm makerspace for use by all of the Sherman programs. From this use, I would ask users for their feedback about future improvements and feasibility to be scaled. If the prototype isn’t yet functional by showcase, I would either reapply for another semester of Generate (depending on if that would be worthwhile for the teams and the progress still needed) or I would continue to develop the product on my own based on the prototype given to me until it can be put back into the Sherm makerspace for user testing.","The target market is makerspaces with many users, such as university makerspaces or other community makerspaces, and higher volume print farms. This wouldn’t be designed for individual users since they wouldn’t produce enough filament waste to make the cost of this product worthwhile. I haven’t tested the market fit yet, though I will perform testing following the development of this product.","There is a hobbyist version of a filament recycler called ARTME 3D, which can be seen in this YouTube video: https://youtu.be/BT04glGDjB4?si=FWjMaHqjnzTtaIWL. This is primarily designed for individual users and requires the user to print most of the components themselves and manually assemble the machine. This type of machine wouldn’t work well, however, since it’s intended for individual users whose scale of filament waste is too low, and the assembly time requires skilled users and takes time to properly assemble. Additionally, Loop is another competitor that plans to achieve similar goals to the filament recycler I envision, however the price that it is set at is much higher than is reasonable, and it also hasn’t been released yet - and many are skeptical about it’s functionality. A video about this product can be found here: https://youtu.be/GV7y1FnxAVE?si=nSk6S8-xh8OW0CZu","I haven’t made any progress toward this product yet, so there is mostly a blank slate to work with.","Once the prototype is functional, either entirely from generate or with a little further development on my own, I will perform user testing in the sherm makerspace. From this, I will first learn if this is a viable product that should be pursued further. If it is a worthwhile product, I would then compile a list of improvements from the testing and continue to iteratively develop the product and collaborate with manufacturers to determine scalability options.","For the scope of a generate project, this would specifically be focusing on recycling PLA filament only. Ideally the user flow would be to place the old or failed print into a hopper/container that would then be crushed/shredded into smaller PLA pellets that would then be passed through a heating chamber and extruder where the filament could then be automatically respooled with high precision (consistent filament diameter is important to prevent clogs). This product would be fully assembled when purchased, not requiring the user to manually print, assemble, and calibrate their own machines. Electrically, I’m flexible to work at the complexity generate wants to work at. I personally think it would be best to use dev boards that go into headers on the PCB so that the product can go through rigorous testing and iteration early, but if it’s a better learning opportunity to do more fun stuff like onboard microcontroller chips and boot loading, then that’s also great. My main goal for this generate project is to be a fun and rewarding learning experience that can help make the makerspace more efficient! Also if it’s more convenient to do the interview in person at the sherm, I’m definitely available to do so!","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=4eabf6c5-ac3d-4fd4-b640-df0e06e1e404","86a5a2be0463c3c44e619daaf995e88f"
+"885f5b8a-8208-43c2-b573-ac665e1204de","Wed Jun 25 2025 13:23:00 GMT-0400 (Eastern Daylight Time)","Tue Jun 24 2025 15:08:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","21df18dd5a94817391a5ee6de70bc610","Tactus","","Jeremy","","Chow","jeremy@tactusmusic.com","NEU","Through my connection at CIC","Boston Campus. Department of Engineering","IDEA,Venture Mentoring Network,Sherman Center Venture Co-op","Yes","Present a slideshow","https://docs.google.com/presentation/d/1MPQ5dWslflF1xWWhIUXrVXH0b5LeBEYPsOG6IohmHio/edit?usp=sharing","","true","Hardware","","","","","","","","","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=885f5b8a-8208-43c2-b573-ac665e1204de","bb86479825ac2b58c67cc6641978157f"
+"9a71fb61-dc96-41e9-896b-743b7794bbb0","Sat Jun 21 2025 14:23:00 GMT-0400 (Eastern Daylight Time)","Sat Jun 21 2025 13:34:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","219f18dd5a94812f97e9dcec80f2f6f6","Mitzvah","Mitzvah","Valeria","Val","Bogomolnaya","bogomolnaya.v@northeastern.edu","IDEA venture","Software","Boston ","IDEA","Yes","Review my submitted answers","said she will have a presentation ready for the interview","","false","Software","Software","Small donation, big impact. ","I would like Generate to build software (and potentially help with data, need your expertise to help with this).  I have designed a prototype of the software.  Mitzvah is a fundraising app that targets small donors. ","An app that is ready to be launched and tested in the real-world environment. ","Small donors (approx. 14 mil potential users in the US).We have not tested the product with the targeted audience, but tested an idea and reviewed peer-reviewed publication on the topic. I have also worked with an advisor from IDEA and NEU marketing students. ","CREDO Donations - limited number of categories and some of categories are similar to what I propose; community-building oriented platform for fundraising; limits the choice but not in the way Mitzvah proposes. 
+
+Various change collection platforms - offer customers an option for a small but impactful donations to a specific charity.
+
+Facebook - leverages FB platform for donations and community engagement, small donations are allowed.
+
+Gofundme - crowdfunding model, allows small donations, caters to a wide range of charitable causes, encourages updates on the progress (this is where data piece may be useful, but I don't have technical expertise to analyze it)
+","I have researched the market using secondary research; conducted one survey with one targeted group of customers; worked with NEU marketing students on the pitch deck; reviewed peer-reviewed publications; worked with IDEA advisor; attended prof. Meyers lecture on innovation in IDEA; created a prototype (PPT deck on how the app can look like and UX).","After Generate, I would like to launch the venture and start marketing it with the hope that it will resonate with the customers and becomes a brand and a competitor in the market. I will either fundraise or will use my own funds to start marketing. Mitzvah is a non-profit organization though I am also considering making it Corp. B.  I also worked though IDEA plan and thought about additional services Mitzvah could offer in order to grow as a business. Expanding the brand globally is also possible.  ","The idea was born out of my personal experience with donations. IDEA advisor suggested to connect with Generate. I've been working on the idea for several years and ready to test it in the real world. No research will match the real customer test.  I have slide decks for Mitzvah but decided not to submit them with this application. I will be happy to present the idea in person/virtually if needed. ","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=9a71fb61-dc96-41e9-896b-743b7794bbb0","15b6e9d25a50ae577b7df194941c5349"
+"dd0524de-b7ce-44aa-9201-7db28f1ff977","Fri Jun 20 2025 14:39:00 GMT-0400 (Eastern Daylight Time)","Tue Jun 03 2025 15:59:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","218f18dd5a9481d5b35adbded4bee23b","Sageware","","Sage","Sage","Antonio","antonio.sa@northeastern.edu","Sherman Center Co-op","website","Boston","IDEA,Husky Startup Challenge (Entrepreneurs Club),WISE,IP Law Clinic,NUMA,Venture Mentoring Network,Sherman Center Venture Co-op","Yes","Present a slideshow","https://www.canva.com/design/DAGpHkTd15U/bZZKCnAP4wY2miBS2KokMg/edit?utm_content=DAGpHkTd15U&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton","https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-346030/flowpublicid-rrsZ9j3oXhus/34c8f369-59d5-4810-a391-d1e270697d9c-gzDR02yE7ejUgrmun93eMzClzYlm7pP2tN9K32TPSU45a93cKX2nytVxePWwiNAuzCBoR7Ra6d5Nnk3uoRE0KnDcFyQpyUDkaM3/Fabric-Bead-Manufacture-Pitch.pdf","true","Hardware","","","","","","","","","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=dd0524de-b7ce-44aa-9201-7db28f1ff977","c36b90b790a67c5d89e370a76389808d"
+"1de21e9e-3a08-4304-bd86-3ff3ba1fff09","Tue Jun 17 2025 18:39:00 GMT-0400 (Eastern Daylight Time)","Wed Jun 11 2025 11:03:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","215f18dd5a9481d3b819df41aa1fe3c7","","TRYBE","Gyuwon","Tawan","Lee","tawan.napat.lee@gmail.com","Through a friend at NEU","I saw it on the website","I studied at D'amore Mckim for undergrad (class of 22')","None","Yes","Review my submitted answers","","","false","","Software + Data","TRYBE helps people build consistent habits by turning personal goals into social commitments through gamification, peer accountability, and shared progress.","Me and my co-founder are lacking the technical skills and would like to have a software person on the team, either guiding us or taking the lead on the app development side. We would also love to use the connections that Generate has so that we can talk to the right people and learn from people that are or have operated in the similar space.","We expect to be in a position where we can pitch to investors and have an MVP, robust business plan, legit strategy. Ultimately, we want to be in a position, where have done all the trials and test and have a product to show for that can actually be used to attract investors.","Our target market is 16-28 year olds (high school students to young professional adults. We have started beta trial runs within campus organizations and clubs. ","Duolingo, Strava, Habitica. These are a few of the our ""competitors,"" Ultimately we want to become an app that combines all these different niches into one while utilizing the gamification that duolingo does so well. 
+
+Habitica: Gamified habit tracker. 
+Weaknesses: Solo RPG-style, lacks emotional/social layer
+
+Strava: Fitness tracking
+Weaknesses: Only fitness- no general growth habits
+
+Duolingo: Learning gamification
+Weaknesses: Narrow use case, no real accountability
+","- We have conducted many rounds of interviews for Proof of Concept
+- We are in the process of doing trial runs with a web based browser version of our app to see if it works and to iterate after each trial.
+- In talks with a lot of faculty & connections within the health/ biotech scene in boston. ","We have a rough timeline. Firstly by Aug 1, we would like to have an appstore compatible MVP that can be used by users. Then by Nov 1, we hope to be in position, where have gathered the right manpower for the job and have finalized our initial ""co-founding team"" additionally, we are also consistently on the hunt for people on our advisory board. ","We’re incredibly driven and genuinely passionate about what we’re building with TRYBE. Having the opportunity to work with you or move forward to the next round would mean everything to us. 
+
+We’re not just excited about our idea, we’re committed to learning, evolving, and putting in the work to bring it to life. Even if we’re not selected, we’ll take every piece of feedback as fuel to grow. But if we are given the chance, we’ll give it everything we’ve got. We’re all in.","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=1de21e9e-3a08-4304-bd86-3ff3ba1fff09","6f59421b987cf7cebb5c2875aa18d232"
+"e913c39b-ed2a-4728-8767-c48955e52703","Sat Jun 14 2025 14:59:00 GMT-0400 (Eastern Daylight Time)","Sat Jun 14 2025 12:13:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","212f18dd5a94814bb57adcc14ee0f812","","SimBus","Jinyu","Alex","Tian","alextian@simbusus.org","Referral from NEU staff","Generate official website","Boston","IDEA,Huntington Angels Network","Yes","Review my submitted answers","","","false","Software","Database software + Browser-based UI","SimBus helps higher-education institutions to grow their entrepreneurship programs' impacts to non-business disciplines through our immersive role-play startup simulation programs. ","We have built a prototype of our simulation, functional but lacks some more exciting features. We need help building the next big version of the simulation, incorporating some key new features. ","We are using an outsourced software at the moment, so the main purpose of this project is to take it in-house. It would be a great success if we can have a backend database, the software, and a browser-based UI done.
+
+If we can accomplish more, we'd like to add some new features, based on the existing design. ","We target higher-ed institutions like NEU to use our simulations as workshop events, or in the future, in classrooms. We have co-hosted a workshop event with IDEA back in February, and are planning to host a cross-university event this fall (using our existing simulation software). 
+
+We are looking into event sponsorships as one of the revenue streams. We are in the process of securing several sponsors, sufficient to support event costs. 
+
+Eventually, we are looking to put our simulation into a licensable product for professors to use in classrooms. This will be very similar to how textbooks are purchased.","Business simulation software: 
+- MarketPlace Simulation, Cesim, etc.
+- Math-based, number-heavy simulations or scenario based decision tree simulations
+- Typically used in business schools but are too complex and number-focused for non-business disciplines
+","Essentially, the simulation we are designing is a virtual business execution platform, that functions similar to an ERP system. In our current version, we have the following features functional:
+- Individual user accounts, team belongings, and virtual team cash accounts
+- Facility purchasing capabilities (factories, stores, etc.)
+- Raw material lists to be used for manufacturing
+- Product designing functions with raw materials
+- Manufacturing, warehousing, transferring of virtual products
+- Drafting and accepting contracts among teams
+- Live market mechanisms for product sales","For 2025, we have planned several milstones: 
+- Turn software in-house (with Generate's help) 
+- Cross-university events in the fall (with IDEA) 
+- Develope simplified version of the simulation for class-size usages by October
+- Being adapted as curriculum or programs by one of the universities we have worked with before the end of the year
+- Year-long marketing content creation as thought leadership","We are now trying to collaborate with NUCEE as a whole to try positioning SimBus simulation as a top-funnel for its programs. The idea is to make the most active students visible through our events, and educate the participants on the resources that they need the most, then channel them to the right people. 
+
+We are considering if we can collaborate with the newly established DASH at DMSB to develope an AI customer service bot, so students can get quick answers about NUCEE programs without waiting for email replies. ","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=e913c39b-ed2a-4728-8767-c48955e52703","99226e5dae77b2388fad09096fa49cc4"
+"ae0e053a-8dd3-41a6-8579-33993327c1e2","Fri Jun 13 2025 16:53:00 GMT-0400 (Eastern Daylight Time)","Fri Jun 13 2025 16:45:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","211f18dd5a94811a9113c874c10711ce","The Rehumanization Project","The Rehumanization Project","Ethan","","Bagley","ethan@helprehumanize.org","Marina Watanabe","Here","Boston","IDEA","Yes","Review my submitted answers","","","false","","Software","Compassion in Motion","We have several platform projects we are looking to stand up, which will allow TRP and partner agencies to better serve our unsheltered neighbors. There are several different project concepts, and I would love the opportunity to review how each would contribute to our impact.","I would expect a usable beta of one or more of the platforms to be available.","Our clients are the homeless or those facing homeless, and the product-market fit there is excellent. Our target market, though, includes municipalities, community groups, donors, etc.","We leverage other outreach operations in order to understand what works and doesn't work for them. In particular, we are learning a lot from mobile health clinics, an adjacent service.
+- Crisis Intervention Teams (Boston, Somerville, etc.)
+- Mobile Health Clinics (HRiA)
+- Bloodmobiles (American Red Cross)
+- Homeless Outreach Team (ABCD, Housing Families)","- Incorporated nonprofit (Feb '25)
+- Onboarded first client (May '25)","Our expectation is to use the output from Generate to help accelerate our future growth. We anticipate ending our pilot at the end of December, and assessing our progress at that time. Based on what we learn, we intend to scale up into new markets to serve new populations of the homeless.","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=ae0e053a-8dd3-41a6-8579-33993327c1e2","124634346d87ed71ec7bfe4f0c7d0f53"
+"f2615be7-091d-45c6-a13a-de02ed1d1907","Fri Jun 13 2025 11:30:00 GMT-0400 (Eastern Daylight Time)","Fri Jun 13 2025 11:17:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","211f18dd5a9481caaedee75a9d742e2c","","The Special Standard","Sarah","","Martins","sarahmartins779@gmail.com","Through IDEA Northeastern.","On Generate's website.","I graduated from Northeastern with my master's degree from the Boston campus.","IDEA,Women Who Empower Innovator Awards","Yes","Review my submitted answers","","","false","","Software","The Special Standard helps school districts stay compliant with therapy and documentation requirements through an all-in-one, digital platform - reducing administrative burden, improving service delivery, and supporting SLP retention and success.","We would like Generate to build a digital platform that serves as an all-in-one curriculum hub for speech therapists, featuring engaging, standards-aligned materials and integrated student data tracking. This directly supports our core value proposition by reducing therapist workload, making sessions more effective and enjoyable, and ensuring student progress is easily monitored and measured.
+Additionally, we would like the online portal to include an AI component that enables automatic customization of materials based on each student’s unique goals. The platform should also be able to track student attendance, collect session-by-session data, and automatically generate progress reports using both the data and attendance records.","By the end of the semester, we would consider it a success if we have a functional prototype of our digital platform that includes a sample library of interactive therapy materials and a basic system for tracking student progress. Success would also include a clear framework for expanding the platform’s content and features - laying the groundwork for a scalable tool that brings real value to therapists and students.","School districts in the U.S. We have tested our product-market fit with our target market through pilot programs in several schools/states.","There are currently no direct competitors offering the full, integrated scope of our platform. A few companies address individual components of our solution including:
+-Boom Cards: offers digital flashcard activities, but lacks a curriculum structure, progress tracking, and compliance support.
+
+-Everyday Speech: focuses on social skills content, but does not support individualized therapy planning or automated documentation.
+
+-Teachers Pay Teachers: provides user-created resources, but lacks consistency, customization, and integration with data collection or IEP compliance tools.","-Developed a functional MVP, including a full month of curricular materials for one grade level
+-Successfully completed a multi-state pilot program with school-based SLPs
+-Named finalists for a prestigious innovation award recognizing women entrepreneurs
+-Achieved key early validation of product-market fit and team capability within just 3 months of founding","-Secure funding to support team expansion (Q3 2025)
+-Hire key roles, including:
+      -Illustrator - to enhance visual and accessible content
+      -Software engineer - to optimize platform functionality and scalability
+      -Freelance speech-language pathologists - to expand curriculum development and clinical validation
+-Enhance and expand curriculum across additional grade levels (Q4 2025 - Q1 2026)
+-Refine platform features, including personalization tools and compliance reporting (Q4 2025 - Q1 2026)
+-Begin onboarding additional pilot districts to test at scale and gather impact data (Q1 2026)
+-Prepare for a broader launch based on refined product and pilot feedback (Q2 2026)","The Special Standard gives Generate students a real-world opportunity to sharpen their software and web development skills while contributing to a meaningful, fast-growing edtech platform. As a digital-first, AI-adaptable tool, it presents hands-on challenges in front-end design, back-end architecture, and data integration. With a clear roadmap and early traction, students will build features actively tested in schools, gaining experience in scalable, user-centered development tied to real impact. This project offers both technical depth and a powerful mission, aligned with the future of personalized education.","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=f2615be7-091d-45c6-a13a-de02ed1d1907","8ee48d36bd71b5b758ffc0a40db50ffa"
+"1a5ab510-e9fe-4b8c-a3f0-c261670a2ff7","Sun Jun 08 2025 23:26:00 GMT-0400 (Eastern Daylight Time)","Sun Jun 08 2025 23:10:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","20df18dd5a9481a1902ac0fe891172ea","","Nightinerary","Simrin, Alysha","alysha@advani.us (This is both mine and Alysha's venture!)","Ramchandani, Advani","simrinramchandani05@gmail.com","We used to be in Generate!!","Generate Website","Boston","None","Yes","Review my submitted answers","","","false","","Software","Nightinerary helps users effortlessly plan their night out by curating personalized bar and club routes based on vibe, preferences, and location, so every night feels intentional.","We would love for Generate to help us build the first working version of our product. It would be a mobile app (or web app if easier) that allows users to input their preferences (type of music, area, etc) and receive a customized night-out plan with 2 to 3 suggested spots with a timeline of when to start where. The app would ideally present a starting bar, a second stop, and a club or final destination, along with short descriptions of each place.
+
+We would also love basic filters (eg. chill vs energetic, large group vs date night) and a clean layout. We care a lot about making this app easy and fun to use. The user experience should be smooth and inviting, not a list of places you could Google yourself. We would love help designing a simple and clear interface that makes users feel excited about their night. The idea is to turn the messy, last-minute ‘where do we go’ stress into a smooth experience that feels tailored to the user.","Expectations: 
+- Work closely with software teams to build a working version of the app
+- Give feedback and support the team with research and testing
+- Start testing the app with real users and receiving feedback
+
+Success: 
+- A working app that lets users plan a night out in Boston
+- A few example night routes live in the app that we can test
+- Honest feedback from users so we can keep improving
+- Feeling confident in what we’ve built and at a good place to expand to other cities","Target: 
+Collect students and young adults in Boston (around ages 20-30) who like going out but are tired of guessing where to go and wasting money on places that don’t match their vibe.
+
+Tested: 
+We’ve talked to many friends and almost everyone says the same thing: unless they’ve lived somewhere for years, they never really know where to go out. People usually rely on Tiktok, Google, or word of mouth and it is usually hit or miss. This is especially true when you’re visiting a new city; if you don’t do a ton of research or have friends there, it is really hard to figure out a fun night plan.","Discotech: A nightlife app that lets users discover and book club events, festivals, and nightlife experiences in major cities in the U.S. and some internationally. It provides features like free guest list access, ticket purchasing, and VIP table reservations directly through the app. Geared towards young adults who go to clubs and music events.
+Joyraft: A mobile app for finding local events and nightlife experiences, originally launched in Boston. Highlights unique outings, showing users experiences they don’t want to miss around town. Aimed at 20-30 year olds planning fun nights out with friends. It offers curated event listings, you can see what your friends are interested in, and sends alerts about local events.
+Bandsintown: App and platform that helps users discover concerts near them and notifies you of upcoming gigs by artists you listen to. Targeted at concert-goers and allows you to track favorite artists, find local concerts and festivals, and get ticket info. The app has tens of millions of users globally.
+DICE: A mobile ticketing app that ‘makes going out easy’ by helping users discover and attend the best live shows, club nights, and festivals nearby. DICE offers personalized event recommendations and you can connect your Spotify to get tailored picks. You can follow friends/artists and they have quick-in app ticket purchases with transparent pricing. Originally from the UK, but now operates in major cities in North America and Europe.
+Eventbrite: A well-known event discovery and ticketing platform that has nightlife and other hobby events. Users can browse local happenings, get personalized recommendations, and buy tickets in-app. Eventbrite is available in cities worldwide and appeals to a broad audience.
+Tablelist: A nightlife reservations app focused on VIP clubbing experiences. Tablelist provides access to VIP bottle service, private tables, and exclusive events at nightclubs in a growing number of cities. Aimed at upscale, young adults who enjoy club nights.
+BarChick: A global bar and club discovery app that showcases the best nightlife spots BarChick’s writers create guides to top bars and late-night venues in more than 50 cities around the world. The app provides information on each bar’s vibe, highlights ‘last-minute’ party-spots and includes reviews/tips for a great night out. Geared toward bar-hoppers and travelers in their 20s and 30s.
+InList: A members-only nightlife app that curates exclusive parties and high-end events across the globe. Keeps users in the know in about 45 cities and caters to an upscale demographic of late-20s/30s professionals and travelers. It offers VIP access to trendy clubs, parties, and celebrity events.
+TikTok: Of course TikTok isn’t a dedicated nightlife app, but the platform indirectly competes in the nightlife space by influencing where young adults choose to go. Many people in their 20s and 30s discover trending bars, clubs, and events via viral TikTok videos and influencer recommendations.The content often drives its user’s nightlife decisions, making it an indirect competitor.
+
+Each of these platforms is actively operating and targets Nightinerary’s same core audience of young adults looking for fun nights out. They are solutions that help users find nightlife experiences, whether through curated events, social recommendations, or easy booking tools.","- Came up with the idea after a bad night out in NYC that felt random and chaotic
+- Talked to friends who shared the same frustrations
+- Sketched out how the app should work and what features matter most
+- Researched similar apps to understand what they do well and what is missing
+- Brainstormed ways on how to make money (ad revenue, venue partnerships, promoted spots)
+- Chose the name Nightinerary, bought domain
+","- Winter 2025: Begin testing the app with real users in Boston (friends, students, etc). We will collect feedback on what works, what is confusing, and what needs improvement
+- Early Spring 2026: Use the feedback to improve the app’s flow, design, and filters. We will also start mapping out more Boston routes and neighborhoods based on new data and user suggestions
+- Late Spring 2026: Reach out to local bars and clubs to explore partnerships, like featuring certain venues or offering deals through the app.
+- Summer 2026: Start expanding to a second city. At the same time, we’ll look into early-stage startup programs, pitch nights, or funding opportunities that could help us grow. 
+- Beyond: Keep building new features (social sharing, real-time crowd levels, ticket links), expand to new cities, and stay focused on creating a go-to nightlife app for anyone who wants to explore.","Both of us were previously members of Generate! I was Chief of Finance and Alysha was a Data Analyst. We know how Generate operates and how to work well with student teams. We’re excited to return as clients because we know how talented and creative the people here are. This idea came from a real pain point we’ve experienced firsthand, and we’re passionate about building a solution that helps other people avoid that same frustration!","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=1a5ab510-e9fe-4b8c-a3f0-c261670a2ff7","6380f234a371061b745e71011cd05fde"
+"a414fa58-e1ab-4101-aeed-847e195d8e03","Sun Jun 01 2025 18:57:00 GMT-0400 (Eastern Daylight Time)","Sun Jun 01 2025 18:47:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","205f18dd5a9481c7adfed39f7f8a89db","","Finder @ Social","Surya Sai Brahmendra","Surya","Ramoju","ramoju.s@northeastern.edu","I first heard about Generate at Northeastern through the IDEA Lab and the broader Mosaic community.","On the Sherman Center’s website, Mosaic newsletter, and through peer recommendations.","Boston","IDEA,Scout,Husky Startup Challenge (Entrepreneurs Club),IP Law Clinic","Yes","Review my submitted answers","","","false","","Software","Finder @ Social is a secure, AI-powered networking platform exclusively for verified students, fostering authentic connections, event discovery, and campus engagement.","We’d like Generate to build a responsive, mobile-optimized web application that delivers our core features: profile creation, student verification, interest-based matching, event discovery, and messaging. This approach allows us to rapidly test and validate the product with students while laying the foundation for a future native mobile app. The MVP directly supports our value proposition by creating a trusted, engaging platform for students to build meaningful connections within their campus community.","A working MVP web application, optimized for mobile use, ready for beta launch at Northeastern University.
+
+User-tested designs and feedback loops incorporated into the product.
+
+A design system and documentation that supports scalability and future mobile development.
+
+A strong foundation for launching a native mobile app in future phases.","Our target market includes:
+
+Undergraduate and graduate students (ages 18-28) at Northeastern and similar universities who seek safe, authentic social connections.
+
+University departments and student organizations that need a secure platform to manage events and foster community engagement.
+
+Product-market fit testing:
+
+Conducted surveys and interviews with 50+ Northeastern students.
+
+Participated in IDEA venture coaching, Husky Startup Challenge, and received feedback through Mosaic programs.
+
+Validated the need through conversations with student groups and university stakeholders.","GroupMe/Discord: Offer communication but lack authentication, leading to safety and privacy concerns.
+
+LinkedIn: Too professional and broad for campus social life.
+
+Handshake: Focuses on career opportunities, not social student connections.
+
+Eventbrite: Event management tool but lacks community features for students.
+
+WhatsApp/Slack groups: Fragmented and inaccessible without direct invites, no interest-based discovery.
+
+Finder @ Social uniquely combines authentication, safety, and AI-driven discovery—something no current platform fully offers for students.","Built early web app prototype using Laravel and PostgreSQL.
+
+Developed initial brand identity and landing page.
+
+Conducted user surveys and interviews with 50+ Northeastern students.
+
+Secured Alpha Fund Award, Boston 25 Under 25 recognition, and DASSH Challenge win.
+
+Trademarked Finder @ Social with USPTO.
+
+Participated in Mosaic programs and venture coaching.","Jan 2026: Launch beta web app at Northeastern University.
+
+Spring 2026: Collect feedback, iterate on features, and refine product-market fit.
+
+Summer 2026: Begin native mobile app development for iOS/Android.
+
+Fall 2026: Expand to 3-5 partner universities in the U.S.
+
+Late 2026: Pursue seed funding through accelerators and VCs.","We’re passionate about empowering students to build safe, authentic relationships on campus and are eager to collaborate closely with the Generate team. We’re ready to be active, responsive partners and ensure this project is a mutually rewarding, real-world learning experience. Let’s make something impactful together!","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=a414fa58-e1ab-4101-aeed-847e195d8e03","00456e08e7f027f776dfccc78e6a4a4b"
+"eafe54f3-c9e7-4284-b3c8-7dd1d3c94c6a","Wed May 28 2025 20:44:00 GMT-0400 (Eastern Daylight Time)","Tue May 20 2025 03:16:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","202f18dd5a9481e8a7ecf7b753c4d910","","Great Combination Enterprise Co., Ltd.","Oscar","","Hsieh","chco168@autopartsold.com.tw","via friends","via friends","No","IDEA,WISE,Evolve,Venture Mentoring Network","I am a member of one of the above groups.","Review my submitted answers","","","false","","Unsure","We are an industrial filter & PET recycled manufacturer.","automated production/Ai","automated production/Ai","semi-conductor, biotechnology field","Yesiang Enterprise Co., Ltd.","semi-automated production","automated production","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=eafe54f3-c9e7-4284-b3c8-7dd1d3c94c6a","62d0a12f670d382b4c7bf374e5863b3f"
+"6dc34869-3b06-4e13-b84c-cf56f170c476","Fri May 23 2025 16:04:00 GMT-0400 (Eastern Daylight Time)","Fri May 23 2025 15:51:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","1fcf18dd5a9481b9baccd3fefb411448","","MoveWealth","Dennis","DJ","Brinkworth","dj@movewealth.io","IDEA advisor","Website","College of Social Sciences and Humanities","IDEA","Yes","Review my submitted answers","","","false","","Software","MoveWealth is a generative AI platform that helps life insurance agents and agencies streamline underwriting, automate case design, and close policies faster with less friction.","We’d love for Generate to help us design and build the front-end interface for our MVP — specifically the AI-Powered Deal Room and Copilot experience. This includes file upload, onboarding flow, conversational UI, and how insights are surfaced to the user. These components are critical for transforming our backend AI engine into a usable, trusted workspace for agents.","A successful collaboration would result in a polished, functional front-end MVP with thoughtful UX that agents can use to upload client documents, interact with our AI assistant, and view real-time insurance guidance. Ideally, we’d also validate these flows with 3–5 of our design partners and prep the app for closed beta use.","Our core market includes:
+
+Life insurance producers (independent or captive)
+
+Small-to-midsize insurance agencies (3–25 agents)
+
+Managing General Agencies (MGAs) and Broker General Agencies (BGAs)
+
+To date, we’ve:
+
+Conducted over 60 deep-dive interviews with agents, case designers, and operations staff
+
+Onboarded 8 design partners (3 agencies and 5 producers) who are actively shaping our MVP
+
+Validated core pain points in underwriting delays, document overload, and compliance bottlenecks","Modern Life – A tech-forward life insurance brokerage with some quoting and CRM tools, but lacks embedded AI workflows and is not designed for agent-led case design and underwriting support.
+
+Praxos AI – An AI tool for insurance professionals focused on automation of proposals and comparisons, but not deeply integrated into underwriting or policy placement workflows.
+
+Qumis – A rising gen AI platform for insurance professionals. Focuses on text-based answers and RAG pipelines but lacks a robust document workspace or pre-underwriting tools. Strong UI, but early-stage on workflow integration.
+
+Harvey AI – A leading verticalized AI platform in legal and finance. Offers deep domain-specific LLM capabilities and shows the power of specialized copilots — but is focused on law, not insurance distribution.
+
+Bestow / Quility – Full-stack life insurance platforms focusing on direct-to-consumer or embedded agent distribution. They streamline parts of the journey but don’t serve the producer’s full workflow or offer customizable AI tools.
+
+ChatGPT / Claude / Gemini – General-purpose LLMs used by some advisors for research or writing. Lacks fine-tuning, regulation awareness, or integration into insurance systems — requiring heavy manual prompting.
+
+iPipeline / Advisor360 / Salesforce – Industry incumbents with deep adoption but poor UX and limited AI capabilities. They serve back-office and carrier needs better than frontline producers.","Completed 60+ customer interviews across agents, brokers, and insurance ops
+
+Developed a clear 3-phase product roadmap and MVP feature set
+
+Built a backend prototype for document extraction and AI recommendations
+
+Created a live Figma prototype for our AI-Powered Deal Room and Copilot
+
+Secured 8 active design partners and are in pilot discussions with agencies","Begin selling to early adopter agencies and producers; start onboarding paid users
+Expand into larger MGAs and partner with IMOs for scaled distribution
+Build advanced features like compliance audit, underwriting APIs, and white-labeled copilots","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=6dc34869-3b06-4e13-b84c-cf56f170c476","3089fcfa6338137de4a54e7cd3469f0c"
+"f1f96a42-13cc-41d6-a790-c36c786c1df7","Fri May 23 2025 11:12:00 GMT-0400 (Eastern Daylight Time)","Tue May 20 2025 10:41:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","1fcf18dd5a9481b4b44ec157ddab069e","","Palate AI","Mateus","Mateus","Silva Lopes","lopes.mat@northeastern.edu","Theo Johnson ","Within the Generate Website recommended to me by Theo Johnson","London Campus (NU London), with a final 4th year at the Boston Campus.","IDEA,Husky Startup Challenge (Entrepreneurs Club),NUImpact,Venture Mentoring Network,Sherman Center Venture Co-op","Yes, I am a member of one of the above groups.","Review my submitted answers","","","false","","Software and Data- Our platform requires deep integration of both branches: real-time software systems and advanced data analytics for personalization.","Palate is your trusted restaurant discovery concierge that only shows perfectly matched restaurants with confirmed available tables, eliminating the frustration of finding great places that are fully booked.","Unlike typical student projects, Palate offers production-level challenges:
+
+We need Generate to build three critical components:
+
+Real-time availability verification system - Ensures we only show bookable restaurants (core to our promise)
+Restaurant partner analytics dashboard - Helps restaurants understand their customers better, strengthening partnerships
+A/B testing framework for recommendation algorithms - Improves our matching accuracy from 75% to 90%+
+
+These directly enhance our value proposition by improving availability accuracy, deepening restaurant relationships, and perfecting our matching capabilities.","Success means:
+
+Availability accuracy improved from 85% to 99%
+Restaurant partner dashboard live with 20+ active restaurant users
+A/B testing framework enabling weekly algorithm improvements
+2-3 Generate students prepared for full-time offers
+At least one publishable case study showcasing student impact on our growth metrics.","Target Market: Urban professionals (25-45) in London who dine out 3+ times monthly and value their time
+Product-Market Fit Testing:
+
+500+ beta users with 73% weekly retention
+45 user interviews validating core pain points
+£7.99/month price point validated with 12% conversion rate
+15 restaurant partners signed with 90% satisfaction score
+Early revenue traction proving willingness to pay","OpenTable - Market leader but hated by restaurants (high fees), no personalization, shows unavailable restaurants
+Resy - Premium positioning but limited UK presence, focuses on exclusivity over availability
+Google Maps - Restaurant discovery but no booking completion, too broad, no curation
+TheFork - European player with basic features, poor user experience, limited restaurant relationships
+
+We differentiate through availability-first browsing, intelligent matching, and restaurant-friendly economics.","Secured initial funding from own finances and prototype funding 
+Built Prototype with core booking functionality
+Developed initial matching algorithm with 75% satisfaction rate
+Generated early revenue validating business model
+Created technical architecture supporting 10x scale
+Completed successful user research with 15+ interviews","Months 1-2 post-Generate: Launch full platform with Generate improvements integrated
+Month 3: Scale to 5,000 paying users using enhanced systems
+Months 4-6: Expand to 100+ restaurant partners with analytics dashboard
+Month 7: Close Series A funding (£2-3M) with proven metrics
+Months 8-12: Scale to 50,000 users across greater London
+Month 13+: Consider international expansion or acquisition opportunities
+Ongoing: Hire top Generate performers for full-time engineering roles, with the opportunity to work with us in London!","Our Commitment to Generate:
+We'll provide students with challenging, resume-building projects while protecting our core IP through appropriate NDAs. Students will gain invaluable experience in building scalable technology products, understanding user needs, and growing a venture-backed startup.
+The Opportunity:
+Generate students would help us accelerate growth in areas like user acquisition, retention optimization, and platform scaling—all while gaining hands-on experience in a fast-growing startup environment. We're building something significant in the restaurant technology space, and Generate students could be part of that journey.
+We believe in creating win-win partnerships where students gain real-world experience and meaningful resume achievements while helping us build the future of dining discovery.","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=f1f96a42-13cc-41d6-a790-c36c786c1df7","4f88f463c45ac57472281df220fc78e7"
+"a24186ea-35fa-4756-a3f6-142c22f8d357","Wed May 21 2025 06:45:00 GMT-0400 (Eastern Daylight Time)","Wed May 21 2025 06:23:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","","","ShowerSwell","Edward","Nate","Winslow","winslow.e@northeastern.edu","Friends in Generate","Instagram","Boston Campus","IDEA","Yes, I am a member of one of the above groups.","Review my submitted answers","","","false","","Hardware","ShowerSwell is a portable shower filter that clamps over shower heads rather than the industry standard of screwing into the waterline, making it accessible for dorm students, gym-goers, and travelers who care about coming out of the shower truly clean.","My friend and I have started prototyping the general design, but we have struggled to create a valid clamping mechanism that can fit over a variety of showerhead sizes. While the product would only be able to work with the standard conical shaped shower head, I want it to be as versatile as possible with the sizes of that model of shower head. ","A prototype with a validated clamping mechanism and modular/replaceable filter system.","I have ran a survey on my social media pages asking if people would use a product like this and how much they would pay. From our 10+ responses we found that almost everyone would use a shower filter product and the majority of our responses would pay in the $50-$75 range. The target market for this filter would be dorm students, but it is also applicable to frequent travelers and gym-goers.","All shower filters in the market must be screwed directly into the water line of the shower. These products include
+- Phillips Water In-Line Shower Filter
+- Auxbales Vitamin C Shower Filter
+- Ibergrif High-Pressure Shower Head","- CADed and printed the outside casing for the filters and clamping mechanism
+- Researched and brainstormed various types of clamping mechanisms. At this point, we are trying to use a modular silicon wrap of sorts that and be tightened with a tooth system
+- Researched and determined our 3-filter system
+","- Determine and test a clamping system to integrate into the product (2-6 weeks)
+- Test the effectiveness of the proposed filter system (2 weeks, easy)
+- Determine the optimal geometry and arrangement of holes at the bottom of product to maximize flow rate and pressure (4-6 weeks, potential need for CFD)","While this idea is very much in the early stages, I believe there is a huge potential market that is currently untapped. In my first at Northeastern, I heard numerous complaints about newfound skin and hair issues, and given the general health and wellness trends taking social media by storm, this is the perfect time for a product like this. Additionally, as a Mechanical Engineering Major, I would like to assist in the development of this product as much as possible.","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=a24186ea-35fa-4756-a3f6-142c22f8d357","6220d6717bfa2f9a3bdae5ea6376eda6"
+"172c6622-499d-4f26-bf97-541947a974fd","Tue May 20 2025 15:14:00 GMT-0400 (Eastern Daylight Time)","Mon May 19 2025 23:02:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","","","CineCircle","Sreya","","Ravi","ravi.sre@northeastern.edu","Katherine Zhang referred me!","Instagram Bio","Boston Campus","None","Yes, I am a member of one of the above groups.","Review my submitted answers","","","false","","Software","A user-friendly, community-oriented app for South Indian movie fans to stay updated with, discuss, and review / rate Tollywood (Telugu), Kollywood (Tamil), Mollywood (Malayalam), and Sandalwood (Kollywood) cinema.","I would like Generate to build and design a cohesive and intuitive mobile app experience-with mockups, branding ideas, and wireframes-that will reflect the energy, diversity, and culture of South Indian cinema and the discourse in those communities. These designs and prototypes will be critical to the future pitching, user testing and validating, and development stages CineCircle will undergo. Eventually, I foresee the app being downloadable in the App store for both iOS and Android.","A fully designed, clickable prototype of the CineCircle app with a homepage, forum threads, ratings / reviews section, and a newsfeed. Additionally, a logo and design system that reflects the colorful world of South Indian cinema! 
+
+I would also expect a friendly and collaborative working experience with the Design teams. If selected as a client, I would like to check in with the teams once a month (or more often) to see how the progress is looking and to share my thoughts (and excitement), but ultimately trust Generate's vision in bringing my ideas to reality. ","South Indian diaspora (ages 14-40), film students, cinephiles, and fans of Kollywood, Tollywood, Mollywood, and Sandalwood who are currently engaged across scattered platforms like Letterboxd, Reddit, X, Youtube comments, Instagram reels. 
+
+I haven't tested the product yet as it is still in concept stages, but I've had the chance to informally pitch the idea to students in Northeastern's South Indian community as well as with South Indian friends at other universities to assess platform fatigue and interest in a centralized and community oriented app. Personally, I've identified reoccurring frustration with the lack of a unified space for South Indian film discourse beyond just memes, spoiler threads, and reels. ","- Letterboxd: A popular app used for creating diary-like entries about the movies you've watched and for film logging and reviews, but lacks regional South Indian categorization and nuance for the South Indian film industry
+
+- Reddit (r/tollywood, r/kollywood, etc): Reddit's subcommunities have vibrant discussion spaces, but the discussions held within them can become hateful / spam, threads are disorganized, and there is no structured rating or curation system in place
+
+- Instagram fan pages / Twitter spaces: Real-time discussion, but not archived and community-owned or driven","- Finalized app's core feature list and content categories (including forums, ranking lists, regional tabs, newsfeed, music, personal page design)
+
+- Outlined sample user personas and usage scenarios","- Use Generate's deliverables to pitch the app to student developers and venture accelerators at NEU and other universities (following completion of project, likely Spring 2026)
+
+- Launch a private beta of the app with South Indian student organizations and share updates and marketing content on Tiktok / Instagram Reels (Summer / Winter 2026)
+
+- Expand features to include notifications, award predictions, fan created lists, etc and reach out to connections and producers in India to grow app in both South India and the USA diaspora (Summer 2026)
+
+- Explore monetization opportunities like ads, premium features, and sponsored content (Winter 2026 / Spring 2027)","I'm a really avid fan of South Indian cinema, and it is something that has brought me connection to my culture, exploration of the film industry, and introduced me to countless friends (online and in person). South Indian cinema is culturally diverse, emotionally rich, and bold in narratives, but current discussion spaces are currently under-designed and fragmented. South Indian cinema is also very different than the stereotypical Bollywood movies that are often people's first thought when thinking of Indian film. I'm passionate about bridging media with community spaces for underrepresented audiences, and am excited to collaborate with Generate if selected to build something as vibrant as the films it celebrates. While I'm a first-time founder, I believe I bring transferrable skills through my background studying Business Administration, my competitive experience and accolades in public speaking, my time working in consulting, finance, and project management, and my creativity as an artist, musician, and lover of cinema.","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=172c6622-499d-4f26-bf97-541947a974fd","7b0c06dba3207420feb721c009293197"
+"ee4d5b08-4db8-498c-995a-a26f4536c8c5","Tue May 20 2025 13:32:00 GMT-0400 (Eastern Daylight Time)","Tue May 20 2025 13:15:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","","","CommentHub","Mert","","Saz","mertsaz195@gmail.com","IDEA","Generate","Boston","None","Yes, I am a member of one of the above groups.","Review my submitted answers","","","false","","Software","A platform where users can discover, share, and engage with the funniest and most interesting social media comments—all in one place.","Coding","Working prototype/MVP","Our target market is Gen Z and Millennials who actively browse social media platforms like YouTube, Twitter, and TikTok and enjoy sharing and engaging with viral, humorous, or thought-provoking content.","Some comparable products include Reddit, Instagram meme pages, iFunny, 9GAG, and niche communities like the “Comment Awards” subreddit. Reddit allows users to upvote and interact with content, but it’s not focused on curating humorous or interesting comments from other platforms. Instagram meme pages and similar accounts share screenshots of viral comments, but they’re limited to passive viewing with no way for users to upload or organize content themselves. Platforms like iFunny and 9GAG focus on general humor, but they don’t highlight social media comment culture specifically. Meanwhile, communities like “Comment Awards” do celebrate funny comments but are restricted to Reddit and lack a dedicated, standalone experience. Our product fills this gap by offering a focused, community-driven space where users can actively share and engage with the best comments from across the internet.","I created UI designs along with basic interactive mockups and functional prototypes","Beta Launch with early adopters in NEU and then public launch","","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=ee4d5b08-4db8-498c-995a-a26f4536c8c5","73c072a27e2ae57ef2e4f4746d700475"
+"91793acd-3ee6-4eaf-bad7-7dd5243a62b1","Mon May 19 2025 23:22:00 GMT-0400 (Eastern Daylight Time)","Mon May 19 2025 23:13:00 GMT-0400 (Eastern Daylight Time)","finished","Ending","","","Teens 4 Teens","Mehr","","Anand","anand.me@northeastern.edu","Through an plethora amount of students, rev, SGA, and other clubs","On the instagram!","Oakland -> Boston","IDEA","Yes, I am a member of one of the above groups.","Review my submitted answers","","","false","","Software","Feminine Hygiene for homeless or impoverished youth.","We would love to finish our project of a mobile app and website! We have so many projects that were started but unfortunately not finished by our summer interns from NEU, and we want to get them off the ground and running! With 50+ chapter it's extremely hard to manage and sucks away the time we could be spending on finding more grants and even more chapters!","If we have 100+ employees using our app, and over 1,000 people viewing our website in a month.","Our target is young female teenagers! We have already design premium healthcare bundles for people to buy to donate, but also designed other types of packages that we can send overseas to help the African communities and tribes such as Libera!","* Teens 4 Teens help
+* Teens 4 Teens youth
+* The pad Project
+* Helping women period
+* Period.
+* Women's health of Boston","* $10,000 raised
+* 2M+ Views
+* 50+ chapters
+* International and overseas 
+* government funding and sponsorship","* 100+ chapters that are automated and taken care of
+* Website where of increased amount of volunteer and intern applications
+* 20% increase in donations each quarter
+* 5+ more sponsorships and partnered scholarships","We are a 501(c3) Nonprofit org that has been running for 2 years! We are hoping to soon make a small branch in Boston and Oakland NEU campuses, and we have pro bono part time fully remote internships! If anyone at generate wants to come, we are more than happy to take them :)","true","true","","None","https://build.fillout.com/editor/rrsZ9j3oXhus/results?sessionId=91793acd-3ee6-4eaf-bad7-7dd5243a62b1","89a6aae63af5cdbe68fe90ae45d706dd"

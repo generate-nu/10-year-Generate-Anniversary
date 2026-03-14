@@ -1,0 +1,282 @@
+{
+  "recruitment_applications": 504,
+  "client_applications": 38,
+  "onboarding_responses": 217,
+  "archive_zip_count": 7,
+  "archive_file_count": 571,
+  "archive_semester_count": 13,
+  "role_counts": [
+    [
+      "Software Engineer Application",
+      136
+    ],
+    [
+      "Data Member App",
+      82
+    ],
+    [
+      "Software Designer Application",
+      39
+    ],
+    [
+      "Finance Member Application",
+      29
+    ],
+    [
+      "Data Lead Application",
+      24
+    ],
+    [
+      "Hardware Engineer Application",
+      22
+    ],
+    [
+      "Internal Data Analyst Application",
+      18
+    ],
+    [
+      "Software Chief Application",
+      18
+    ],
+    [
+      "Software Technical Lead Application",
+      17
+    ],
+    [
+      "Data Chief App",
+      16
+    ],
+    [
+      "Hardware Technical Lead Application",
+      14
+    ],
+    [
+      "Software Product Lead Application",
+      13
+    ],
+    [
+      "Alumni Relations Coordinator Application",
+      12
+    ],
+    [
+      "Community Chief Applications",
+      12
+    ],
+    [
+      "Marketing Lead Application",
+      12
+    ],
+    [
+      "Hardware Chief Application",
+      9
+    ],
+    [
+      "Event Coordinator Application",
+      8
+    ],
+    [
+      "Learning and Development Coordinator Application",
+      8
+    ],
+    [
+      "Software Design Lead Application",
+      8
+    ],
+    [
+      "Hardware Project Lead Application",
+      7
+    ]
+  ],
+  "recruitment_sources": [
+    [
+      "Instagram",
+      86
+    ],
+    [
+      "Instagram (@generatenu)",
+      58
+    ],
+    [
+      "Generate Referral",
+      51
+    ],
+    [
+      "Generate Referral (current or past member)",
+      38
+    ],
+    [
+      "Sherman Center Slack",
+      35
+    ],
+    [
+      "Word of mouth",
+      21
+    ],
+    [
+      "A different Slack",
+      14
+    ],
+    [
+      "LinkedIn",
+      8
+    ],
+    [
+      "Organizational Outreach",
+      6
+    ],
+    [
+      "Generate Instagram",
+      5
+    ],
+    [
+      "Social Media",
+      5
+    ],
+    [
+      "Friend",
+      4
+    ]
+  ],
+  "branch_distribution": [
+    [
+      "Hardware",
+      40
+    ],
+    [
+      "Software",
+      40
+    ],
+    [
+      "Community",
+      16
+    ],
+    [
+      "Data",
+      12
+    ],
+    [
+      "Marketing",
+      6
+    ],
+    [
+      "Management",
+      2
+    ],
+    [
+      "Finance",
+      1
+    ]
+  ],
+  "college_distribution": [
+    [
+      "KCCS (Khoury College of Computer Sciences)",
+      50
+    ],
+    [
+      "COE (College of Engineering)",
+      44
+    ],
+    [
+      "DMSB (D\u2019Amore-McKim School of Business)",
+      19
+    ],
+    [
+      "CAMD (College of Arts, Media and Design)",
+      5
+    ],
+    [
+      "CSSH (College of Social Sciences and Humanities)",
+      3
+    ],
+    [
+      "COS (College of Science)",
+      2
+    ],
+    [
+      "Home College",
+      1
+    ]
+  ],
+  "top_majors": [
+    [
+      "Computer Science",
+      115
+    ],
+    [
+      "Mechanical Engineering",
+      19
+    ],
+    [
+      "Data Science",
+      13
+    ],
+    [
+      "Computer Science and Design",
+      12
+    ],
+    [
+      "Computer Engineering",
+      11
+    ],
+    [
+      "Computer Science and Mathematics",
+      10
+    ],
+    [
+      "Information Systems",
+      8
+    ],
+    [
+      "Data Science and Business Administration",
+      8
+    ],
+    [
+      "MS in Computer Science",
+      7
+    ],
+    [
+      "Computer Science and Business Administration",
+      7
+    ]
+  ],
+  "client_branch_interest": [
+    [
+      "Software",
+      20
+    ],
+    [
+      "Hardware",
+      13
+    ],
+    [
+      "Hardware & Software",
+      2
+    ],
+    [
+      "Software + Data",
+      1
+    ],
+    [
+      "Database software + Browser-based UI",
+      1
+    ],
+    [
+      "Software and Data- Our platform requires deep integration of both branches: real-time software systems and advanced data analytics for personalization.",
+      1
+    ]
+  ],
+  "historical_checkpoints": [
+    {
+      "label": "Fall 2018 interest form",
+      "responses": 44
+    },
+    {
+      "label": "Fall 2021 acceptance survey",
+      "responses": 109
+    },
+    {
+      "label": "Fall 2025 onboarding responses",
+      "responses": 217
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "kpis": {
+    "recruitment_applications": 504,
+    "client_applications": 38,
+    "onboarding_responses": 217,
+    "archive_zip_count": 7,
+    "archive_file_count": 571,
+    "selected_historical_extracts": 43
+  },
+  "role_counts": [
+    [
+      "Software Engineer Application",
+      136
+    ],
+    [
+      "Data Member App",
+      82
+    ],
+    [
+      "Software Designer Application",
+      39
+    ],
+    [
+      "Finance Member Application",
+      29
+    ],
+    [
+      "Data Lead Application",
+      24
+    ],
+    [
+      "Hardware Engineer Application",
+      22
+    ],
+    [
+      "Internal Data Analyst Application",
+      18
+    ],
+    [
+      "Software Chief Application",
+      18
+    ],
+    [
+      "Software Technical Lead Application",
+      17
+    ],
+    [
+      "Data Chief App",
+      16
+    ],
+    [
+      "Hardware Technical Lead Application",
+      14
+    ],
+    [
+      "Software Product Lead Application",
+      13
+    ],
+    [
+      "Alumni Relations Coordinator Application",
+      12
+    ],
+    [
+      "Community Chief Applications",
+      12
+    ],
+    [
+      "Marketing Lead Application",
+      12
+    ],
+    [
+      "Hardware Chief Application",
+      9
+    ],
+    [
+      "Event Coordinator Application",
+      8
+    ],
+    [
+      "Learning and Development Coordinator Application",
+      8
+    ],
+    [
+      "Software Design Lead Application",
+      8
+    ],
+    [
+      "Hardware Project Lead Application",
+      7
+    ]
+  ],
+  "recruitment_sources": [
+    [
+      "Instagram",
+      86
+    ],
+    [
+      "Instagram (@generatenu)",
+      58
+    ],
+    [
+      "Generate Referral",
+      51
+    ],
+    [
+      "Generate Referral (current or past member)",
+      38
+    ],
+    [
+      "Sherman Center Slack",
+      35
+    ],
+    [
+      "Word of mouth",
+      21
+    ],
+    [
+      "A different Slack",
+      14
+    ],
+    [
+      "LinkedIn",
+      8
+    ],
+    [
+      "Organizational Outreach",
+      6
+    ],
+    [
+      "Generate Instagram",
+      5
+    ],
+    [
+      "Social Media",
+      5
+    ],
+    [
+      "Friend",
+      4
+    ]
+  ],
+  "onboarding_branches": [
+    [
+      "Hardware",
+      40
+    ],
+    [
+      "Software",
+      40
+    ],
+    [
+      "Community",
+      16
+    ],
+    [
+      "Data",
+      12
+    ],
+    [
+      "Marketing",
+      6
+    ],
+    [
+      "Management",
+      2
+    ],
+    [
+      "Finance",
+      1
+    ]
+  ],
+  "onboarding_colleges": [
+    [
+      "KCCS (Khoury College of Computer Sciences)",
+      50
+    ],
+    [
+      "COE (College of Engineering)",
+      44
+    ],
+    [
+      "DMSB (D\u2019Amore-McKim School of Business)",
+      19
+    ],
+    [
+      "CAMD (College of Arts, Media and Design)",
+      5
+    ],
+    [
+      "CSSH (College of Social Sciences and Humanities)",
+      3
+    ],
+    [
+      "COS (College of Science)",
+      2
+    ],
+    [
+      "Home College",
+      1
+    ]
+  ],
+  "top_member_goals": [
+    [
+      "Building friendships/community",
+      81
+    ],
+    [
+      "Gaining hands-on project experience",
+      72
+    ],
+    [
+      "Developing professional skills to strengthen my career prospects",
+      68
+    ],
+    [
+      "Expanding my network",
+      45
+    ],
+    [
+      "Exploring different fields and industries",
+      13
+    ]
+  ],
+  "top_majors": [
+    [
+      "Computer Science",
+      115
+    ],
+    [
+      "Mechanical Engineering",
+      19
+    ],
+    [
+      "Data Science",
+      13
+    ],
+    [
+      "Computer Science and Design",
+      12
+    ],
+    [
+      "Computer Engineering",
+      11
+    ],
+    [
+      "Computer Science and Mathematics",
+      10
+    ],
+    [
+      "Information Systems",
+      8
+    ],
+    [
+      "Data Science and Business Administration",
+      8
+    ],
+    [
+      "MS in Computer Science",
+      7
+    ],
+    [
+      "Computer Science and Business Administration",
+      7
+    ],
+    [
+      "Computer Engineering and Computer Science",
+      6
+    ],
+    [
+      "Bioinformatics",
+      6
+    ]
+  ],
+  "client_track_interest": [
+    [
+      "Software",
+      20
+    ],
+    [
+      "Hardware",
+      13
+    ],
+    [
+      "Hardware & Software",
+      2
+    ],
+    [
+      "Software + Data",
+      1
+    ],
+    [
+      "Database software + Browser-based UI",
+      1
+    ],
+    [
+      "Software and Data- Our platform requires deep integration of both branches: real-time software systems and advanced data analytics for personalization.",
+      1
+    ]
+  ],
+  "archive_year_counts": [
+    [
+      "2016",
+      84
+    ],
+    [
+      "2017",
+      35
+    ],
+    [
+      "2018",
+      11
+    ],
+    [
+      "2019",
+      24
+    ],
+    [
+      "2020",
+      45
+    ],
+    [
+      "2021",
+      368
+    ]
+  ],
+  "archive_semester_counts": [
+    [
+      "",
+      4
+    ],
+    [
+      "02_Spring 2016",
+      4
+    ],
+    [
+      "03_Fall 2016",
+      80
+    ],
+    [
+      "04_Spring 2017",
+      11
+    ],
+    [
+      "05_Fall 2017",
+      24
+    ],
+    [
+      "06_Spring 2018",
+      2
+    ],
+    [
+      "07_Fall 2018",
+      9
+    ],
+    [
+      "08_Spring 2019",
+      4
+    ],
+    [
+      "09_Fall 2019",
+      20
+    ],
+    [
+      "10_Spring 2020",
+      21
+    ],
+    [
+      "11_Fall 2020",
+      24
+    ],
+    [
+      "12_Spring 2021",
+      354
+    ],
+    [
+      "13_Fall 2021",
+      14
+    ]
+  ],
+  "archive_filetypes": [
+    [
+      ".docx",
+      159
+    ],
+    [
+      ".png",
+      113
+    ],
+    [
+      ".mov",
+      106
+    ],
+    [
+      ".jpg",
+      47
+    ],
+    [
+      ".mp4",
+      38
+    ],
+    [
+      ".xlsx",
+      37
+    ],
+    [
+      ".jpeg",
+      19
+    ],
+    [
+      ".heic",
+      17
+    ],
+    [
+      ".m4a",
+      15
+    ],
+    [
+      ".pptx",
+      8
+    ],
+    [
+      ".pdf",
+      3
+    ],
+    [
+      ".zip",
+      3
+    ],
+    [
+      ".mp3",
+      2
+    ],
+    [
+      ".csv",
+      1
+    ],
+    [
+      ".pptx(1)",
+      1
+    ],
+    [
+      ".webm",
+      1
+    ],
+    [
+      "[none]",
+      1
+    ]
+  ],
+  "historical_checkpoints": [
+    [
+      "Fall 2018 interest form",
+      44
+    ],
+    [
+      "Fall 2021 acceptance survey",
+      109
+    ],
+    [
+      "Fall 2025 onboarding responses",
+      217
+    ]
+  ]
+}
